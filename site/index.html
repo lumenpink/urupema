@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URUPEMA // Filtro Post-Queue MIME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #0a0a0a;
+      --paper: #f4efe6;
+      --crimson: #dc143c;
+      --crimson-dark: #8b0000;
+      --halftone: rgba(10, 10, 10, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--paper);
+      color: var(--ink);
+      font-family: 'Courier Prime', monospace;
+      line-height: 1.5;
+      min-height: 100vh;
+      background-image: 
+        radial-gradient(var(--halftone) 1.5px, transparent 1.5px),
+        radial-gradient(var(--halftone) 1.5px, var(--paper) 1.5px);
+      background-size: 16px 16px;
+      background-position: 0 0, 8px 8px;
+      padding: 2rem 1rem;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Faixa diagonal vermelha Trash Polka */
+    body::before {
+      content: "";
+      position: fixed;
+      top: -100px;
+      right: -80px;
+      width: 140px;
+      height: 140vh;
+      background: var(--crimson);
+      transform: rotate(24deg);
+      z-index: 0;
+      opacity: 0.92;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: fixed;
+      top: -120px;
+      right: 90px;
+      width: 32px;
+      height: 140vh;
+      background: var(--crimson-dark);
+      transform: rotate(24deg);
+      z-index: 0;
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      background: #faf6ee;
+      border: 3px solid var(--ink);
+      box-shadow: 12px 12px 0 var(--ink);
+      padding: 3rem 2.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      border-bottom: 3px solid var(--ink);
+      padding-bottom: 2rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .stamp {
+      position: absolute;
+      top: -10px;
+      right: 0;
+      border: 3px dashed var(--crimson);
+      color: var(--crimson);
+      padding: 0.5rem 1.2rem;
+      font-family: 'Special Elite', cursive;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transform: rotate(-7deg);
+      pointer-events: none;
+      user-select: none;
+    }
+
+    h1 {
+      font-family: 'Special Elite', cursive;
+      font-size: 3.4rem;
+      letter-spacing: -2px;
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 0 rgba(220, 20, 60, 0.35);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      font-weight: 700;
+      background: var(--ink);
+      color: var(--paper);
+      display: inline-block;
+      padding: 0.2rem 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .manifesto {
+      margin: 2rem 0;
+      font-size: 1.05rem;
+      border-left: 4px solid var(--crimson);
+      padding-left: 1.2rem;
+      font-style: italic;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .card {
+      border: 2px solid var(--ink);
+      padding: 1.2rem;
+      background: #fff;
+    }
+
+    .card h3 {
+      font-family: 'Special Elite', cursive;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: var(--crimson-dark);
+      text-transform: uppercase;
+    }
+
+    pre, code {
+      font-family: 'Courier Prime', monospace;
+      background: #eee6d6;
+      color: var(--ink);
+    }
+
+    pre {
+      padding: 1rem;
+      border: 2px solid var(--ink);
+      overflow-x: auto;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      border-top: 2px solid var(--ink);
+      padding-top: 1.5rem;
+      margin-top: 3rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--crimson);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    a:hover {
+      background: var(--crimson);
+      color: var(--paper);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="stamp">POSTFIX // SANITIZADOR</div>
+      <h1>URUPEMA</h1>
+      <div class="subtitle">Filtro Post-Queue & Higienizador de MIME</div>
+    </header>
+
+    <div class="manifesto">
+      Dissecador cirúrgico de MIME em Rust síncrono. Recebe o payload bruto RFC 5322 via stdin do Postfix, expurga scripts, rastreadores e ruídos de newsletter, gerando Markdown limpo e HTML estritamente higienizado.
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>01. ZERO-COPY MIME</h3>
+        <p>Parser ultrarrápido baseado em <code>mail-parser</code> dissecando cabeçalhos e árvores multipart com alocação mínima.</p>
+      </div>
+      <div class="card">
+        <h3>02. TXT AUTO MARKDOWN</h3>
+        <p>Conversão determinística de blocos HTML em texto legível preservando links e estrutura via <code>html2text</code>.</p>
+      </div>
+      <div class="card">
+        <h3>03. HIGIENE CIRÚRGICA</h3>
+        <p>Eliminação impiedosa de rastreadores, CSS externo e vetores maliciosos com allowlist estrita via <code>ammonia</code>.</p>
+      </div>
+    </div>
+
+    <h2 style="font-family: 'Special Elite', cursive; text-transform: uppercase; margin-top: 2rem;">TRANSPORTE POSTFIX (master.cf)</h2>
+    <pre>urupema  unix  -  n  n  -  -  pipe
+  flags=Rq user=urupema argv=/usr/local/bin/urupema
+  --sender=${sender} --recipient=${recipient}</pre>
+
+    <footer>
+      <span>PADRÃO GOST 1.0 // RUST 2021</span>
+      <span>CÓDIGO: <a href="https://codeberg.org/lumenpink/urupema" target="_blank" rel="noopener">codeberg.org/lumenpink/urupema</a></span>
+    </footer>
+  </div>
+</body>
+</html>
