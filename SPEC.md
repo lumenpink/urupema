@@ -198,8 +198,8 @@ Implementa o trait `EmailSink` gerenciando o processo filho:
   - `75` (EX_TEMPFAIL): Falha transitória ao invocar o sendmail ou ler stdin (Postfix mantém a mensagem na fila).
 
 ### 6.3 Critérios de Aceite (Ticket #2)
-- [ ] Especificação documentada neste `SPEC.md`.
-- [ ] Teste unitário para parser `clap` validando argumentos válidos e inválidos.
-- [ ] Implementação de `SendmailSink` respeitando caminhos customizados de binário para testes.
-- [ ] Conexão no `src/main.rs` lendo de `std::io::stdin()` e despachando para o `SendmailSink`.
-- [ ] Clippy zero warnings e `cargo fmt --check`.
+- [x] Especificação documentada neste `SPEC.md`.
+- [x] Teste unitário para parser `clap` validando argumentos válidos e inválidos.
+- [x] Implementação de `SendmailSink` respeitando caminhos customizados de binário para testes.
+- [x] Conexão no `src/main.rs` lendo de `std::io::stdin()` e despachando para o `SendmailSink`.
+- [x] Clippy zero warnings e `cargo fmt --check`.

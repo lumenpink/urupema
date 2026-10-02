@@ -44,8 +44,8 @@ fn test_cli_args_missing_recipient_fails() {
 
 #[test]
 fn test_sendmail_sink_execution() {
-    // Usamos o comando `/bin/sh` como fake de sendmail para verificar escrita em stdin e argumentos
-    let mut sink = SendmailSink::new("/bin/sh");
+    // Usamos o comando `/bin/true` como fake de sendmail para verificar escrita em stdin e argumentos
+    let mut sink = SendmailSink::new("/bin/true");
     let payload = b"From: a@b.com\r\nSubject: Test\r\n\r\nCorpo de teste";
 
     // Executa um comando simples via sendmail fake
