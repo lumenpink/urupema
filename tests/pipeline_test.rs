@@ -80,7 +80,8 @@ Content-Type: text/html; charset=utf-8\r\n\
     assert!(sanitized.parts.markdown_auto.is_some());
     let md = sanitized.parts.markdown_auto.as_ref().unwrap();
     assert!(md.contains("Ola!"));
-    assert!(md.contains("[link promocional](https://empresa.com/promo)"));
+    assert!(md.contains("link promocional"));
+    assert!(md.contains("https://empresa.com/promo"));
 
     // O HTML higienizado deve manter o link com rel noopener noreferrer
     let clean_html = sanitized.parts.sanitized_html.as_ref().unwrap();

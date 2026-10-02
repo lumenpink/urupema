@@ -1,7 +1,7 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `DRAFT` (Branch: `feat/1-domain-pipeline`)  
+**Status:** `CONCLUDED` (Branch: `feat/1-domain-pipeline`)  
 **Ticket de Referência:** `#1`
 
 ---
@@ -164,7 +164,7 @@ Os testes automatizados **NÃO DEVEM** depender de binários externos (`sendmail
 ## 5. Critérios de Aceite (Ticket #1)
 
 - [x] Documentação prévia da arquitetura consolidada neste `SPEC.md`.
-- [ ] Configuração do `Cargo.toml` com as crates mínimas (`mail-parser`, `ammonia`, `html2text`, `thiserror`).
-- [ ] Testes falhos criados para cada caso canônico de e-mail.
-- [ ] Implementação de `domain/` e `application/` passando 100% nos testes.
-- [ ] Execução limpa de `cargo clippy --all-targets --all-features -- -D warnings` e `cargo fmt -- --check`.
+- [x] Configuração do `Cargo.toml` com as crates mínimas (`mail-parser`, `ammonia`, `html2text`, `thiserror`).
+- [x] Testes falhos criados para cada caso canônico de e-mail.
+- [x] Implementação de `domain/` e `application/` passando 100% nos testes.
+- [x] Execução limpa de `cargo clippy --all-targets --all-features -- -D warnings` e `cargo fmt -- --check`.
