@@ -1,0 +1,18 @@
+[package]
+name = "urupema"
+version = "0.1.0"
+edition = "2021"
+authors = ["Lumen <lumen@2lp.in>"]
+description = "Filtro Post-Queue MIME e sanitizador de e-mail para Postfix"
+license = "Apache-2.0"
+
+[dependencies]
+mail-parser = "0.9"
+html2text = "0.12"
+ammonia = "4.0"
+clap = { version = "4.5", features = ["derive"] }
+thiserror = "2.0"
+
+[lints.clippy]
+all = "deny"
+warnings = "deny"
