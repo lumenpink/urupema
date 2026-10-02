@@ -168,3 +168,38 @@ Os testes automatizados **NÃO DEVEM** depender de binários externos (`sendmail
 - [x] Testes falhos criados para cada caso canônico de e-mail.
 - [x] Implementação de `domain/` e `application/` passando 100% nos testes.
 - [x] Execução limpa de `cargo clippy --all-targets --all-features -- -D warnings` e `cargo fmt -- --check`.
+
+---
+
+## 6. Especificação dos Adaptadores de Borda (Ticket #2)
+
+### 6.1 Parser de Linha de Comando (`adapters/cli.rs`)
+O binário utilitário é invocado pelo comando `pipe` do Postfix conforme declarado em `master.cf`:
+```bash
+urupema --sender=${sender} --recipient=${recipient}
+```
+Argumentos obrigatórios e opcionais via `clap` (derive):
+- `--sender` / `-s`: Endereço de envelope do remetente (`${sender}`).
+- `--recipient` / `-r`: Endereço de envelope do destinatário (`${recipient}`).
+- `--sendmail-bin`: Caminho configurável para o binário de injeção (padrão: `/usr/sbin/sendmail`).
+
+### 6.2 Adaptador de Injeção Sendmail (`adapters/sendmail.rs`)
+Implementa o trait `EmailSink` gerenciando o processo filho:
+- **Comando:** `<sendmail-bin> -G -i -f <sender> <recipient>`
+  - `-G`: Informa ao Postfix que a mensagem é de submissão de gateway/relay.
+  - `-i`: Impede encerramento de leitura por ponto solto (`.`).
+  - `-f <sender>`: Define o envelope sender original.
+- **Streams:**
+  - O payload gerado pelo pipeline é escrito diretamente no `stdin` do processo filho.
+  - Mensagens informativas ou de diagnóstico do Urupema são emitidas exclusivamente em `stderr`.
+- **Códigos de Saída do Processo:**
+  - `0`: Sucesso absoluto (mensagem entregue ao MTA).
+  - `64` (EX_USAGE): Erro na passagem de argumentos CLI.
+  - `75` (EX_TEMPFAIL): Falha transitória ao invocar o sendmail ou ler stdin (Postfix mantém a mensagem na fila).
+
+### 6.3 Critérios de Aceite (Ticket #2)
+- [ ] Especificação documentada neste `SPEC.md`.
+- [ ] Teste unitário para parser `clap` validando argumentos válidos e inválidos.
+- [ ] Implementação de `SendmailSink` respeitando caminhos customizados de binário para testes.
+- [ ] Conexão no `src/main.rs` lendo de `std::io::stdin()` e despachando para o `SendmailSink`.
+- [ ] Clippy zero warnings e `cargo fmt --check`.
