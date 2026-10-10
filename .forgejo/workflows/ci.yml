@@ -45,3 +45,19 @@ jobs:
         uses: https://codeberg.org/actions/pages@v1
         with:
           path: site
+
+  trigger-gost-ci:
+    name: "Trigger gost-ci Rebuild"
+    runs-on: ubuntu-latest
+    needs: [test]
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: "Trigger gost-ci-lauda container rebuild"
+        run: |
+          if [ -n "${{ secrets.CODEBERG_TOKEN }}" ]; then
+            curl -s -X POST \
+              -H "Authorization: token ${{ secrets.CODEBERG_TOKEN }}" \
+              -H "Content-Type: application/json" \
+              "https://codeberg.org/api/v1/repos/lumenpink/gost-ci/actions/workflows/build-images.yml/dispatches" \
+              -d '{"ref": "main"}'
+          fi
