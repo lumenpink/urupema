@@ -1,5 +1,5 @@
 use urupema::domain::{
-    EmailSegment, HeaderMeta, SegmentKind, SegmentationConfig, segment_email,
+    HeaderMeta, SegmentKind, SegmentationConfig, segment_email,
 };
 
 #[test]
