@@ -193,5 +193,3 @@ Content-Type: text/html; charset=utf-8\r\n\
     // Blockquote
     assert!(md.contains("Citacao em bloco com multiplas palavras"));
 }
-
-
