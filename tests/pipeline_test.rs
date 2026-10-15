@@ -153,3 +153,45 @@ Content-Type: text/html; charset=utf-8\r\n\
     assert!(md.contains("CEP: 88000-000"));
 }
 
+#[test]
+fn test_edge_cases_and_complex_html_formatting() {
+    let raw_rfc5322 = b"From: remetente@exemplo.org\r\n\
+To: destinatario@exemplo.org\r\n\
+Subject: Teste de Casos Limite\r\n\
+Content-Type: text/html; charset=utf-8\r\n\
+\r\n\
+<html><body>\
+<p>Poesia:<br><br>Linha 1<br>Linha 2<br><br>Fim da estrofe.</p>\
+<ul>\
+<li>Primeiro item com descricao bem longa para garantir fluidez</li>\
+<li>Segundo item</li>\
+</ul>\
+<blockquote>Citacao em bloco com multiplas palavras</blockquote>\
+</body></html>";
+
+    let raw = RawEmail::new(raw_rfc5322.to_vec());
+    let mut sink = InMemorySink::new();
+
+    let (sanitized, _result) = Pipeline::process(
+        &raw,
+        "remetente@exemplo.org",
+        "destinatario@exemplo.org",
+        &mut sink,
+    )
+    .expect("Deve processar pipeline");
+
+    let md = sanitized
+        .parts
+        .markdown_auto
+        .expect("Deve gerar markdown auto");
+
+    // Quebras duplas preservadas
+    assert!(md.contains("Linha 1\nLinha 2"));
+    // Lista renderizada
+    assert!(md.contains("Primeiro item com descricao bem longa para garantir fluidez"));
+    assert!(md.contains("Segundo item"));
+    // Blockquote
+    assert!(md.contains("Citacao em bloco com multiplas palavras"));
+}
+
+
