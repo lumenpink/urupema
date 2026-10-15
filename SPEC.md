@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `CONCLUDED` (Branch: `feat/1-domain-pipeline`)  
-**Ticket de Referência:** `#1`
+**Status:** `IN_PROGRESS` (Branch: `fix/5-preserve-line-breaks`)  
+**Ticket de Referência:** `#5` (Original: `#1`)
 
 ---
 
@@ -68,8 +68,10 @@ A política de higienização de tags via `ammonia` é estrita:
   - Tags de rastreamento (`<img>` com dimensões 1x1 ou links de tracker).
   - Atributos inline perigosos (`onload`, `onclick`, `style` contendo expressões).
 
-### 2.4 Passo 4: Geração de Markdown (`txt auto`)
+### 2.4 Passo 4: Geração de Markdown (`txt auto`) e Preservação de Quebras
 - O corpo HTML higienizado é processado por `html2text`.
+- **Largura Flexível / Responsiva:** Em vez de quebras artificiais rígidas a 80 colunas (que corrompem o fluxo de leitura em visualizadores modernos e telas dinâmicas), a conversão utiliza uma largura ampla (unwrapped, e.g. 10.000 colunas), permitindo que o cliente de exibição controle o wrap de texto livremente.
+- **Preservação de Quebras Intencionais:** Quebras de parágrafo (`<p>`) são preservadas como parágrafos separados (`\n\n`), e quebras de linha duras (`<br>`, `<br/>`) são mantidas como quebras de linha (`\n`), garantindo integridade visual em endereços, listas, versos e blocos de assinatura.
 - Links são preservados na sintaxe padrão Markdown `[texto](url)`.
 - Tabelas simples são formatadas em ASCII legível.
 
