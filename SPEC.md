@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `CONCLUDED` (Branch: `fix/5-preserve-line-breaks`)  
-**Ticket de Referência:** `#5` (Original: `#1`)
+**Status:** `IN_PROGRESS` (Branch: `feat/4-semantic-email-segmentation`)  
+**Ticket de Referência:** `#4` (Anteriores: `#5`, `#1`)
 
 ---
 
@@ -90,6 +90,7 @@ src/
 ├── domain/
 │   ├── mod.rs
 │   ├── entity.rs        # RawEmail, SanitizedMessage, EmailParts
+│   ├── segmentation.rs  # EmailSegment, SegmentKind, fatiamento semantico
 │   ├── status.rs        # PipelineStatus { Processed, Bypassed, Rejected }
 │   └── ports.rs         # Trait EmailSink
 ├── application/
@@ -205,3 +206,65 @@ Implementa o trait `EmailSink` gerenciando o processo filho:
 - [x] Implementação de `SendmailSink` respeitando caminhos customizados de binário para testes.
 - [x] Conexão no `src/main.rs` lendo de `std::io::stdin()` e despachando para o `SendmailSink`.
 - [x] Clippy zero warnings e `cargo fmt --check`.
+
+---
+
+## 7. Segmentação Semântica e Fatiamento Estrutural (Ticket #4)
+
+Para alimentar o motor de busca semântica vetorial do Lauda (operando com embeddings eficientes na CPU sem competir com Baquara na GPU), o Urupema disseca a mensagem limpa em blocos semânticos tipados.
+
+### 7.1 Tipos e Estruturas de Domínio (`domain/segmentation.rs`)
+
+```rust
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum SegmentKind {
+    /// Metadados resumidos (De, Para, Assunto, Data)
+    Header,
+    /// Chunks do corpo principal da mensagem
+    Body,
+    /// Fecho de despedida e assinatura do remetente
+    Signature,
+    /// Histórico citado de respostas anteriores
+    QuotedThread,
+}
+
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct EmailSegment {
+    pub kind: SegmentKind,
+    pub content: String,
+    pub index: usize,
+}
+
+#[derive(Debug, Clone)]
+pub struct SegmentationConfig {
+    /// Número máximo de chunks para o corpo (default: 5)
+    pub max_body_chunks: usize,
+    /// Limite aproximado de tokens/palavras por chunk (default: 350)
+    pub target_chunk_tokens: usize,
+}
+```
+
+### 7.2 Regras de Detecção Trilíngue (PT, EN, ES)
+
+1. **Fechos e Assinaturas (`SegmentKind::Signature`)**:
+   - **RFC 3676**: Marcador universal `-- ` (dois traços seguidos de espaço opcional e quebra de linha).
+   - **Português (pt)**: `atenciosamente`, `att.`, `att,`, `atte.`, `cordialmente`, `cordiais saudações`, `abraços`, `um abraço`, `forte abraço`, `saudações`, `cumprimentos`, `grato`, `obrigado`, `obrigada`, `desde já agradeço`.
+   - **Inglês (en)**: `best regards`, `warm regards`, `regards`, `sincerely`, `yours sincerely`, `yours faithfully`, `cheers`, `best`, `all the best`, `thanks`, `thank you`, `many thanks`, `respectfully`.
+   - **Espanhol (es)**: `atentamente`, `atte.`, `atte,`, `cordialmente`, `saludos cordiales`, `saludos`, `un saludo`, `un abrazo`, `gracias`, `muchas gracias`, `quedo a su disposición`, `quedo atento`, `quedo atenta`.
+
+2. **Citação e Histórico (`SegmentKind::QuotedThread`)**:
+   - **Marcador Universal**: Linhas iniciadas por `>` ou `>>`.
+   - **Português (pt)**: `em ..., ... escreveu:`, `no dia ..., ... escreveu:`, `----- mensagem original -----`, `----- mensagem encaminhada -----`.
+   - **Inglês (en)**: `on ..., ... wrote:`, `----- original message -----`, `----- forwarded message -----`.
+   - **Espanhol (es)**: `el ..., ... escribió:`, `en ..., ... escribió:`, `----- mensaje original -----`, `----- mensaje reenviado -----`.
+
+### 7.3 Estratégia de Fatiamento Cabeça-Cauda (Head-Tail Chunking)
+
+Para evitar que e-mails anômalos ou hiper-longos inflacionem a matriz vetorial sem agregar valor semântico:
+- **Teto do Body:** Até `max_body_chunks` (padrão 5).
+- **E-mails curtos e médios ($\le 5$ chunks):** Fatiamento sequencial completo sem omissão de partes.
+- **E-mails longos (> 5 chunks):**
+  - **Head (Cabeça):** Preserva os primeiros 4 blocos sequenciais a partir do início.
+  - **Tail (Cauda):** O 5º bloco é extraído a partir do fim do corpo contando de trás para frente (~350 tokens finais).
+  - Garante que a abertura (objetivo) e o desfecho (conclusões e rodapés) estejam sempre presentes no índice vetorial.
+
