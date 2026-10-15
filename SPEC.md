@@ -1,7 +1,7 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `IN_PROGRESS` (Branch: `feat/4-semantic-email-segmentation`)  
+**Status:** `CONCLUDED` (Branch: `feat/4-semantic-email-segmentation`)  
 **Ticket de Referência:** `#4` (Anteriores: `#5`, `#1`)
 
 ---
@@ -267,4 +267,13 @@ Para evitar que e-mails anômalos ou hiper-longos inflacionem a matriz vetorial 
   - **Head (Cabeça):** Preserva os primeiros 4 blocos sequenciais a partir do início.
   - **Tail (Cauda):** O 5º bloco é extraído a partir do fim do corpo contando de trás para frente (~350 tokens finais).
   - Garante que a abertura (objetivo) e o desfecho (conclusões e rodapés) estejam sempre presentes no índice vetorial.
+
+### 7.4 Critérios de Aceite (Ticket #4)
+- [x] Tipagem `EmailSegment`, `SegmentKind`, `HeaderMeta` e `SegmentationConfig` implementadas em `src/domain/segmentation.rs`.
+- [x] Detecção trilíngue (Português, Inglês e Espanhol) para fechos/assinaturas e marcadores de resposta citada.
+- [x] Suporte ao delimitador universal de assinatura RFC 3676 (`-- `) e prefixo de citação (`>`).
+- [x] Algoritmo de fatiamento Cabeça-Cauda (Head-Tail Chunking) garantindo teto de 5 blocos sem perda da cauda.
+- [x] Suíte de testes em `tests/segmentation_test.rs` cobrindo todas as variantes de idioma, casos combinados e corpos vazios.
+- [x] Quality Gate 100% verde (`cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`).
+
 
