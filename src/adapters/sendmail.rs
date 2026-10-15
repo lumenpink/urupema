@@ -38,7 +38,11 @@ impl EmailSink for SendmailSink {
             .spawn()?;
 
         if let Some(mut stdin) = child.stdin.take() {
-            stdin.write_all(payload)?;
+            if let Err(e) = stdin.write_all(payload) {
+                if e.kind() != std::io::ErrorKind::BrokenPipe {
+                    return Err(EmailSinkError::Io(e));
+                }
+            }
         }
 
         let status = child.wait()?;
