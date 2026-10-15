@@ -5,7 +5,5 @@ pub mod status;
 
 pub use entity::{ProcessedParts, RawEmail, SanitizedEmail};
 pub use ports::{EmailSink, EmailSinkError};
-pub use segmentation::{
-    EmailSegment, HeaderMeta, SegmentKind, SegmentationConfig, segment_email,
-};
+pub use segmentation::{segment_email, EmailSegment, HeaderMeta, SegmentKind, SegmentationConfig};
 pub use status::ProcessResult;

@@ -157,14 +157,13 @@ fn is_quote_start(line: &str) -> bool {
     }
 
     let lower = trimmed.to_lowercase();
-    if lower.starts_with("---") || lower.starts_with("-----") {
-        if lower.contains("original")
+    if (lower.starts_with("---") || lower.starts_with("-----"))
+        && (lower.contains("original")
             || lower.contains("encaminhada")
             || lower.contains("forwarded")
-            || lower.contains("reenviado")
-        {
-            return true;
-        }
+            || lower.contains("reenviado"))
+    {
+        return true;
     }
 
     // Português: "Em ..., ... escreveu:" / "No dia ..., ... escreveu:"
