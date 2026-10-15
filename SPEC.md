@@ -1,7 +1,7 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `IN_PROGRESS` (Branch: `fix/5-preserve-line-breaks`)  
+**Status:** `CONCLUDED` (Branch: `fix/5-preserve-line-breaks`)  
 **Ticket de Referência:** `#5` (Original: `#1`)
 
 ---
