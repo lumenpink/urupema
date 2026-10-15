@@ -124,3 +124,60 @@ fn test_head_tail_chunking_on_huge_email() {
     // O último chunk (Tail) deve conter o último parágrafo (contado de trás pra frente)
     assert!(body_segments[4].content.contains("Parágrafo 10"));
 }
+
+#[test]
+fn test_all_segments_combined_in_single_email() {
+    let headers = HeaderMeta {
+        from: Some("maria@empresa.com".to_string()),
+        to: Some("joao@empresa.com".to_string()),
+        subject: Some("Atualização do Projeto".to_string()),
+        date: Some("2026-10-15 11:30:00".to_string()),
+    };
+
+    let full_email = "Olá João,\r\n\r\n\
+                      Os testes de homologação foram concluídos com sucesso.\r\n\r\n\
+                      Atenciosamente,\r\n\
+                      Maria Silva\r\n\
+                      Diretora de Engenharia\r\n\r\n\
+                      Em qua., 14 de out. de 2026 às 15:00, João escreveu:\r\n\
+                      > Como estão os testes de homologação?";
+
+    let segments = segment_email(Some(&headers), full_email, &SegmentationConfig::default());
+
+    assert_eq!(segments.len(), 4);
+    assert_eq!(segments[0].kind, SegmentKind::Header);
+    assert_eq!(segments[0].index, 0);
+
+    assert_eq!(segments[1].kind, SegmentKind::Body);
+    assert_eq!(segments[1].index, 1);
+    assert!(segments[1].content.contains("Os testes de homologação"));
+
+    assert_eq!(segments[2].kind, SegmentKind::Signature);
+    assert_eq!(segments[2].index, 2);
+    assert!(segments[2].content.contains("Atenciosamente"));
+    assert!(segments[2].content.contains("Maria Silva"));
+
+    assert_eq!(segments[3].kind, SegmentKind::QuotedThread);
+    assert_eq!(segments[3].index, 3);
+    assert!(segments[3].content.contains("Como estão os testes"));
+}
+
+#[test]
+fn test_empty_or_whitespace_body() {
+    let config = SegmentationConfig::default();
+
+    let segs_empty = segment_email(None, "", &config);
+    assert!(segs_empty.is_empty());
+
+    let segs_spaces = segment_email(None, "   \n\n   \t  \n", &config);
+    assert!(segs_spaces.is_empty());
+
+    let headers = HeaderMeta {
+        from: Some("test@domain.com".to_string()),
+        ..Default::default()
+    };
+    let segs_header_only = segment_email(Some(&headers), "   ", &config);
+    assert_eq!(segs_header_only.len(), 1);
+    assert_eq!(segs_header_only[0].kind, SegmentKind::Header);
+}
+
