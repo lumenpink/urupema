@@ -96,7 +96,9 @@ impl Pipeline {
             ammonia_builder.link_rel(Some("noopener noreferrer"));
 
             let clean_html = ammonia_builder.clean(html).to_string();
-            let markdown = html2text::from_read(clean_html.as_bytes(), 80);
+            // Largura ampla para preservar fluxo livre de parágrafos sem quebras artificiais
+            const UNWRAPPED_WIDTH: usize = 10_000;
+            let markdown = html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH);
 
             parts.sanitized_html = Some(clean_html);
             parts.markdown_auto = Some(markdown);
