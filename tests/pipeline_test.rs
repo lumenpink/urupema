@@ -113,3 +113,43 @@ Mensagem ja processada.";
     assert_eq!(result, ProcessResult::Bypass);
     assert_eq!(sink.deliveries.len(), 1); // Pass-through inalterado
 }
+
+#[test]
+fn test_line_break_preservation_and_unwrapped_paragraphs() {
+    let raw_rfc5322 = b"From: remetente@exemplo.org\r\n\
+To: destinatario@exemplo.org\r\n\
+Subject: Teste de Quebras e Largura\r\n\
+Content-Type: text/html; charset=utf-8\r\n\
+\r\n\
+<html><body>\
+<p>Este e um paragrafo propositalmente longo contendo bem mais de oitenta caracteres para certificar que o urupema nao impoe quebra de linha artificial arbitraria no meio das frases do texto.</p>\
+<p>Endereco:<br>Rua das Flores, 123<br>Centro - Florianopolis - SC<br>CEP: 88000-000</p>\
+</body></html>";
+
+    let raw = RawEmail::new(raw_rfc5322.to_vec());
+    let mut sink = InMemorySink::new();
+
+    let (sanitized, _result) = Pipeline::process(
+        &raw,
+        "remetente@exemplo.org",
+        "destinatario@exemplo.org",
+        &mut sink,
+    )
+    .expect("Deve processar pipeline");
+
+    let md = sanitized
+        .parts
+        .markdown_auto
+        .expect("Deve gerar markdown auto");
+
+    // 1. O paragrafo longo NAO deve conter quebras artificiais (\n) no meio
+    assert!(
+        md.contains("Este e um paragrafo propositalmente longo contendo bem mais de oitenta caracteres para certificar que o urupema nao impoe quebra de linha artificial arbitraria no meio das frases do texto.")
+    );
+
+    // 2. As quebras duras (<br>) do endereco devem ser preservadas como linhas distintas
+    assert!(md.contains("Rua das Flores, 123\n"));
+    assert!(md.contains("Centro - Florianopolis - SC\n"));
+    assert!(md.contains("CEP: 88000-000"));
+}
+
