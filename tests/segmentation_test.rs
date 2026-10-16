@@ -199,3 +199,29 @@ fn test_empty_or_whitespace_body() {
     assert_eq!(segs_header_only.len(), 1);
     assert_eq!(segs_header_only[0].kind, SegmentKind::Header);
 }
+
+#[test]
+fn test_respeitosamente_and_webmail_quote_headers() {
+    let config = SegmentationConfig::default();
+
+    let email = "Encaminho o relatório para apreciação.\n\n\
+                 Respeitosamente;\n\
+                 Cap PM Oliveira\n\n\
+                 De: \"Diretoria Geral\" <diretoria@exemplo.gov.br>\n\
+                 Para: \"Comandante\" <cmdo@exemplo.gov.br>\n\
+                 Assunto: Solicitação de Relatório";
+
+    let segments = segment_email(None, email, &config);
+
+    assert_eq!(segments.len(), 3);
+    assert_eq!(segments[0].kind, SegmentKind::Body);
+    assert!(segments[0].content.contains("Encaminho o relatório"));
+
+    assert_eq!(segments[1].kind, SegmentKind::Signature);
+    assert!(segments[1].content.contains("Respeitosamente"));
+    assert!(segments[1].content.contains("Cap PM Oliveira"));
+
+    assert_eq!(segments[2].kind, SegmentKind::QuotedThread);
+    assert!(segments[2].content.contains("De: \"Diretoria Geral\""));
+}
+
