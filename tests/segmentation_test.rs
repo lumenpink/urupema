@@ -224,4 +224,3 @@ fn test_respeitosamente_and_webmail_quote_headers() {
     assert_eq!(segments[2].kind, SegmentKind::QuotedThread);
     assert!(segments[2].content.contains("De: \"Diretoria Geral\""));
 }
-

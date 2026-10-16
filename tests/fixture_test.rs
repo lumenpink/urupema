@@ -1,8 +1,6 @@
 use urupema::adapters::InMemorySink;
 use urupema::application::Pipeline;
-use urupema::domain::{
-    HeaderMeta, RawEmail, SegmentKind, SegmentationConfig, segment_email,
-};
+use urupema::domain::{segment_email, HeaderMeta, RawEmail, SegmentKind, SegmentationConfig};
 
 #[test]
 fn test_fixture_militar_fwd_pipeline_and_segmentation() {
@@ -43,12 +41,24 @@ fn test_fixture_militar_fwd_pipeline_and_segmentation() {
 
     // Deve detectar a assinatura com 'Respeitosamente;'
     let sig_seg = segments.iter().find(|s| s.kind == SegmentKind::Signature);
-    assert!(sig_seg.is_some(), "Deve detectar assinatura com Respeitosamente");
-    assert!(sig_seg.unwrap().content.to_lowercase().contains("respeitosamente"));
+    assert!(
+        sig_seg.is_some(),
+        "Deve detectar assinatura com Respeitosamente"
+    );
+    assert!(sig_seg
+        .unwrap()
+        .content
+        .to_lowercase()
+        .contains("respeitosamente"));
 
     // Deve isolar o histórico citado com 'De: ...'
-    let quote_seg = segments.iter().find(|s| s.kind == SegmentKind::QuotedThread);
-    assert!(quote_seg.is_some(), "Deve isolar quoted thread iniciada por De:");
+    let quote_seg = segments
+        .iter()
+        .find(|s| s.kind == SegmentKind::QuotedThread);
+    assert!(
+        quote_seg.is_some(),
+        "Deve isolar quoted thread iniciada por De:"
+    );
 }
 
 #[test]
@@ -70,8 +80,14 @@ fn test_fixture_thread_multinivel() {
 
     // Deve conter corpo da mensagem atual
     let body_seg = segments.iter().find(|s| s.kind == SegmentKind::Body);
-    assert!(body_seg.is_some(), "Deve conter corpo da mensagem mais recente");
-    assert!(body_seg.unwrap().content.contains("Segue em anexo documento solicitado"));
+    assert!(
+        body_seg.is_some(),
+        "Deve conter corpo da mensagem mais recente"
+    );
+    assert!(body_seg
+        .unwrap()
+        .content
+        .contains("Segue em anexo documento solicitado"));
 
     // Deve detectar assinatura da mensagem mais recente
     let sig_seg = segments.iter().find(|s| s.kind == SegmentKind::Signature);
@@ -79,7 +95,9 @@ fn test_fixture_thread_multinivel() {
     assert!(sig_seg.unwrap().content.contains("Atenciosamente"));
 
     // Deve isolar histórico anterior
-    let quote_seg = segments.iter().find(|s| s.kind == SegmentKind::QuotedThread);
+    let quote_seg = segments
+        .iter()
+        .find(|s| s.kind == SegmentKind::QuotedThread);
     assert!(quote_seg.is_some(), "Deve isolar thread anterior");
 }
 
@@ -104,7 +122,10 @@ fn test_fixture_boletim_longo_head_tail_chunking() {
     };
 
     let segments = segment_email(None, md, &config);
-    let body_segments: Vec<_> = segments.iter().filter(|s| s.kind == SegmentKind::Body).collect();
+    let body_segments: Vec<_> = segments
+        .iter()
+        .filter(|s| s.kind == SegmentKind::Body)
+        .collect();
 
     // Deve respeitar o teto máximo de 5 blocos para o corpo
     assert_eq!(body_segments.len(), 5);

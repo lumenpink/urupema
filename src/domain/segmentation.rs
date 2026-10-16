@@ -190,10 +190,7 @@ fn is_quote_start(line: &str) -> bool {
 
     // Cabeçalhos de resposta/encaminhamento embutidos estilo Webmail/Zimbra/Outlook
     // Ex: 'De: "Nome" <email@...>', 'From: Nome <email@...>', '*De:* ...'
-    let clean = lower
-        .trim_start_matches('*')
-        .trim_start_matches('_')
-        .trim();
+    let clean = lower.trim_start_matches('*').trim_start_matches('_').trim();
     if (clean.starts_with("de:") || clean.starts_with("from:"))
         && (clean.contains('<') || clean.contains('@') || clean.contains('"'))
     {
