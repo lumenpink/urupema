@@ -1,0 +1,269 @@
+Delivered-To: contato@exemplo.org
+Received: by 2002:a17:907:7f89:b0:b6d:524a:c19e with SMTP id qk9csp985865ejc;
+        Thu, 30 Oct 2025 08:08:00 -0700 (PDT)
+X-Forwarded-Encrypted: i=1;
+ AJvYcCUZPKBCqrOcxPFGptrgJFTudDhE6c1x+PyycONioAmRhlVZBtRLY+8gPnAqDrv6WWamlbSXzfLyK1FGBF0=@gmail.com
+X-Google-Smtp-Source: 
+ AGHT+IEBHWa+hXrViCnJ6YvBDeuCDE8JvrkCBp/EvoKWNENgPiWOv1f725kbOkirgj+Z2FuJ5mr3U9es6IM=
+X-Received: by 2002:a17:906:d542:b0:b4a:d0cf:8748 with SMTP id
+ a640c23a62f3a-b7053b0db21mr398003066b.13.1761836783383;
+        Thu, 30 Oct 2025 08:06:23 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) smtp.mailfrom=contato@exemplo.org
+Received-SPF: pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+Received: by 2002:a17:906:4791:b0:b45:b1c3:28f3 with POP3 id
+ a640c23a62f3a-b70514c9646mf119765066b.0;
+        Thu, 30 Oct 2025 08:06:22 -0700 (PDT)
+X-Gmail-Fetch-Info: contato@exemplo.org 1 pop.zoho.com 995 contato@exemplo.org
+Delivered-To: contato@exemplo.org
+Received-SPF: pass (zohomail.com: domain of exemplo.gov.br designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+ envelope-from=contato@exemplo.org; helo=mail.exemplo.gov.br;
+Authentication-Results: mx.zohomail.com;
+	spf=pass (zohomail.com: domain of exemplo.gov.br designates 200.19.221.147 as
+ permitted sender)  smtp.mailfrom=contato@exemplo.org
+Return-Path: <contato@exemplo.org>
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147]) by
+ mx.zohomail.com
+	with SMTPS id 1738773829428944.1902579910854;
+ Wed, 5 Feb 2025 08:43:49 -0800 (PST)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id E21208EAAEEE;
+	Wed,  5 Feb 2025 13:43:43 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10032) with ESMTP
+ id j9A3ODWCl6cL; Wed,  5 Feb 2025 13:43:43 -0300 (-03)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id 723428EAAED6;
+	Wed,  5 Feb 2025 13:43:43 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10026) with ESMTP
+ id JHep9h0seY46; Wed,  5 Feb 2025 13:43:41 -0300 (-03)
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id A45A98EAAEEE;
+	Wed,  5 Feb 2025 13:43:41 -0300 (-03)
+X-Virus-Scanned: amavis at exemplo.gov.br
+Date: Wed, 5 Feb 2025 13:43:41 -0300 (BRT)
+From: DSPS CHEFE DA =?utf-8?Q?DIVIS=C3=83O_M=C3=89DICO-ODONTOL=C3=93GICA?=
+ <contato@exemplo.org>
+To: contato@exemplo.org, contato@exemplo.org
+Cc: DSPS DIVA Chefe <contato@exemplo.org>
+Message-ID: <contato@exemplo.org>
+In-Reply-To: <contato@exemplo.org>
+References: 
+ <CA+g53nyuhVT9iOsqkTunAb9Qo4Jw=fBe2Yc7rxjy=contato@exemplo.org>
+ <contato@exemplo.org>
+Subject: =?utf-8?Q?Re:_Solicita=C3=A7=C3=A3o_do_Manual_d?=
+ =?utf-8?Q?e_Inspe=C3=A7=C3=B5es_de_Sa=C3=BAde_da_PMSC?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_2416706_1997381804.1738773821566"
+X-Originating-IP: [200.19.221.147]
+X-Mailer: Zimbra 8.8.15_GA_4717 (ZimbraWebClient - GC109 (Win)/8.8.15_GA_4717)
+Thread-Topic: 
+ =?utf-8?Q?Solicita=C3=A7=C3=A3o_do_Manual_de_Inspe=C3=A7=C3=B5es_de_Sa=C3=BAde?=
+ da PMSC
+Thread-Index: 4lc0O/0q2roXTbQS8XLGQHG/1mMmcT1v887R
+X-Zoho-Virus-Status: 1
+X-ZM-MESSAGEID: 1738773834887019200
+
+------=_Part_2416706_1997381804.1738773821566
+Content-Type: multipart/alternative;
+	boundary="=_ca87747e-2d3c-468e-b823-26f2f5c1fea5"
+
+--=_ca87747e-2d3c-468e-b823-26f2f5c1fea5
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Senhor Thiago Jos=C3=A9 Hentchen=20
+
+Segue em anexo documento solicitado.=20
+
+
+
+Atenciosamente,=20
+
+Major PM Den M=C3=A1rcia R. da Silveira=20
+Chefe da Divis=C3=A3o M=C3=A9dico-Odontol=C3=B3gica - DMO=20
+Diretoria de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social - DSPS=20
+Avenida Central, 500 - Centro - Florian=C3=B3polis - SC=20
+CEP 88000-000=20
+
+
+
+De: "DSPS DIVA Chefe" <contato@exemplo.org>=20
+Para: "DSPS Divis=C3=A3o M=C3=A9dico-Odontol=C3=B3gica Chefe" <dspsdmoch@pm=
+.sc.gov.br>=20
+Cc: "DSPS DIRETOR" <contato@exemplo.org>=20
+Enviadas: Ter=C3=A7a-feira, 4 de fevereiro de 2025 17:51:11=20
+Assunto: Re: Solicita=C3=A7=C3=A3o do Manual de Inspe=C3=A7=C3=B5es de Sa=
+=C3=BAde da PMSC=20
+
+A DMO,=20
+
+Para an=C3=A1lise e despacho da situa=C3=A7=C3=A3o com o Diretor.=20
+
+Atenciosamente,=20
+
+Andr=C3=A9 Felipe Amaral Silva=20
+Tenente-Coronel PM Chefe da Divis=C3=A3o Administrativa=20
+Diretoria de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social=20
+Avenida Central, 500, 2=C2=BA andar, Centro, Florian=C3=B3polis =E2=80=93 S=
+C (junto ao HPM)=20
+CEP 88.020-400 | Fone (48) 3000-0002 Ramal 1234=20
+
+
+
+
+De: "LUCAS GABRIEL FERREIRA" <contato@exemplo.org>=20
+Para: "DSPS DIRETOR" <contato@exemplo.org>, contato@exemplo.org=20
+Cc: "GECAD -" <contato@exemplo.org>=20
+Enviadas: Quarta-feira, 29 de janeiro de 2025 14:22:11=20
+Assunto: Solicita=C3=A7=C3=A3o do Manual de Inspe=C3=A7=C3=B5es de Sa=C3=BA=
+de da PMSC=20
+
+Boa tarde, prezados.=20
+
+Solicito, por gentileza, o envio do Manual de Inspe=C3=A7=C3=B5es de Sa=C3=
+=BAde da PMSC. O Manual servir=C3=A1 para subsidiar an=C3=A1lise de process=
+o de emiss=C3=A3o de CTC que atualmente tramita no IPREV.=20
+
+Atenciosamente,=20
+--=20
+Thiago Jos=C3=A9 Hentchen=20
+
+
+Analista T=C3=A9cnico Administrativo=20
+
+SECTC/GERIN/IPREV=20
+
+Florian=C3=B3polis/SC=20
+
+(48) 3000-0003=20
+
+
+
+As informa=C3=A7=C3=B5es contidas neste e-mail e em seus anexos s=C3=A3o co=
+nfidenciais e n=C3=A3o.podem ser usadas, reproduzidas ou divulgadas para fi=
+ns e destinat=C3=A1rios n=C3=A3o previstos na a=C3=A7=C3=A3o. Se voc=C3=AA =
+recebeu este e-mail por equ=C3=ADvoco, por favor, apague o seu conte=C3=BAd=
+o e avise, imediatamente, ao remetente. Este Instituto de Previd=C3=AAncia =
+do Estado de Estado de Santa Catarina est=C3=A1 se alinhando para proteger =
+os dados dos titulares, em conson=C3=A2ncia com a Lei no 13.709/2018 (Lei G=
+eral de Prote=C3=A7=C3=A3o de Dados LGPD)=20
+
+
+--=_ca87747e-2d3c-468e-b823-26f2f5c1fea5
+Content-Type: multipart/related;
+	boundary="=_5535546d-c6f2-4f51-9156-60fe18169fa3"
+
+--=_5535546d-c6f2-4f51-9156-60fe18169fa3
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; color: #000000"><div>Senhor  <!--StartFragment--><b style=3D"fon=
+t-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal=
+; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing=
+: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: =
+none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-strok=
+e-width: 0px; background-color: #ffffff; text-decoration-thickness: initial=
+; text-decoration-style: initial; text-decoration-color: initial; color: #2=
+22222;" data-mce-style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 16px; font-style: normal; font-variant-ligatures: normal; font-variant=
+-caps: normal; letter-spacing: normal; orphans: 2; text-align: start; text-=
+indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spa=
+cing: 0px; -webkit-text-stroke-width: 0px; background-color: #ffffff; text-=
+decoration-thickness: initial; text-decoration-style: initial; text-decorat=
+ion-color: initial; color: #222222;">Thiago Jos=C3=A9 Hentchen</b><!--EndFr=
+agment--> </div><div><br data-mce-bogus=3D"1"></div><div>Segue em anexo doc=
+umento solicitado.</div><div><br data-mce-bogus=3D"1"></div><div><br data-m=
+ce-bogus=3D"1"></div><div><br data-mce-bogus=3D"1"></div><div>Atenciosament=
+e,&nbsp;</div><div><br></div><div data-marker=3D"__SIG_PRE__"><div><span st=
+yle=3D"font-size:12pt">Major PM Den </span>M=C3=A1rcia R. da Silveira&nbsp;=
+&nbsp;<br>Chefe da Divis=C3=A3o M=C3=A9dico-Odontol=C3=B3gica - DMO<br>Dire=
+toria de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social - DSPS<br>Rua Major Costa, =
+221 - Centro - Florian=C3=B3polis - SC<br>CEP 88000-000<br><br></div><div><=
+img src=3D"cid:713d0433ee67859253b4043579cd3d41e6c140f3@zimbra" data-mce-sr=
+c=3D"/home/contato@exemplo.org/Briefcase/rodape2021.jpg" doc=3D"Briefcase=
+/rodape2021.jpg"></div></div><div><br></div><hr id=3D"zwchr" data-marker=3D=
+"__DIVIDER__"><div data-marker=3D"__HEADERS__"><b>De: </b>"DSPS DIVA Chefe"=
+ &lt;contato@exemplo.org&gt;<br><b>Para: </b>"DSPS Divis=C3=A3o M=C3=A9=
+dico-Odontol=C3=B3gica Chefe" &lt;contato@exemplo.org&gt;<br><b>Cc: </b>=
+"DSPS DIRETOR" &lt;contato@exemplo.org&gt;<br><b>Enviadas: </b>Ter=C3=A7a-=
+feira, 4 de fevereiro de 2025 17:51:11<br><b>Assunto: </b>Re: Solicita=C3=
+=A7=C3=A3o do Manual de Inspe=C3=A7=C3=B5es de Sa=C3=BAde da PMSC<br></div>=
+<div><br></div><div data-marker=3D"__QUOTED_TEXT__"><div id=3D"zimbraEditor=
+Container" style=3D"font-family:'arial' , 'helvetica' , sans-serif;font-siz=
+e:12pt;color:#000000" class=3D"15"><div>A DMO,</div><br><div>Para an=C3=A1l=
+ise e despacho da situa=C3=A7=C3=A3o com o Diretor.</div><br><div><div>Aten=
+ciosamente,</div><div><br>Andr=C3=A9 Felipe Amaral Silva<br>Tenente-Coronel=
+ PM Chefe da Divis=C3=A3o Administrativa</div><div><div>Diretoria de Sa=C3=
+=BAde e Promo=C3=A7=C3=A3o Social<br>Avenida Central, 500, 2=C2=BA andar, C=
+entro, Florian=C3=B3polis =E2=80=93 SC (junto ao HPM)&nbsp;<br>CEP 88.020-4=
+00 | Fone (48) 3000-0002 Ramal 1234<br><br></div><div><img src=3D"cid:ad74=
+112add508c020013ac45d5506caba2a5e167@zimbra" data-mce-src=3D"/home/dspschda=
+contato@exemplo.org/Briefcase/rodape2021.jpg" style=3D"font-size:12pt"><br></di=
+v></div></div><br><hr id=3D"zwchr"><div><b>De: </b>"LUCAS GABRIEL FERREIRA" &=
+lt;contato@exemplo.org&gt;<br><b>Para: </b>"DSPS DIRETOR" &lt;dspsdir@=
+exemplo.gov.br&gt;, contato@exemplo.org<br><b>Cc: </b>"GECAD -" &lt;gecad@=
+exemplo.gov.br&gt;<br><b>Enviadas: </b>Quarta-feira, 29 de janeiro de 2025=
+ 14:22:11<br><b>Assunto: </b>Solicita=C3=A7=C3=A3o do Manual de Inspe=C3=A7=
+=C3=B5es de Sa=C3=BAde da PMSC<br></div><br><div><div dir=3D"ltr"><div>Boa =
+tarde, prezados.&nbsp;</div><br><div>Solicito, por gentileza, o envio do&nb=
+sp;Manual de Inspe=C3=A7=C3=B5es de Sa=C3=BAde da PMSC. O Manual servir=C3=
+=A1 para subsidiar an=C3=A1lise de processo de emiss=C3=A3o de CTC que atua=
+lmente tramita no IPREV.&nbsp;</div><br><div>Atenciosamente,&nbsp;</div><sp=
+an class=3D"gmail_signature_prefix">-- </span><br><div dir=3D"ltr" class=3D=
+"gmail_signature"><div dir=3D"ltr"><b style=3D"color:rgb( 34 , 34 , 34 )">T=
+hiago Jos=C3=A9 Hentchen</b><br style=3D"color:rgb( 34 , 34 , 34 )"><p styl=
+e=3D"color:rgb( 34 , 34 , 34 )"><b><span style=3D"font-family:'arial'">Anal=
+ista T=C3=A9cnico Administrativo</span></b></p><p style=3D"color:rgb( 34 , =
+34 , 34 )"><b><span style=3D"font-family:'arial'">SECTC/GERIN/IPREV</span><=
+/b><img alt=3D""></p><p style=3D"color:rgb( 34 , 34 , 34 )"><b><span style=
+=3D"font-family:'arial'">Florian=C3=B3polis/SC</span></b></p><p style=3D"co=
+lor:rgb( 34 , 34 , 34 )"><b><span style=3D"font-family:'arial'">(48) 3665-9=
+921</span></b></p><p style=3D"color:rgb( 34 , 34 , 34 )"><img alt=3D"">&nbs=
+p; &nbsp;<b><span style=3D"font-family:'arial'"><br></span></b></p></div></=
+div></div>
+
+<br>
+<div style=3D"text-align:justify">As informa=C3=A7=C3=B5es contidas neste e=
+-mail e em seus anexos s=C3=A3o confidenciais e n=C3=A3o.podem ser usadas, =
+reproduzidas ou divulgadas para fins e destinat=C3=A1rios n=C3=A3o previsto=
+s na a=C3=A7=C3=A3o. Se voc=C3=AA recebeu este e-mail por equ=C3=ADvoco, po=
+r favor, apague o&nbsp;seu conte=C3=BAdo e avise, imediatamente, ao remeten=
+te. Este Instituto de Previd=C3=AAncia do&nbsp;Estado de Estado de Santa Ca=
+tarina est=C3=A1 se alinhando para proteger os dados dos&nbsp;titulares, em=
+ conson=C3=A2ncia com a Lei&nbsp; no&nbsp;13.709/2018 (Lei Geral de Prote=
+=C3=A7=C3=A3o de Dados LGPD)</div></div></div><br></div></div></body></html=
+>
+--=_5535546d-c6f2-4f51-9156-60fe18169fa3
+Content-Type: image/jpeg; name=rodape2021.jpg
+Content-Disposition: inline; filename=rodape2021.jpg
+Content-Transfer-Encoding: 7bit
+Content-ID: <ad74112add508c020013ac45d5506caba2a5e167@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_5535546d-c6f2-4f51-9156-60fe18169fa3
+Content-Type: image/jpeg; name=rodape2021.jpg
+Content-Disposition: attachment; filename=rodape2021.jpg
+Content-Transfer-Encoding: 7bit
+Content-ID: <713d0433ee67859253b4043579cd3d41e6c140f3@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_5535546d-c6f2-4f51-9156-60fe18169fa3--
+
+--=_ca87747e-2d3c-468e-b823-26f2f5c1fea5--
+
+------=_Part_2416706_1997381804.1738773821566
+Content-Type: application/pdf;
+ name="=?utf-8?Q?Manual_de_Inspe=C3=A7=C3=B5es_de_Sa=C3=BAde_da_PMSC=2Epdf?="
+Content-Disposition: attachment;
+ filename="=?utf-8?Q?Manual_de_Inspe=C3=A7=C3=B5es_de_Sa=C3=BAde_da_PMSC=2Epdf?="
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_2416706_1997381804.1738773821566--

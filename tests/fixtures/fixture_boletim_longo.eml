@@ -1,0 +1,1586 @@
+Delivered-To: contato@exemplo.org
+Received: by 2002:a17:907:7f89:b0:b6d:524a:c19e with SMTP id qk9csp877567ejc;
+        Thu, 30 Oct 2025 05:48:43 -0700 (PDT)
+X-Forwarded-Encrypted: i=1;
+ AJvYcCVzCszyXq7/DBrAKNLTGjhzzPqzeQXTvZPBQXElTCD9bzzxQY9zdCgEZWxHoj0/CdtMWotZnmCJfVAD44w=@gmail.com
+X-Google-Smtp-Source: 
+ AGHT+IHAwZprOfQCXwg68W2ZRv05TRxUHFKmWXOeGJzkUQS0UkghVGI19v+XHC/5ZPFQHL/NiuamZ8eRFzI=
+X-Received: by 2002:a17:906:c149:b0:b6d:a7ad:2fda with SMTP id
+ a640c23a62f3a-b7053b169b5mr371455466b.12.1761828339762;
+        Thu, 30 Oct 2025 05:45:39 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) smtp.mailfrom=contato@exemplo.org
+Received-SPF: pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+Received: by 2002:a17:907:3d04:b0:b45:420c:81cc with POP3 id
+ a640c23a62f3a-b70515361a3mf205403466b.0;
+        Thu, 30 Oct 2025 05:45:36 -0700 (PDT)
+X-Gmail-Fetch-Info: contato@exemplo.org 1 pop.zoho.com 995 contato@exemplo.org
+Delivered-To: contato@exemplo.org
+Received-SPF: pass (zohomail.com: domain of exemplo.gov.br designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+ envelope-from=contato@exemplo.org; helo=mail.exemplo.gov.br;
+Authentication-Results: mx.zohomail.com;
+	spf=pass (zohomail.com: domain of exemplo.gov.br designates 200.19.221.147 as
+ permitted sender)  smtp.mailfrom=contato@exemplo.org
+Return-Path: <contato@exemplo.org>
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147]) by
+ mx.zohomail.com
+	with SMTPS id 1757019707741950.3069514775377;
+ Thu, 4 Sep 2025 14:01:47 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id 82E648FDBCE4;
+	Thu,  4 Sep 2025 18:01:36 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10032) with ESMTP
+ id X21O2AN9mqxo; Thu,  4 Sep 2025 18:01:35 -0300 (-03)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id CE0A38FDBCBA;
+	Thu,  4 Sep 2025 18:01:33 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10026) with ESMTP
+ id Ouy0kAqRn8PI; Thu,  4 Sep 2025 18:01:33 -0300 (-03)
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id CA38D8FDBC9E;
+	Thu,  4 Sep 2025 18:01:29 -0300 (-03)
+X-Virus-Scanned: amavis at exemplo.gov.br
+Date: Thu, 4 Sep 2025 18:01:29 -0300 (BRT)
+From: Chefe EMG/PM6 <contato@exemplo.org>
+To: pmcapital <contato@exemplo.org>, pminterior <contato@exemplo.org>
+Message-ID: <contato@exemplo.org>
+Subject: =?utf-8?Q?Nota_n=C2=BA_087/EMG/2025_-_Publica=C3=A7=C3=A3o_de_Atos_?=
+ =?utf-8?Q?do_Comandante-Geral_(IG_10-408_e_IR_10-602)?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_2373750_1837943457.1757019689592"
+X-Originating-IP: [200.19.221.147]
+X-Mailer: Zimbra 8.8.15_GA_4717 (ZimbraWebClient - GC139 (Win)/8.8.15_GA_4717)
+Thread-Index: gmCDYuRpFr+1vIuH6sxmxzmTXQUB/g==
+Thread-Topic: Nota =?utf-8?Q?n=C2=BA_087/EMG/2025_-_Publica=C3=A7=C3=A3o?= de
+ Atos do Comandante-Geral (IG 10-408 e IR 10-602)
+X-Zimbra-DL: contato@exemplo.org, contato@exemplo.org
+X-Zoho-Virus-Status: 1
+X-Zoho-Virus-Status: 1
+X-Zoho-AV-Stamp: zmail-av-1.4.3/256.902.47
+X-ZM-MESSAGEID: 1757019717641123900
+
+------=_Part_2373750_1837943457.1757019689592
+Content-Type: multipart/alternative;
+	boundary="=_e5b45194-1b75-4f84-b73f-46e52c8580b1"
+
+--=_e5b45194-1b75-4f84-b73f-46e52c8580b1
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Senhores Comandantes, Chefes e Diretores ,=20
+
+Com meus cordiais cumprimentos, informo que se encontra dispon=C3=ADvel e p=
+ublicado na Biblioteca da PMSC as seguintes normas:=20
+
+
+
+Ato n=C2=BA 837/PMSC/2025 - Aprova a Instru=C3=A7=C3=A3o Geral de Porte e E=
+mprego de Armas de fogo, muni=C3=A7=C3=B5es, acess=C3=B3rios e equipamentos=
+ afins ( IG-10-408 ).=20
+
+Ato n=C2=BA 838/PMSC/2025 - Aprova a Instru=C3=A7=C3=A3o Reguladora que est=
+abelece as fontes de recursos e os n=C3=ADveis de prioridades e para aquisi=
+=C3=A7=C3=A3o de armas de fogo, muni=C3=A7=C3=B5es, acess=C3=B3rios e equip=
+amentos afins constantes da IG 10-408, bem como os previstos no regulamento=
+ de uniformes e estabelece outras provid=C3=AAncias ( IR-10-602 ).=20
+
+A IG 10-408 atualiza e revoga as Diretrizes de Procedimento Permanente n=C2=
+=BA 028/20/Cmdo-G e n=C2=BA 035/2020/CMDO-G . J=C3=A1 a IR 10-602 tem o con=
+d=C3=A3o de regulamentar as fontes de recursos para a aquisi=C3=A7=C3=A3o d=
+os materiais, equipamentos e armamentos dispostos na IG 10-408, bem como di=
+spostos no RUPMSC . Tal norma foi editada com base em Estudo do Estado-Maio=
+r Geral, constante do SGPE PMSC 49074/2025.=20
+
+Desta forma, na confec=C3=A7=C3=A3o dos Planos de Aplica=C3=A7=C3=A3o das O=
+PMs , deve-se realizar a previs=C3=A3o das aquisi=C3=A7=C3=B5es em conformi=
+dade com o previsto nas normas acima.=20
+
+As aludidas normas podem ser acessadas, diretamente, atrav=C3=A9s do link a=
+baixo:=20
+
+[ https://intranet.exemplo.gov.br/biblioteca/ato/14555 | https://intranet.pm.=
+sc.gov.br/biblioteca/ato/14555 ]=20
+
+[ https://intranet.exemplo.gov.br/biblioteca/ato/14556 | https://intranet.pm.=
+sc.gov.br/biblioteca/ato/14556 ]=20
+
+E tamb=C3=A9m se encontram anexas ao presente e-mail.=20
+
+Solicita-se ampla divulga=C3=A7=C3=A3o das aludidas normas.=20
+
+Atenciosamente,=20
+
+CARLOS ALBERTO NOGUEIRA=20
+Coronel PMSC =E2=80=93 Chefe do Estado-Maior Geral=20
+"Estado-Maior Geral, guardi=C3=A3o da doutrina da PMSC"=20
+Quartel do Comando Geral - QCG=20
+Rua das Palmeiras, 100 - Centro - Florian=C3=B3polis - SC=20
+CEP 88000-000, Fone (48) 3000-0001 . Email: contato@exemplo.org=20
+
+Trs.=20
+Eduardo Ramos Soares=20
+Ten Cel PM - Chefe da 6=C2=AA Divis=C3=A3o do Estado-Maior Geral (PM-6)=20
+
+
+--=_e5b45194-1b75-4f84-b73f-46e52c8580b1
+Content-Type: multipart/related;
+	boundary="=_a5482f21-7988-4a95-93df-3ec96f434e5a"
+
+--=_a5482f21-7988-4a95-93df-3ec96f434e5a
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; color: #000000"><style type=3D"text/css" scoped=3D"">
+<!--
+ /* Font Definitions */
+ @font-face
+=09{font-family:"Cambria Math";
+=09panose-1:2 4 5 3 5 4 6 3 2 4;
+=09mso-font-charset:0;
+=09mso-generic-font-family:roman;
+=09mso-font-pitch:variable;
+=09mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+=09{font-family:Aptos;
+=09mso-font-charset:0;
+=09mso-generic-font-family:swiss;
+=09mso-font-pitch:variable;
+=09mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+=09{mso-style-unhide:no;
+=09mso-style-qformat:yes;
+=09mso-style-parent:"";
+=09margin-top:0cm;
+=09margin-right:0cm;
+=09margin-bottom:8.0pt;
+=09margin-left:0cm;
+=09line-height:107%;
+=09mso-pagination:widow-orphan;
+=09font-size:11.0pt;
+=09font-family:"Aptos",sans-serif;
+=09mso-ascii-font-family:Aptos;
+=09mso-ascii-theme-font:minor-latin;
+=09mso-fareast-font-family:Aptos;
+=09mso-fareast-theme-font:minor-latin;
+=09mso-hansi-font-family:Aptos;
+=09mso-hansi-theme-font:minor-latin;
+=09mso-bidi-font-family:"Times New Roman";
+=09mso-bidi-theme-font:minor-bidi;
+=09mso-font-kerning:1.0pt;
+=09mso-ligatures:standardcontextual;
+=09mso-fareast-language:EN-US;}
+.zimbra49
+=09{mso-style-type:export-only;
+=09mso-default-props:yes;
+=09font-size:11.0pt;
+=09mso-ansi-font-size:11.0pt;
+=09mso-bidi-font-size:11.0pt;
+=09font-family:"Aptos",sans-serif;
+=09mso-ascii-font-family:Aptos;
+=09mso-ascii-theme-font:minor-latin;
+=09mso-fareast-font-family:Aptos;
+=09mso-fareast-theme-font:minor-latin;
+=09mso-hansi-font-family:Aptos;
+=09mso-hansi-theme-font:minor-latin;
+=09mso-bidi-font-family:"Times New Roman";
+=09mso-bidi-theme-font:minor-bidi;
+=09mso-fareast-language:EN-US;}
+.zimbra50
+=09{mso-style-type:export-only;
+=09margin-bottom:8.0pt;
+=09line-height:107%;}
+@page WordSection1
+=09{size:612.0pt 792.0pt;
+=09margin:70.85pt 3.0cm 70.85pt 3.0cm;
+=09mso-header-margin:36.0pt;
+=09mso-footer-margin:36.0pt;
+=09mso-paper-source:0;}
+div.WordSection1
+=09{page:WordSection1;}
+-->
+</style><style type=3D"text/css" scoped=3D"">
+<!--
+br
+{
+mso-data-placement:same-cell;
+}
+table
+{
+mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\, ";
+}
+tr
+{
+mso-height-source:auto;
+mso-ruby-visibility:none;
+}
+td
+{
+border:1pt solid black;
+}
+.zimbra46{cellspacing:0;cellpadding:10;border-collapse:collapse;mso-table-l=
+ayout-alt:fixed;border:none; mso-border-alt:solid black .75pt;mso-padding-a=
+lt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.75pt solid black;mso-border-ins=
+idev:.75pt solid black}
+.zimbra47
+{
+=09font-family:ArialMT;
+=09font-size:11pt;
+=09font-style:normal;
+=09font-weight:normal;
+=09color:rgb(0,0,0);
+}
+.zimbra48
+{
+=09font-size:12pt;
+=09font-style:normal;
+=09font-weight:normal;
+=09color:rgb(0,0,0);
+}
+-->
+</style><style type=3D"text/css" scoped=3D"">
+<!--
+br
+{
+mso-data-placement:same-cell;
+}
+table
+{
+mso-displayed-decimal-separator:"\.";
+mso-displayed-thousand-separator:"\, ";
+}
+tr
+{
+mso-height-source:auto;
+mso-ruby-visibility:none;
+}
+td
+{
+border:1pt solid black;
+}
+.zimbra43{cellspacing:0;cellpadding:10;border-collapse:collapse;mso-table-l=
+ayout-alt:fixed;border:none; mso-border-alt:solid black .75pt;mso-padding-a=
+lt:0cm 5.4pt 0cm 5.4pt; mso-border-insideh:.75pt solid black;mso-border-ins=
+idev:.75pt solid black}
+.zimbra44
+{
+=09font-family:Arial;
+=09font-size:11pt;
+=09font-style:normal;
+=09font-weight:normal;
+=09color:rgb(0,0,0);
+}
+.zimbra45
+{
+=09font-size:12pt;
+=09font-style:normal;
+=09font-weight:normal;
+=09color:rgb(0,0,0);
+}
+-->
+</style><div data-marker=3D"__QUOTED_TEXT__"><div style=3D"" data-mce-style=
+=3D"font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12pt; color=
+: #000000;"><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetic=
+a, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0p=
+x; white-space: normal; background-color: rgb(255, 255, 255);" data-mce-sty=
+le=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font=
+-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: #ffffff;"><span style=3D"font-size: 12pt; background=
+-color: #fdfdfd;" data-mce-style=3D"font-size: 12pt; background-color: #fdf=
+dfd;">Senhores Comandantes, Chefes e Diretores</span><span style=3D"font-si=
+ze: 12pt; background-color: #fdfdfd;" data-mce-style=3D"font-size: 12pt; ba=
+ckground-color: #fdfdfd;">,</span></div><div style=3D"text-indent: 0px; bac=
+kground-color: rgb(255, 255, 255);" data-mce-style=3D"text-indent: 0px; bac=
+kground-color: #ffffff;"><div style=3D""><div style=3D"color: rgb(0, 0, 0);=
+ font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: no=
+rmal; font-weight: 400; letter-spacing: normal; text-transform: none; word-=
+spacing: 0px; white-space: normal; text-indent: 0px; background-color: rgb(=
+255, 255, 255);" data-mce-style=3D"color: #000000; font-family: 'arial' , '=
+helvetica' , sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-transform: none; word-spacing: 0px; white=
+-space: normal; text-indent: 0px; background-color: #ffffff;"><br></div><di=
+v style=3D"text-indent: 0px; background-color: rgb(255, 255, 255);" data-mc=
+e-style=3D"text-indent: 0px; background-color: #ffffff;"><div style=3D"colo=
+r: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px=
+; font-style: normal; font-weight: 400; letter-spacing: normal; text-transf=
+orm: none; word-spacing: 0px; white-space: normal; text-indent: 0px; backgr=
+ound-color: rgb(255, 255, 255);" data-mce-style=3D"color: #000000; font-fam=
+ily: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font-style: norma=
+l; font-weight: 400; letter-spacing: normal; text-transform: none; word-spa=
+cing: 0px; white-space: normal; text-indent: 0px; background-color: #ffffff=
+;"><div style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-=
+serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spacin=
+g: normal; text-transform: none; word-spacing: 0px; white-space: normal;" d=
+ata-mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-=
+serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spacin=
+g: normal; text-transform: none; word-spacing: 0px; white-space: normal;"><=
+div><div style=3D"text-indent: 0px; background-color: #ffffff;" data-mce-st=
+yle=3D"text-indent: 0px; background-color: #ffffff;"><div style=3D"text-ind=
+ent: 0px;" data-mce-style=3D"text-indent: 0px;"><div id=3D"zimbraEditorCont=
+ainer" class=3D"50"><div style=3D"color: #000000; font-family: 'arial' , 'h=
+elvetica' , sans-serif; font-size: 12pt; font-style: normal; font-weight: 4=
+00; letter-spacing: normal; text-indent: 0px; text-transform: none; word-sp=
+acing: 0px; white-space: normal; background-color: #ffffff; text-align: jus=
+tify;" data-mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica'=
+ , sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0p=
+x; white-space: normal; background-color: #ffffff; text-align: justify;"><s=
+pan style=3D"font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12=
+pt;" data-mce-style=3D"font-family: 'arial' , 'helvetica' , sans-serif; fon=
+t-size: 12pt;">Com meus cordiais cumprimentos, informo que&nbsp;<span style=
+=3D"text-align: justify;" data-mce-style=3D"text-align: justify;">se encont=
+ra dispon=C3=ADvel e publicado na Biblioteca da PMSC as seguintes normas:</=
+span></span></div></div></div></div></div></div></div><div style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-transform=
+: none; word-spacing: 0px; white-space: normal; text-indent: 0px; backgroun=
+d-color: rgb(255, 255, 255);" data-mce-style=3D"color: #000000; font-family=
+: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font-style: normal; =
+font-weight: 400; letter-spacing: normal; text-transform: none; word-spacin=
+g: 0px; white-space: normal; text-indent: 0px; background-color: #ffffff;">=
+<br></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica,=
+ sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-=
+spacing: normal; text-transform: none; word-spacing: 0px; white-space: norm=
+al; text-indent: 0px; background-color: rgb(255, 255, 255);" data-mce-style=
+=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-s=
+ize: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; te=
+xt-transform: none; word-spacing: 0px; white-space: normal; text-indent: 0p=
+x; background-color: #ffffff;"> <!-- [if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->   <!-- [if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Normal</w:View>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>PT-BR</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"&#45;-"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!-- [if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"false"
+  DefSemiHidden=3D"false" DefQFormat=3D"false" DefPriority=3D"99"
+  LatentStyleCount=3D"376">
+  <w:LsdException Locked=3D"false" Priority=3D"0" QFormat=3D"true" Name=3D"=
+Normal"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" QFormat=3D"true" Name=3D"=
+heading 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"9" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"heading 9"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 6"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 7"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 8"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index 9"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 7"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 8"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"toc 9"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Normal Indent"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"footnote text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"annotation text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"header"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"footer"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"index heading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"35" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"caption"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"table of figures"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"envelope address"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"envelope return"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"footnote reference"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"annotation reference"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"line number"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"page number"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"endnote reference"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"endnote text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"table of authorities"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"macro"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"toa heading"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Bullet"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Number"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Bullet 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Bullet 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Bullet 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Bullet 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Number 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Number 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Number 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Number 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"10" QFormat=3D"true" Name=3D=
+"Title"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Closing"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Signature"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"Default Paragraph Font"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text Indent"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Continue"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Continue 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Continue 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Continue 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"List Continue 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Message Header"/>
+  <w:LsdException Locked=3D"false" Priority=3D"11" QFormat=3D"true" Name=3D=
+"Subtitle"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Salutation"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Date"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text First Indent"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text First Indent 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Note Heading"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text Indent 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Body Text Indent 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Block Text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Hyperlink"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"FollowedHyperlink"/>
+  <w:LsdException Locked=3D"false" Priority=3D"22" QFormat=3D"true" Name=3D=
+"Strong"/>
+  <w:LsdException Locked=3D"false" Priority=3D"20" QFormat=3D"true" Name=3D=
+"Emphasis"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Document Map"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Plain Text"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"E-mail Signature"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Top of Form"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Bottom of Form"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Normal (Web)"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Acronym"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Address"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Cite"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Code"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Definition"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Keyboard"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Preformatted"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Sample"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Typewriter"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"HTML Variable"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Normal Table"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"annotation subject"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"No List"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Outline List 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Outline List 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Outline List 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Simple 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Simple 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Simple 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Classic 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Classic 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Classic 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Classic 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Colorful 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Colorful 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Colorful 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Columns 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Columns 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Columns 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Columns 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Columns 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 6"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 7"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Grid 8"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 6"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 7"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table List 8"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table 3D effects 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table 3D effects 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table 3D effects 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Contemporary"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Elegant"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Professional"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Subtle 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Subtle 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Web 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Web 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Web 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Balloon Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" Name=3D"Table Grid"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Table Theme"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" Name=3D"Placeholder =
+Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" QFormat=3D"true" Name=3D"=
+No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" Name=3D"Revision"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" QFormat=3D"true"
+   Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" QFormat=3D"true" Name=3D=
+"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" QFormat=3D"true"
+   Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" QFormat=3D"true"
+   Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" QFormat=3D"true"
+   Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" QFormat=3D"true"
+   Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" QFormat=3D"true"
+   Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" QFormat=3D"true" Name=3D=
+"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"TOC Heading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"41" Name=3D"Plain Table 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"42" Name=3D"Plain Table 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"43" Name=3D"Plain Table 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"44" Name=3D"Plain Table 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"45" Name=3D"Plain Table 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"40" Name=3D"Grid Table Light=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46" Name=3D"Grid Table 1 Lig=
+ht"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51" Name=3D"Grid Table 6 Col=
+orful"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52" Name=3D"Grid Table 7 Col=
+orful"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"Grid Table 2 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"Grid Table 3 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"Grid Table 4 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"Grid Table 5 Dar=
+k Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46" Name=3D"List Table 1 Lig=
+ht"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51" Name=3D"List Table 6 Col=
+orful"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52" Name=3D"List Table 7 Col=
+orful"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"46"
+   Name=3D"List Table 1 Light Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"47" Name=3D"List Table 2 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"48" Name=3D"List Table 3 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"49" Name=3D"List Table 4 Acc=
+ent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"50" Name=3D"List Table 5 Dar=
+k Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"51"
+   Name=3D"List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"52"
+   Name=3D"List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Mention"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Smart Hyperlink"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Hashtag"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Unresolved Mention"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   Name=3D"Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]--><!-- [if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+=09{mso-style-name:"Tabela normal";
+=09mso-tstyle-rowband-size:0;
+=09mso-tstyle-colband-size:0;
+=09mso-style-noshow:yes;
+=09mso-style-priority:99;
+=09mso-style-parent:"";
+=09mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+=09mso-para-margin-top:0cm;
+=09mso-para-margin-right:0cm;
+=09mso-para-margin-bottom:8.0pt;
+=09mso-para-margin-left:0cm;
+=09line-height:107%;
+=09mso-pagination:widow-orphan;
+=09font-size:11.0pt;
+=09font-family:"Aptos",sans-serif;
+=09mso-ascii-font-family:Aptos;
+=09mso-ascii-theme-font:minor-latin;
+=09mso-hansi-font-family:Aptos;
+=09mso-hansi-theme-font:minor-latin;
+=09mso-font-kerning:1.0pt;
+=09mso-ligatures:standardcontextual;
+=09mso-fareast-language:EN-US;}
+</style>
+<![endif]--> <!--StartFragment--><p class=3D"MsoNormal" style=3D"margin: 0p=
+x;" data-mce-style=3D"margin: 0px;"><span style=3D"font-size: 12pt;" data-m=
+ce-style=3D"font-size: 12pt;"><b>Ato n=C2=BA 837/PMSC/2025 -&nbsp;</b>Aprov=
+a a Instru=C3=A7=C3=A3o Geral de Porte e Emprego de Armas de fogo, muni=C3=
+=A7=C3=B5es, acess=C3=B3rios e equipamentos afins (<strong>IG-10-408</stron=
+g>).</span><o:p></o:p></p><p class=3D"MsoNormal" style=3D"margin: 0px;" dat=
+a-mce-style=3D"margin: 0px;"><o:p>&nbsp;</o:p></p><span style=3D"font-size:=
+ 12pt;" data-mce-style=3D"font-size: 12pt;"><b><span style=3D"line-height: =
+107%; font-family: Aptos, sans-serif;" data-mce-style=3D"line-height: 107%;=
+ font-family: Aptos, sans-serif;">Ato n=C2=BA 838/PMSC/2025 -&nbsp;</span><=
+/b><span style=3D"line-height: 107%; font-family: Aptos, sans-serif;" data-=
+mce-style=3D"line-height: 107%; font-family: Aptos, sans-serif;">Aprova a I=
+nstru=C3=A7=C3=A3o Reguladora que estabelece as fontes de recursos e os n=
+=C3=ADveis de prioridades e para aquisi=C3=A7=C3=A3o de armas de fogo, muni=
+=C3=A7=C3=B5es, acess=C3=B3rios e equipamentos afins constantes da IG 10-40=
+8, bem como os previstos no regulamento de uniformes e estabelece outras pr=
+ovid=C3=AAncias (<strong>IR-10-602</strong>).</span></span></div><div style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; text-indent: 0px=
+; background-color: rgb(255, 255, 255);" data-mce-style=3D"color: #000000; =
+font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font-styl=
+e: normal; font-weight: 400; letter-spacing: normal; text-transform: none; =
+word-spacing: 0px; white-space: normal; text-indent: 0px; background-color:=
+ #ffffff;"><strong style=3D"color: #000000; font-style: normal; letter-spac=
+ing: normal; text-align: justify; text-indent: 0px; text-transform: none; w=
+ord-spacing: 0px; white-space: normal; font-family: 'calibri' , sans-serif;=
+ font-size: 11pt;" data-mce-style=3D"color: #000000; font-style: normal; le=
+tter-spacing: normal; text-align: justify; text-indent: 0px; text-transform=
+: none; word-spacing: 0px; white-space: normal; font-family: 'calibri' , sa=
+ns-serif; font-size: 11pt;"><span style=3D"font-size: 12pt; font-family: 'a=
+rial' , 'helvetica' , sans-serif;" data-mce-style=3D"font-size: 12pt; font-=
+family: 'arial' , 'helvetica' , sans-serif;"></span></strong><br></div><div=
+ style=3D"text-indent: 0px; background-color: rgb(255, 255, 255);" data-mce=
+-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; =
+font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-transform: none; word-spacing: 0px; white-space: normal; text-inde=
+nt: 0px; background-color: #ffffff;"><div style=3D"" data-mce-style=3D"colo=
+r: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12p=
+t; font-style: normal; font-weight: 400; letter-spacing: normal; text-trans=
+form: none; word-spacing: 0px; white-space: normal;"><div style=3D"color: r=
+gb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; fo=
+nt-style: normal; font-weight: 400; letter-spacing: normal; text-transform:=
+ none; word-spacing: 0px; white-space: normal; text-indent: 0px; background=
+-color: rgb(255, 255, 255); text-align: justify;" data-mce-style=3D"color: =
+#000000; font-family: arial, helvetica, sans-serif; font-size: 12pt; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; text-transform: non=
+e; word-spacing: 0px; white-space: normal; text-indent: 0px; background-col=
+or: #ffffff; text-align: justify;">A<span style=3D"text-decoration: underli=
+ne;" data-mce-style=3D"text-decoration: underline;"> IG 10-408 atualiza e r=
+evoga <span style=3D"font-size: 12pt;">as Diretrizes de Procedimento Perman=
+ente </span>n=C2=BA 028/20/Cmdo-G e n=C2=BA 035/2020/CMDO-G</span>. J=C3=A1=
+ a <span style=3D"text-decoration: underline;" data-mce-style=3D"text-decor=
+ation: underline;">IR 10-602 tem o cond=C3=A3o de regulamentar as fontes de=
+ recursos para a aquisi=C3=A7=C3=A3o dos materiais, equipamentos e armament=
+os dispostos na IG 10-408, bem como dispostos no RUPMSC</span>. Tal norma f=
+oi editada com base em Estudo do Estado-Maior Geral, constante do SGPE PMSC=
+ 49074/2025.</div><div style=3D"color: rgb(0, 0, 0); font-family: arial, he=
+lvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400;=
+ letter-spacing: normal; text-transform: none; word-spacing: 0px; white-spa=
+ce: normal; text-indent: 0px; background-color: rgb(255, 255, 255); text-al=
+ign: justify;" data-mce-style=3D"color: #000000; font-family: 'arial' , 'he=
+lvetica' , sans-serif; font-size: 12pt; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: #ffffff; text-align: just=
+ify;"><br data-mce-bogus=3D"1"></div><div style=3D"color: rgb(0, 0, 0); fon=
+t-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal=
+; font-weight: 400; letter-spacing: normal; text-transform: none; word-spac=
+ing: 0px; white-space: normal; text-indent: 0px; background-color: rgb(255,=
+ 255, 255); text-align: justify;" data-mce-style=3D"color: #000000; font-fa=
+mily: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; fo=
+nt-weight: 400; letter-spacing: normal; text-transform: none; word-spacing:=
+ 0px; white-space: normal; text-indent: 0px; background-color: #ffffff; tex=
+t-align: justify;">Desta forma, na confec=C3=A7=C3=A3o dos <span style=3D"t=
+ext-decoration: underline;" data-mce-style=3D"text-decoration: underline;">=
+<strong>Planos de Aplica=C3=A7=C3=A3o das OPMs</strong></span>, deve-se rea=
+lizar a previs=C3=A3o das aquisi=C3=A7=C3=B5es em conformidade com o previs=
+to nas normas acima.&nbsp;</div><div style=3D"color: rgb(0, 0, 0); font-fam=
+ily: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; fon=
+t-weight: 400; letter-spacing: normal; text-transform: none; word-spacing: =
+0px; white-space: normal; text-indent: 0px; background-color: rgb(255, 255,=
+ 255); text-align: justify;" data-mce-style=3D"color: #000000; font-family:=
+ 'arial' , 'helvetica' , sans-serif; font-size: 12pt; font-style: normal; f=
+ont-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: =
+none; word-spacing: 0px; white-space: normal; background-color: #ffffff; te=
+xt-align: justify;"><br><span style=3D"color: #000000; font-family: 'arial'=
+ , sans-serif; font-size: 16px; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; text-align: justify; text-indent: 0px; text-transform: n=
+one; word-spacing: 0px; white-space: normal; background-color: #fdfdfd; flo=
+at: none; display: inline !important;" data-mce-style=3D"color: #000000; fo=
+nt-family: 'arial' , sans-serif; font-size: 16px; font-style: normal; font-=
+weight: 400; letter-spacing: normal; text-align: justify; text-indent: 0px;=
+ text-transform: none; word-spacing: 0px; white-space: normal; background-c=
+olor: #fdfdfd; float: none; display: inline !important;"></span></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-transform: none; word-spacing: 0px; white-space: normal; text-indent=
+: 0px; background-color: rgb(255, 255, 255); text-align: justify;" data-mce=
+-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; =
+font-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space:=
+ normal; background-color: #ffffff; text-align: justify;"><span style=3D"ba=
+ckground-color: #fdfdfd; font-family: 'arial' , sans-serif; font-size: 12pt=
+;" data-mce-style=3D"background-color: #fdfdfd; font-family: 'arial' , sans=
+-serif; font-size: 12pt;">As aludidas normas podem ser acessadas, diretamen=
+te, atrav=C3=A9s do link abaixo:</span></div><div style=3D"color: rgb(0, 0,=
+ 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style=
+: normal; font-weight: 400; letter-spacing: normal; text-transform: none; w=
+ord-spacing: 0px; white-space: normal; text-indent: 0px; background-color: =
+rgb(255, 255, 255); text-align: justify;" data-mce-style=3D"color: #000000;=
+ font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12pt; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: #ffffff; text-align: justify;"><span style=3D"background-color: #fdfdfd; =
+font-family: 'arial' , sans-serif; font-size: 12pt;" data-mce-style=3D"back=
+ground-color: #fdfdfd; font-family: 'arial' , sans-serif; font-size: 12pt;"=
+><br data-mce-bogus=3D"1"></span></div></div></div><div style=3D"text-inden=
+t: 0px; background-color: rgb(255, 255, 255);" data-mce-style=3D"color: #00=
+0000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; fon=
+t-style: normal; font-weight: 400; letter-spacing: normal; text-transform: =
+none; word-spacing: 0px; white-space: normal; text-indent: 0px; background-=
+color: #ffffff;"><a href=3D"https://intranet.exemplo.gov.br/biblioteca/ato/14=
+555">https://intranet.exemplo.gov.br/biblioteca/ato/14555</a></div><div style=
+=3D"text-indent: 0px; background-color: rgb(255, 255, 255);" data-mce-style=
+=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-s=
+ize: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; te=
+xt-transform: none; word-spacing: 0px; white-space: normal; text-indent: 0p=
+x; background-color: #ffffff;"><br data-mce-bogus=3D"1"></div><div style=3D=
+"text-indent: 0px; background-color: rgb(255, 255, 255);" data-mce-style=3D=
+"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size=
+: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-=
+transform: none; word-spacing: 0px; white-space: normal; text-indent: 0px; =
+background-color: #ffffff;"><a href=3D"https://intranet.exemplo.gov.br/biblio=
+teca/ato/14556">https://intranet.exemplo.gov.br/biblioteca/ato/14556</a></div=
+><div style=3D"text-indent: 0px; background-color: rgb(255, 255, 255);" dat=
+a-mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-se=
+rif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing:=
+ normal; text-transform: none; word-spacing: 0px; white-space: normal; text=
+-indent: 0px; background-color: #ffffff;"><br data-mce-bogus=3D"1"></div><d=
+iv style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif;=
+ font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: nor=
+mal; text-transform: none; word-spacing: 0px; white-space: normal; text-ind=
+ent: 0px; background-color: rgb(255, 255, 255);" data-mce-style=3D"color: #=
+000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-transform=
+: none; word-spacing: 0px; white-space: normal; text-indent: 0px; backgroun=
+d-color: #ffffff;"><span style=3D"font-size: 12pt; text-align: justify;">E =
+tamb=C3=A9m se encontram anexas ao presente e-mail.</span></div><div style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; text-indent: 0px=
+; background-color: rgb(255, 255, 255);" data-mce-style=3D"color: #000000; =
+font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font-styl=
+e: normal; font-weight: 400; letter-spacing: normal; text-transform: none; =
+word-spacing: 0px; white-space: normal; text-indent: 0px; background-color:=
+ #ffffff;"><span style=3D"font-size: 12pt; text-align: justify;"><br data-m=
+ce-bogus=3D"1"></span></div><div style=3D"color: rgb(0, 0, 0); font-family:=
+ arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-we=
+ight: 400; letter-spacing: normal; text-transform: none; word-spacing: 0px;=
+ white-space: normal; text-indent: 0px; background-color: rgb(255, 255, 255=
+);" data-mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , =
+sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-s=
+pacing: normal; text-transform: none; word-spacing: 0px; white-space: norma=
+l; text-indent: 0px; background-color: #ffffff;"><span style=3D"font-size: =
+12pt; text-align: justify;">Solicita-se ampla divulga=C3=A7=C3=A3o das alud=
+idas normas.</span></div><div style=3D"color: rgb(0, 0, 0); font-family: ar=
+ial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weigh=
+t: 400; letter-spacing: normal; text-transform: none; word-spacing: 0px; wh=
+ite-space: normal; text-indent: 0px; background-color: rgb(255, 255, 255);"=
+ data-mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , san=
+s-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spac=
+ing: normal; text-transform: none; word-spacing: 0px; white-space: normal; =
+text-indent: 0px; background-color: #ffffff;"><div style=3D"color: #000000;=
+ font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12pt; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: #ffffff;" data-mce-style=3D"color: #000000; font-family: 'arial' , 'helve=
+tica' , sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; =
+letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacin=
+g: 0px; white-space: normal; background-color: #ffffff;"><br style=3D"color=
+: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px=
+; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent=
+: 0px; text-transform: none; word-spacing: 0px; white-space: normal;" data-=
+mce-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: n=
+ormal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-spa=
+ce: normal;"></div><div style=3D"color: #000000; font-family: 'arial' , 'he=
+lvetica' , sans-serif; font-size: 12pt; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: #ffffff;" data-mce-style=
+=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-s=
+ize: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; te=
+xt-indent: 0px; text-transform: none; word-spacing: 0px; white-space: norma=
+l; background-color: #ffffff;"><span style=3D"font-family: arial, sans-seri=
+f; font-size: 12pt; background-color: rgb(253, 253, 253); text-align: justi=
+fy;">Atenciosamente,</span></div></div></div><br></div><div style=3D"color:=
+ rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; =
+font-style: normal; font-weight: 400; letter-spacing: normal; text-transfor=
+m: none; word-spacing: 0px; white-space: normal;" data-mce-style=3D"color: =
+#000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 12pt; =
+font-style: normal; font-weight: 400; letter-spacing: normal; text-transfor=
+m: none; word-spacing: 0px; white-space: normal;"><div style=3D"color: #000=
+000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font=
+-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px;=
+ text-transform: none; word-spacing: 0px; white-space: normal;" data-mce-st=
+yle=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; fon=
+t-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal;=
+ text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: no=
+rmal;"><div><b>CARLOS ALBERTO NOGUEIRA</b><br>Coronel PMSC =E2=80=93 Chefe =
+do Estado-Maior Geral</div><div><em><strong>"Estado-Maior Geral, guardi=C3=
+=A3o da doutrina da PMSC"</strong></em><br>Quartel do Comando Geral - QCG<b=
+r>Rua das Palmeiras, 100 - Centro - Florian=C3=B3polis - SC<br>CEP=
+ 88000-000, Fone&nbsp;<span class=3D"Object" id=3D"OBJ_PREFIX_DWT3072_com_=
+zimbra_phone" style=3D"color: #005a95; text-decoration: none;" data-mce-sty=
+le=3D"color: #005a95; text-decoration: none;"><a style=3D"color: #005a95;" =
+data-mce-style=3D"color: #005a95;">(48) 3000-0001</a></span>. Email:&nbsp;<=
+span class=3D"Object" id=3D"OBJ_PREFIX_DWT3073_ZmEmailObjectHandler" style=
+=3D"color: #005a95; text-decoration: none;" data-mce-style=3D"color: #005a9=
+5; text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT119_Z=
+mEmailObjectHandler" style=3D"color: #005a95; text-decoration: none;" data-=
+mce-style=3D"color: #005a95; text-decoration: none;"><span class=3D"Object"=
+ id=3D"OBJ_PREFIX_DWT123_ZmEmailObjectHandler" style=3D"color: #005a95; tex=
+t-decoration: none;" data-mce-style=3D"color: #005a95; text-decoration: non=
+e;">contato@exemplo.org</span></span></span></div></div><div style=3D"color: =
+#000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; =
+font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: =
+0px; text-transform: none; word-spacing: 0px; white-space: normal;" data-mc=
+e-style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif;=
+ font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: nor=
+mal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space=
+: normal;"><img data-mce-src=3D"/home/contato@exemplo.org/Briefcase/img_5=
+50.jpg" src=3D"cid:7dbbccf0a1087b91887caa0d74615505f1b0210c@zimbra"></div><=
+div style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: n=
+ormal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-spa=
+ce: normal;" data-mce-style=3D"color: #000000; font-family: 'arial' , 'helv=
+etica' , sans-serif; font-size: 16px; font-style: normal; font-weight: 400;=
+ letter-spacing: normal; text-indent: 0px; text-transform: none; word-spaci=
+ng: 0px; white-space: normal;"><br></div><div style=3D"color: #000000; font=
+-family: 'arial' , 'helvetica' , sans-serif; font-size: 16px; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal;" data-mce-style=3D"co=
+lor: #000000; font-family: 'arial' , 'helvetica' , sans-serif; font-size: 1=
+6px; font-style: normal; font-weight: 400; letter-spacing: normal; text-ind=
+ent: 0px; text-transform: none; word-spacing: 0px; white-space: normal;">Tr=
+s.</div><div style=3D"color: #000000; font-family: 'arial' , 'helvetica' , =
+sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-s=
+pacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; =
+white-space: normal;" data-mce-style=3D"color: #000000; font-family: 'arial=
+' , 'helvetica' , sans-serif; font-size: 16px; font-style: normal; font-wei=
+ght: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; w=
+ord-spacing: 0px; white-space: normal;"><span style=3D"font-size: 12pt;" da=
+ta-mce-style=3D"font-size: 12pt;">Eduardo Ramos Soares</span><br></div><div=
+ style=3D"color: #000000; font-family: 'arial' , 'helvetica' , sans-serif; =
+font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space:=
+ normal;" data-mce-style=3D"color: #000000; font-family: 'arial' , 'helveti=
+ca' , sans-serif; font-size: 16px; font-style: normal; font-weight: 400; le=
+tter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing:=
+ 0px; white-space: normal;"><div>Ten Cel PM - Chefe da 6=C2=AA Divis=C3=A3o=
+ do Estado-Maior Geral (PM-6)<br></div></div></div></div></div><br></div></=
+div></body></html>
+--=_a5482f21-7988-4a95-93df-3ec96f434e5a
+Content-Type: image/jpeg; name=img_550.jpg
+Content-Disposition: inline; filename=img_550.jpg
+Content-Transfer-Encoding: 7bit
+Content-ID: <7dbbccf0a1087b91887caa0d74615505f1b0210c@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_a5482f21-7988-4a95-93df-3ec96f434e5a--
+
+--=_e5b45194-1b75-4f84-b73f-46e52c8580b1--
+
+------=_Part_2373750_1837943457.1757019689592
+Content-Type: application/pdf;
+ name="=?utf-8?Q?IR_10-602_Fontes_de_Recursos_para_Aquisi=C3=A7=C3=A3o_de_EquipamentosAss=2Epdf?="
+Content-Disposition: attachment;
+ filename="=?utf-8?Q?IR_10-602_Fontes_de_Recursos_para_Aquisi=C3=A7=C3=A3o_de_EquipamentosAss=2Epdf?="
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_2373750_1837943457.1757019689592
+Content-Type: application/pdf;
+ name="=?utf-8?Q?IG-10-408_-_Instru=C3=A7=C3=A3o_Geral_de_Porte_e_Emprego_de_Armas_de_fogo=2C_muni=C3=A7=C3=B5es=2C_acess=C3=B3rios_e_equipamentos_afins=2Epdf?="
+Content-Disposition: attachment;
+ filename="=?utf-8?Q?IG-10-408_-_Instru=C3=A7=C3=A3o_Geral_de_Porte_e_Emprego_de_Armas_de_fogo=2C_muni=C3=A7=C3=B5es=2C_acess=C3=B3rios_e_equipamentos_afins=2Epdf?="
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_2373750_1837943457.1757019689592--

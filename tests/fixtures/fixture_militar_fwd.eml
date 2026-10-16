@@ -1,0 +1,1378 @@
+Delivered-To: contato@exemplo.org
+Received: by 2002:a17:907:7f89:b0:b6d:524a:c19e with SMTP id qk9csp838537ejc;
+        Thu, 30 Oct 2025 04:52:43 -0700 (PDT)
+X-Forwarded-Encrypted: i=1;
+ AJvYcCWcGjHMJqR9pxlLLbyQcPdyUWBR/L0z+HjpDUqiwcEs0S5wPkf+/BjkfxZu6kTi8DERhV3TbqQE5OgYKZI=@gmail.com
+X-Google-Smtp-Source: 
+ AGHT+IHUTsn5u4jsWQWYZdB4fYfMiULJhJNeFBUmHekymRwmqiuuKH2Jxd/xwxaiXe+RoRrM7CdDVrmHHnQ=
+X-Received: by 2002:a05:651c:3248:20b0:372:9780:a2b2 with SMTP id
+ 38308e7fff4ca-37a02404b1dmr16614671fa.39.1761824931088;
+        Thu, 30 Oct 2025 04:48:51 -0700 (PDT)
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) smtp.mailfrom=contato@exemplo.org
+Received-SPF: pass (google.com: domain of contato@exemplo.org designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+Received: by 2002:a05:651c:32d5:b0:361:3a3d:d532 with POP3 id
+ 38308e7fff4ca-37a101bd588mf4131351fa.0;
+        Thu, 30 Oct 2025 04:48:45 -0700 (PDT)
+X-Gmail-Fetch-Info: contato@exemplo.org 1 pop.zoho.com 995 contato@exemplo.org
+Delivered-To: contato@exemplo.org
+Received-SPF: pass (zohomail.com: domain of exemplo.gov.br designates
+ 200.19.221.147 as permitted sender) client-ip=200.19.221.147;
+ envelope-from=contato@exemplo.org; helo=mail.exemplo.gov.br;
+Authentication-Results: mx.zohomail.com;
+	spf=pass (zohomail.com: domain of exemplo.gov.br designates 200.19.221.147 as
+ permitted sender)  smtp.mailfrom=contato@exemplo.org
+Return-Path: <contato@exemplo.org>
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147]) by
+ mx.zohomail.com
+	with SMTPS id 1761328971257636.32292497081;
+ Fri, 24 Oct 2025 11:02:51 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id 368ED902ED16
+	for <contato@exemplo.org>; Fri, 24 Oct 2025 15:02:18 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10032) with ESMTP
+ id 4SppYDeRQ1ka; Fri, 24 Oct 2025 15:02:17 -0300 (-03)
+Received: from localhost (localhost [127.0.0.1])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id 2D6BA902EC9B;
+	Fri, 24 Oct 2025 15:02:17 -0300 (-03)
+Received: from mail.exemplo.gov.br ([127.0.0.1])
+ by localhost (mail.exemplo.gov.br [127.0.0.1]) (amavis, port 10026) with ESMTP
+ id l8T0-H1_CS5I; Fri, 24 Oct 2025 15:02:03 -0300 (-03)
+Received: from mail.exemplo.gov.br (mail.exemplo.gov.br [200.19.221.147])
+	by mail.exemplo.gov.br (Postfix) with ESMTP id 928EE902ED7E;
+	Fri, 24 Oct 2025 15:02:03 -0300 (-03)
+X-Virus-Scanned: amavis at exemplo.gov.br
+Date: Fri, 24 Oct 2025 15:02:03 -0300 (BRT)
+From: DSPS AUXILIAR DA SECRETARIA <contato@exemplo.org>
+To: DSPS Subdiretor <contato@exemplo.org>
+Cc: DSPS DIVA Chefe <contato@exemplo.org>
+Message-ID: <contato@exemplo.org>
+In-Reply-To: <contato@exemplo.org>
+References: <contato@exemplo.org>
+ <contato@exemplo.org>
+ <contato@exemplo.org>
+ <contato@exemplo.org>
+Subject: =?utf-8?Q?Fwd:_Nota_n=C2=BA_2.306/DP-5/202?=
+ =?utf-8?Q?5_Re:_RETIFICANDO_NOTA_N=C2=BA12?=
+ =?utf-8?Q?36/DSPS/2025_SOLICITA=C3=87=C3=83O_DE?=
+ =?utf-8?Q?_INFORMA=C3=87=C3=95ES_JUNTO_AO_SIGRH?=
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+	boundary="----=_Part_3759819_651944833.1761328922873"
+X-Originating-IP: [200.19.221.147]
+X-Mailer: Zimbra 8.8.15_GA_4717 (ZimbraWebClient - GC141 (Win)/8.8.15_GA_4717)
+Thread-Topic: Nota
+ =?utf-8?Q?n=C2=BA_2=2E306/DP-5/2025_Re=3A_RETIFICANDO_NOTA_N=C2=BA1236/DSPS/2025_SOLICITA=C3=87=C3=83O_DE_INFORMA=C3=87=C3=95ES?=
+ JUNTO AO SIGRH
+Thread-Index: gdp+NDPnLmg73I7eE9hjgQO6ExGH31ivkRpoR6p9bPJHFdFqu5HXUycc
+X-Zoho-Virus-Status: 1
+X-Zoho-Virus-Status: 1
+X-Zoho-AV-Stamp: zmail-av-1.4.3/261.273.22
+X-ZM-MESSAGEID: 1761329003695153400
+
+------=_Part_3759819_651944833.1761328922873
+Content-Type: multipart/alternative;
+	boundary="=_0b8bceca-9f3e-4b3e-aa67-5c09fe9957eb"
+
+--=_0b8bceca-9f3e-4b3e-aa67-5c09fe9957eb
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Ao Sr TC Santos, para conhecimento;=20
+
+Respeitosamente;=20
+
+1=C2=BA Sgt Alves=20
+
+
+
+De: "Ger=C3=AAncia do SIRH" <contato@exemplo.org>=20
+Para: "DSPS P1" <contato@exemplo.org>=20
+Enviadas: Quinta-feira, 23 de outubro de 2025 16:43:30=20
+Assunto: Nota n=C2=BA 2.306/DP-5/2025 Re: RETIFICANDO NOTA N=C2=BA1236/DSPS=
+/2025 SOLICITA=C3=87=C3=83O DE INFORMA=C3=87=C3=95ES JUNTO AO SIGRH=20
+
+Nota n=C2=BA 2.306/DP-5/2025=20
+
+
+Ao Sr Coronel PM Diretor de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social=20
+
+
+Em resposta a solicita=C3=A7=C3=A3o contida na Nota n=C2=BA 1236/DSPS/2025 =
+de 22-10-2025 , informo que:=20
+
+I - Quantidade de PPMM aptos e inaptos por ano:=20
+
+- n=C3=A3o =C3=A9 poss=C3=ADvel quantificar com precis=C3=A3o os policiais =
+por ano, porque em tese o mesmo policial poderia estar com determinado hist=
+=C3=B3rico vigente, v=C3=A1rias vezes no mesmo ano.=20
+- Contudo, foi verificado a quantidade de vezes que o 3760 - APTO PARA O SE=
+RVICO DA PM/BM foi inserido por ano (ver anexo):=20
+
+
+- E a quantidade de Policiais que estavam com o 3760 - APTO PARA O SERVICO =
+DA PM/BM por ano (ver anexo):=20
+
+
+- Foi verificado tamb=C3=A9m a quantidade de Policiais que receberam o 3769=
+ - INAPTO PARA O SERVICO DA PM por ano (ver anexo):=20
+
+
+
+- Por tudo, V. Sa. pode escolher o hist=C3=B3rico que deseja, por exemplo 3=
+760 - APTO PARA O SERVICO DA PM/BM e extrair a rela=C3=A7=C3=A3o de of=C3=
+=ADcio no menu do sistema > HIST=C3=93RICO > CADASTRO > 01. MANTER HIST=C3=
+=93RICO conforme um per=C3=ADodo, como a seguir:=20
+
+
+
+
+II - Quantidade de PPMM aptos com restri=C3=A7=C3=B5es por ano:=20
+
+- n=C3=A3o =C3=A9 poss=C3=ADvel quantificar os policiais por ano, porque o =
+mesmo policial pode estar apto e apto com restri=C3=A7=C3=B5es no mesmo ano=
+, v=C3=A1rias vezes.=20
+
+- Contudo, foi verificado a quantidade de vezes que o 4799 - APTO PARA O SE=
+RVICO COM RESTRICOES foi inserido por ano (ver anexo):=20
+
+
+- Foi verificado tamb=C3=A9m a quantidade de Policiais que receberam o 4799=
+ - APTO PARA O SERVICO COM RESTRICOES por ano (ver anexo):=20
+
+- Por fim, V. Sa. pode escolher outros hist=C3=B3rico que deseja, e extrair=
+ a rela=C3=A7=C3=A3o de of=C3=ADcio no sigrh, conforme orienta=C3=A7=C3=A3o=
+ acima.=20
+
+
+III - Quantidade total do efetivo por ano (ver arquivo anexo por favor):=20
+
+
+
+
+
+
+
+Respeitosamente,=20
+
+
+FELIPE AUGUSTO DE JESUS=20
+Tenente-Coronel PM Ch da Divis=C3=A3o de Sistemas Informacionais de Pessoal=
+ (DP-5)=20
+Diretoria de Pessoal=20
+Quartel do Comando Geral - QCG=20
+Rua das Palmeiras, 100 - Centro - Florian=C3=B3polis - SC=20
+CEP 88000-000, Fone (48) 3229-6342 /3229-6343/3229-6346/3229-6338=20
+Email contato@exemplo.org=20
+
+Trs.:=20
+St Menegotto=20
+
+
+De: "DSPS AUXILIAR DA SECRETARIA" <contato@exemplo.org>=20
+Para: "dp5" <contato@exemplo.org>, "DP5 CHEFE" <contato@exemplo.org>=20
+Cc: "DSPS Subdiretor" <contato@exemplo.org>, "DSPS DIVA Chefe" <dspsdiv=
+contato@exemplo.org>=20
+Enviadas: Quarta-feira, 22 de outubro de 2025 13:35:14=20
+Assunto: RETIFICANDO NOTA N=C2=BA1236/DSPS/2025 SOLICITA=C3=87=C3=83O DE IN=
+FORMA=C3=87=C3=95ES JUNTO AO SIGRH=20
+
+Boa tarde Senhor;=20
+Cumprimentando V.S=C2=AA, RETIFICO a solicita=C3=A7=C3=A3o de que seja forn=
+ecida a esta DSPS as seguintes Informa=C3=A7=C3=B5es, c ontando do ano de 2=
+019 at=C3=A9 2025 ( detalhamento por cada ano):=20
+I - Quantidade de PPMM aptos e inaptos por ano;=20
+II - Quantidade de PPMM aptos com restri=C3=A7=C3=B5es por ano;=20
+III - Quantidade total do efetivo por ano.=20
+
+Atenciosamente,=20
+
+
+Julival Q. de Santana=20
+Coronel PM Diretor de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social=20
+R. Maj. Costa, 221, 2=C2=BA Andar - Centro, Florian=C3=B3polis - SC=20
+CEP 88000-000, Fone: (48) 3000-0002 , Ramal 1234=20
+E-mail: contato@exemplo.org=20
+
+
+Trs:=20
+1=C2=BA Sgt PM Aur=C3=A9lio Jos=C3=A9 ALVES Ribeiro=20
+Auxiliar da DivaP1=20
+Telefone 32296019 Ramal 1234=20
+
+
+
+
+De: "DSPS P1" <contato@exemplo.org>=20
+Para: "dp5" <contato@exemplo.org>, "dp5ch" <contato@exemplo.org>=20
+Enviadas: Quarta-feira, 22 de outubro de 2025 13:29:03=20
+Assunto: NOTA N=C2=BA1236/DSPS/2025 SOLICITA=C3=87=C3=83O DE INFORMA=C3=87=
+=C3=95ES JUNTO AO SIGRH=20
+
+Boa tarde Senhor;=20
+Cumprimentando V.S=C2=AA, solicito que seja fornecida a esta DSPS as seguin=
+tes Informa=C3=A7=C3=B5es, c ontando do ano de 2019 at=C3=A9 2025:=20
+I - Quantidade de PPMM aptos e inaptos;=20
+II - Quantidade de PPMM aptos com restri=C3=A7=C3=B5es;=20
+III - Quantidade total do efetivo neste anos.=20
+Atenciosamente,=20
+
+
+Julival Q. de Santana=20
+Coronel PM Diretor de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social=20
+R. Maj. Costa, 221, 2=C2=BA Andar - Centro, Florian=C3=B3polis - SC=20
+CEP 88000-000, Fone: (48) 3000-0002 , Ramal 1234=20
+E-mail: contato@exemplo.org=20
+
+
+Trs:=20
+1=C2=BA Sgt PM Aur=C3=A9lio Jos=C3=A9 ALVES Ribeiro=20
+Auxiliar da DivaP1=20
+Telefone 32296019 Ramal 1234=20
+
+
+--=_0b8bceca-9f3e-4b3e-aa67-5c09fe9957eb
+Content-Type: multipart/related;
+	boundary="=_3b1574ee-f1dd-4155-bda1-497d0d6583df"
+
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html><body><div style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; color: #000000"><div>Ao Sr TC Santos, para conhecimento;</div><d=
+iv><br data-mce-bogus=3D"1"></div><div>Respeitosamente;</div><div><br data-=
+mce-bogus=3D"1"></div><div>1=C2=BA Sgt Alves</div><div><br data-mce-bogus=
+=3D"1"></div><div><br></div><hr id=3D"zwchr" data-marker=3D"__DIVIDER__"><d=
+iv data-marker=3D"__HEADERS__"><b>De: </b>"Ger=C3=AAncia do SIRH" &lt;dp5@p=
+m.sc.gov.br&gt;<br><b>Para: </b>"DSPS P1" &lt;contato@exemplo.org&gt;<b=
+r><b>Enviadas: </b>Quinta-feira, 23 de outubro de 2025 16:43:30<br><b>Assun=
+to: </b>Nota n=C2=BA 2.306/DP-5/2025 Re: RETIFICANDO NOTA N=C2=BA1236/DSPS/=
+2025 SOLICITA=C3=87=C3=83O DE INFORMA=C3=87=C3=95ES JUNTO AO SIGRH<br></div=
+><div><br></div><div data-marker=3D"__QUOTED_TEXT__"><div><div style=3D"fon=
+t-family: arial, helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0=
+);"><div><span style=3D"font-size: 12pt; background-color: rgb(250, 250, 25=
+0);">Nota n=C2=BA 2.306/DP-5/2025</span></div><div><div style=3D"font-famil=
+y: arial, helvetica, sans-serif; font-size: 12pt; color: rgb(0, 0, 0);"><di=
+v><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-se=
+rif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing:=
+ normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-s=
+pace: normal; background-color: rgb(250, 250, 250);"><div style=3D"color: r=
+gb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; fo=
+nt-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0p=
+x; text-transform: none; word-spacing: 0px; white-space: normal; background=
+-color: rgb(250, 250, 250);"><div><br><br><span style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255); float: none; display: inline !important;"><span style=3D"=
+color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: =
+16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-in=
+dent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; ba=
+ckground-color: rgb(255, 255, 255); float: none; display: inline !important=
+;">Ao Sr <span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica,=
+ sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-=
+spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px;=
+ white-space: normal; background-color: rgb(255, 255, 255); float: none; di=
+splay: inline !important;">Coronel PM Diretor de Sa=C3=BAde e Promo=C3=A7=
+=C3=A3o Social</span></span></span><br><div style=3D"color: rgb(0, 0, 0); f=
+ont-family: arial, helvetica, sans-serif; font-size: 16px; font-style: norm=
+al; font-weight: 400; letter-spacing: normal; text-transform: none; word-sp=
+acing: 0px; white-space: normal;"><br></div><br><div style=3D"color: rgb(0,=
+ 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-st=
+yle: normal; font-weight: 400; letter-spacing: normal; text-transform: none=
+; word-spacing: 0px; white-space: normal;"><span style=3D"font-size: 12pt;"=
+><span style=3D"font-size: 12pt;">Em resposta a solicita=C3=A7=C3=A3o conti=
+da na Nota n=C2=BA <span style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(255, 255, 255); float=
+: none; display: inline !important;">1236/DSPS/2025</span></span></span><sp=
+an style=3D"font-size: 12pt;"><span style=3D"background-color: rgb(255, 255=
+, 255); float: none; display: inline !important;">&nbsp;</span></span><span=
+ style=3D"font-size: 12pt;">de&nbsp;<span class=3D"Object" id=3D"OBJ_PREFIX=
+_DWT109_com_zimbra_date" style=3D"color: rgb(51, 102, 153); text-decoration=
+: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT172_com_zimbra_date" st=
+yle=3D"color: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Obj=
+ect" id=3D"OBJ_PREFIX_DWT359_com_zimbra_date" style=3D"color: rgb(51, 102, =
+153); text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT36=
+7_com_zimbra_date" style=3D"color: rgb(51, 102, 153); text-decoration: none=
+;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT608_com_zimbra_date" style=3D=
+"color: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Object" i=
+d=3D"OBJ_PREFIX_DWT619_com_zimbra_date" style=3D"color: rgb(51, 102, 153); =
+text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT397_com_=
+zimbra_date" style=3D"color: rgb(51, 102, 153); text-decoration: none;"><sp=
+an class=3D"Object" id=3D"OBJ_PREFIX_DWT411_com_zimbra_date" style=3D"color=
+: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Object" id=3D"O=
+BJ_PREFIX_DWT961_com_zimbra_date" style=3D"color: rgb(51, 102, 153); text-d=
+ecoration: none;">22-10-2025</span></span></span></span></span></span></spa=
+n></span></span>, informo que:</span></div><div style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-transform: none; wor=
+d-spacing: 0px; white-space: normal;"><span style=3D"font-size: 12pt;"></sp=
+an><br></div><div><span style=3D"font-size: 12pt;"><span style=3D"font-size=
+: 12pt;"> </span></span><div style=3D"color: rgb(0, 0, 0); font-family: ari=
+al, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight=
+: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word=
+-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);">=
+<span style=3D"text-decoration: underline;"><em><strong><span style=3D"colo=
+r: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px=
+; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spac=
+ing: 0px; white-space: normal; background-color: rgb(255, 255, 255); float:=
+ none; text-decoration: underline; display: inline !important;">I - Quantid=
+ade de PPMM aptos e inaptos por ano:</span></strong></em></span></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(255, 255, 255); float: none; display: inline !important;"></span><br>=
+</div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, san=
+s-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spac=
+ing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whi=
+te-space: normal; background-color: rgb(255, 255, 255);"><span style=3D"col=
+or: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16p=
+x; font-style: normal; font-weight: 400; letter-spacing: normal; text-inden=
+t: 0px; text-transform: none; word-spacing: 0px; white-space: normal; backg=
+round-color: rgb(255, 255, 255); float: none; display: inline !important;">=
+<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: =
+normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-sp=
+ace: normal; background-color: rgb(255, 255, 255); float: none; display: in=
+line !important;"> <span style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(250, 250, 250); float=
+: none; display: inline !important;">- n=C3=A3o =C3=A9 poss=C3=ADvel quanti=
+ficar com precis=C3=A3o os policiais por ano, porque em tese o mesmo polici=
+al poderia estar com determinado hist=C3=B3rico vigente, v=C3=A1rias vezes =
+no mesmo ano.</span></span></span><br></div><div style=3D"color: rgb(0, 0, =
+0); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style:=
+ normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-t=
+ransform: none; word-spacing: 0px; white-space: normal; background-color: r=
+gb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial,=
+ helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 4=
+00; letter-spacing: normal; text-indent: 0px; text-transform: none; word-sp=
+acing: 0px; white-space: normal; background-color: rgb(255, 255, 255); floa=
+t: none; display: inline !important;"><span style=3D"color: rgb(0, 0, 0); f=
+ont-family: arial, helvetica, sans-serif; font-size: 16px; font-style: norm=
+al; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transf=
+orm: none; word-spacing: 0px; white-space: normal; background-color: rgb(25=
+5, 255, 255); float: none; display: inline !important;"><span style=3D"colo=
+r: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px=
+; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent=
+: 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgr=
+ound-color: rgb(250, 250, 250); float: none; display: inline !important;">-=
+ Contudo, foi verificado a quantidade de vezes que o <strong>3760 - APTO PA=
+RA O SERVICO DA PM/BM</strong> foi inserido por ano (ver anexo):</span></sp=
+an></span></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helv=
+etica, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; l=
+etter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing=
+: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><span st=
+yle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: rgb(255, 255, 255); float: none; display: inline !im=
+portant;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica=
+, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter=
+-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); float: none; d=
+isplay: inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family=
+: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-w=
+eight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none;=
+ word-spacing: 0px; white-space: normal; background-color: rgb(250, 250, 25=
+0); float: none; display: inline !important;"></span></span></span><br></di=
+v><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-se=
+rif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spacing:=
+ normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-s=
+pace: normal; background-color: rgb(255, 255, 255);"><span style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0=
+px; text-transform: none; word-spacing: 0px; white-space: normal; backgroun=
+d-color: rgb(255, 255, 255); float: none; display: inline !important;"><spa=
+n style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; =
+font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space:=
+ normal; background-color: rgb(255, 255, 255); float: none; display: inline=
+ !important;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helve=
+tica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; le=
+tter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing:=
+ 0px; white-space: normal; background-color: rgb(250, 250, 250); float: non=
+e; display: inline !important;"><img data-mce-src=3D"cid:b327abc119d3bad403=
+ba390b643479301ddd99cb@zimbra" pnsrc=3D"cid:b327abc119d3bad403ba390b6434793=
+01ddd99cb@zimbra" src=3D"cid:b327abc119d3bad403ba390b643479301ddd99cb@zimbr=
+a"></span></span></span></div><div style=3D"color: rgb(0, 0, 0); font-famil=
+y: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-=
+weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none=
+; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 2=
+55);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sa=
+ns-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spa=
+cing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; wh=
+ite-space: normal; background-color: rgb(255, 255, 255); float: none; displ=
+ay: inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family: ar=
+ial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weigh=
+t: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; wor=
+d-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); =
+float: none; display: inline !important;"><span style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(250, 250, 250); float: none; display: inline !important;"></span></span><=
+/span><br></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helv=
+etica, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; l=
+etter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing=
+: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><span st=
+yle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: rgb(255, 255, 255); float: none; display: inline !im=
+portant;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica=
+, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter=
+-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px=
+; white-space: normal; background-color: rgb(255, 255, 255); float: none; d=
+isplay: inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family=
+: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-w=
+eight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none;=
+ word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 25=
+5); float: none; display: inline !important;"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(250, 250, 250); float: none; display: inline !important;">- E a quant=
+idade de Policiais que estavam com o <strong style=3D"color: rgb(0, 0, 0); =
+font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: nor=
+mal; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal;">3760 - APTO PARA O SERVICO DA PM/BM</str=
+ong> por ano (ver anexo):</span></span></span></span><br></div><div style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0)=
+; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal; background-color: rgb=
+(255, 255, 255); float: none; display: inline !important;"><span style=3D"c=
+olor: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 1=
+6px; font-style: normal; font-weight: 400; letter-spacing: normal; text-ind=
+ent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; bac=
+kground-color: rgb(255, 255, 255); float: none; display: inline !important;=
+"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-s=
+erif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing=
+: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-=
+space: normal; background-color: rgb(250, 250, 250); float: none; display: =
+inline !important;"></span></span></span><br></div><div style=3D"color: rgb=
+(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; font=
+-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px;=
+ text-transform: none; word-spacing: 0px; white-space: normal; background-c=
+olor: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family:=
+ arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-we=
+ight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); float: none; display: inline !important;"><span style=3D"color: rgb(0, 0=
+, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-styl=
+e: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text=
+-transform: none; word-spacing: 0px; white-space: normal; background-color:=
+ rgb(255, 255, 255); float: none; display: inline !important;"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(250, 250, 250); float: none; display: inline !impor=
+tant;"><img data-mce-src=3D"cid:d3fca06cd0c6a33470dce022ea39cf6ca876b944@zi=
+mbra" pnsrc=3D"cid:d3fca06cd0c6a33470dce022ea39cf6ca876b944@zimbra" src=3D"=
+cid:d3fca06cd0c6a33470dce022ea39cf6ca876b944@zimbra"></span></span></span><=
+/div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans=
+-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-spaci=
+ng: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whit=
+e-space: normal; background-color: rgb(255, 255, 255);"><span style=3D"colo=
+r: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px=
+; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent=
+: 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgr=
+ound-color: rgb(255, 255, 255); float: none; display: inline !important;"><=
+span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-seri=
+f; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: n=
+ormal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-spa=
+ce: normal; background-color: rgb(255, 255, 255); float: none; display: inl=
+ine !important;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, he=
+lvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;=
+ letter-spacing: normal; text-indent: 0px; text-transform: none; word-spaci=
+ng: 0px; white-space: normal; background-color: rgb(250, 250, 250); float: =
+none; display: inline !important;"></span></span></span><br></div><div styl=
+e=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; te=
+xt-indent: 0px; text-transform: none; word-spacing: 0px; white-space: norma=
+l; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255); float: none; display: inline !important;"><span style=3D"=
+color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: =
+16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-in=
+dent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; ba=
+ckground-color: rgb(255, 255, 255); float: none; display: inline !important=
+;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-=
+serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacin=
+g: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white=
+-space: normal; background-color: rgb(250, 250, 250); float: none; display:=
+ inline !important;">- Foi verificado tamb=C3=A9m&nbsp;a quantidade de Poli=
+ciais </span></span></span><span style=3D"color: rgb(0, 0, 0); font-family:=
+ arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-we=
+ight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; =
+word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255=
+); float: none; display: inline !important;"><span style=3D"color: rgb(0, 0=
+, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-styl=
+e: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text=
+-transform: none; word-spacing: 0px; white-space: normal; background-color:=
+ rgb(255, 255, 255); float: none; display: inline !important;"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255); float: none; display: inline !impor=
+tant;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, s=
+ans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-sp=
+acing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; w=
+hite-space: normal; background-color: rgb(250, 250, 250); float: none; disp=
+lay: inline !important;">que receberam o <strong style=3D"color: rgb(0, 0, =
+0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style:=
+ normal; letter-spacing: normal; text-indent: 0px; text-transform: none; wo=
+rd-spacing: 0px; white-space: normal;">3769 - INAPTO PARA O SERVICO DA PM</=
+strong> por ano (ver anexo):</span></span></span></span><br><span style=3D"=
+color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: =
+16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-in=
+dent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; ba=
+ckground-color: rgb(255, 255, 255); float: none; display: inline !important=
+;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-=
+serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacin=
+g: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white=
+-space: normal; background-color: rgb(255, 255, 255); float: none; display:=
+ inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family: arial=
+, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal; background-color: rgb(250, 250, 250); flo=
+at: none; display: inline !important;"></span></span></span><br></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(255, 255, 255); float: none; display: inline !important;"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255); float: none; display: inline !impor=
+tant;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, s=
+ans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-sp=
+acing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; w=
+hite-space: normal; background-color: rgb(250, 250, 250); float: none; disp=
+lay: inline !important;"><img data-mce-src=3D"cid:e6e51a6915c8e8c95b0875b5d=
+239fc7441c2bf94@zimbra" pnsrc=3D"cid:e6e51a6915c8e8c95b0875b5d239fc7441c2bf=
+94@zimbra" src=3D"cid:e6e51a6915c8e8c95b0875b5d239fc7441c2bf94@zimbra"></sp=
+an></span></span></div><div style=3D"color: rgb(0, 0, 0); font-family: aria=
+l, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight:=
+ 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-=
+spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><=
+br></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, =
+sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-s=
+pacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; =
+white-space: normal; background-color: rgb(255, 255, 255);"><br></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(255, 255, 255); float: none; display: inline !important;"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255); float: none; display: inline !impor=
+tant;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, s=
+ans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-sp=
+acing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; w=
+hite-space: normal; background-color: rgb(250, 250, 250); float: none; disp=
+lay: inline !important;">- Por tudo, V. Sa. pode escolher o hist=C3=B3rico =
+que deseja, por exemplo <strong>3760 - APTO PARA O SERVICO DA PM/BM</strong=
+> e extrair a rela=C3=A7=C3=A3o de of=C3=ADcio no <strong><span style=3D"te=
+xt-decoration: underline;">menu do sistema &gt; HIST=C3=93RICO &gt; CADASTR=
+O &gt; 01. MANTER HIST=C3=93RICO</span></strong> conforme um per=C3=ADodo, =
+como a seguir:</span></span></span></div><div style=3D"color: rgb(0, 0, 0);=
+ font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: no=
+rmal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tran=
+sform: none; word-spacing: 0px; white-space: normal; background-color: rgb(=
+255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, he=
+lvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400;=
+ letter-spacing: normal; text-indent: 0px; text-transform: none; word-spaci=
+ng: 0px; white-space: normal; background-color: rgb(255, 255, 255); float: =
+none; display: inline !important;"><span style=3D"color: rgb(0, 0, 0); font=
+-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal;=
+ font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform=
+: none; word-spacing: 0px; white-space: normal; background-color: rgb(255, =
+255, 255); float: none; display: inline !important;"><span style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0=
+px; text-transform: none; word-spacing: 0px; white-space: normal; backgroun=
+d-color: rgb(250, 250, 250); float: none; display: inline !important;"></sp=
+an></span></span><br></div><div style=3D"color: rgb(0, 0, 0); font-family: =
+arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-wei=
+ght: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; w=
+ord-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255)=
+;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-=
+serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacin=
+g: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white=
+-space: normal; background-color: rgb(255, 255, 255); float: none; display:=
+ inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family: arial=
+, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); flo=
+at: none; display: inline !important;"><span style=3D"color: rgb(0, 0, 0); =
+font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: nor=
+mal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-trans=
+form: none; word-spacing: 0px; white-space: normal; background-color: rgb(2=
+50, 250, 250); float: none; display: inline !important;"><img data-mce-src=
+=3D"cid:8f31b74f2405b97250d950ffbfba4e8ce44aeb05@zimbra" pnsrc=3D"cid:8f31b=
+74f2405b97250d950ffbfba4e8ce44aeb05@zimbra" src=3D"cid:8f31b74f2405b97250d9=
+50ffbfba4e8ce44aeb05@zimbra"></span></span></span></div><div style=3D"color=
+: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt;=
+ font-style: normal; font-weight: 400; letter-spacing: normal; text-indent:=
+ 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgro=
+und-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fa=
+mily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; fo=
+nt-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: n=
+one; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255=
+, 255); float: none; display: inline !important;"><span style=3D"color: rgb=
+(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font=
+-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px;=
+ text-transform: none; word-spacing: 0px; white-space: normal; background-c=
+olor: rgb(255, 255, 255); float: none; display: inline !important;"><span s=
+tyle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fon=
+t-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal;=
+ text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: no=
+rmal; background-color: rgb(250, 250, 250); float: none; display: inline !i=
+mportant;"></span></span></span><br></div><div style=3D"color: rgb(0, 0, 0)=
+; font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal; background-color: rgb=
+(255, 255, 255);"><img data-mce-src=3D"cid:e98fdd074dd27f7959bc54b63aba68b5=
+8c9d4838@zimbra" pnsrc=3D"cid:e98fdd074dd27f7959bc54b63aba68b58c9d4838@zimb=
+ra" src=3D"cid:e98fdd074dd27f7959bc54b63aba68b58c9d4838@zimbra"></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><br></div><div style=3D"color=
+: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt;=
+ font-style: normal; font-weight: 400; letter-spacing: normal; text-indent:=
+ 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgro=
+und-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fa=
+mily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; fo=
+nt-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: n=
+one; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255=
+, 255); float: none; display: inline !important;"></span><br></div><div sty=
+le=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-=
+size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; t=
+ext-indent: 0px; text-transform: none; word-spacing: 0px; white-space: norm=
+al; background-color: rgb(255, 255, 255);"><span style=3D"text-decoration: =
+underline;"><em><strong><span style=3D"color: rgb(0, 0, 0); font-family: ar=
+ial, helvetica, sans-serif; font-size: 16px; letter-spacing: normal; text-i=
+ndent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; b=
+ackground-color: rgb(255, 255, 255); float: none; text-decoration: underlin=
+e; display: inline !important;">II - Quantidade de PPMM aptos com restri=C3=
+=A7=C3=B5es por ano:</span></strong></em></span></div><div style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0=
+px; text-transform: none; word-spacing: 0px; white-space: normal; backgroun=
+d-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fami=
+ly: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font=
+-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: non=
+e; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, =
+255); float: none; display: inline !important;"></span><br></div><div style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0)=
+; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal; background-color: rgb=
+(255, 255, 255); float: none; display: inline !important;"><span style=3D"c=
+olor: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 1=
+6px; font-style: normal; font-weight: 400; letter-spacing: normal; text-ind=
+ent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; bac=
+kground-color: rgb(255, 255, 255); float: none; display: inline !important;=
+"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-s=
+erif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing=
+: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-=
+space: normal; background-color: rgb(255, 255, 255); float: none; display: =
+inline !important;"> <span style=3D"color: rgb(0, 0, 0); font-family: arial=
+, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal; background-color: rgb(250, 250, 250); flo=
+at: none; display: inline !important;">- n=C3=A3o =C3=A9 poss=C3=ADvel quan=
+tificar os policiais por ano, porque o mesmo policial pode estar apto e apt=
+o <span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-s=
+erif; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing=
+: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-=
+space: normal; background-color: rgb(255, 255, 255); float: none; display: =
+inline !important;">com restri=C3=A7=C3=B5es </span></span></span></span></=
+span><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, san=
+s-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spac=
+ing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whi=
+te-space: normal; background-color: rgb(255, 255, 255); float: none; displa=
+y: inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family: ari=
+al, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight=
+: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word=
+-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); f=
+loat: none; display: inline !important;"><span style=3D"color: rgb(0, 0, 0)=
+; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal; background-color: rgb=
+(250, 250, 250); float: none; display: inline !important;">no mesmo ano, v=
+=C3=A1rias vezes.</span></span></span><div><span style=3D"font-size: 12pt;"=
+></span><br></div><div><span style=3D"font-size: 12pt;"><span style=3D"font=
+-size: 12pt;"> </span></span><div style=3D"color: rgb(0, 0, 0); font-family=
+: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-w=
+eight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none;=
+ word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 25=
+5);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, san=
+s-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spac=
+ing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whi=
+te-space: normal; background-color: rgb(255, 255, 255); float: none; displa=
+y: inline !important;"><span style=3D"color: rgb(0, 0, 0); font-family: ari=
+al, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight=
+: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word=
+-spacing: 0px; white-space: normal; background-color: rgb(250, 250, 250); f=
+loat: none; display: inline !important;">- Contudo, foi verificado a quanti=
+dade de vezes que o<span style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-transform: none; word-spacing: 0px; white-s=
+pace: normal;">&nbsp;</span><b>4799 - APTO PARA O SERVICO COM RESTRICOES</b=
+> foi inserido por ano (ver anexo):</span></span></div><div style=3D"color:=
+ rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; =
+font-style: normal; font-weight: 400; letter-spacing: normal; text-indent: =
+0px; text-transform: none; word-spacing: 0px; white-space: normal; backgrou=
+nd-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fam=
+ily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; fon=
+t-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: no=
+ne; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255,=
+ 255); float: none; display: inline !important;"><span style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-=
+style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; =
+text-transform: none; word-spacing: 0px; white-space: normal; background-co=
+lor: rgb(250, 250, 250); float: none; display: inline !important;"></span><=
+/span><br></div><span style=3D"font-size: 12pt;"><span style=3D"font-size: =
+12pt;"></span></span><div><img data-mce-src=3D"cid:f7f3aab2d59cc6202f27cde2=
+96527e24c221470d@zimbra" pnsrc=3D"cid:f7f3aab2d59cc6202f27cde296527e24c2214=
+70d@zimbra" src=3D"cid:f7f3aab2d59cc6202f27cde296527e24c221470d@zimbra"></d=
+iv></div><div><span style=3D"font-size: 12pt;"></span><br></div><div><span =
+style=3D"font-size: 12pt;"><span style=3D"font-size: 12pt;"> <span style=3D=
+"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size:=
+ 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-i=
+ndent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; b=
+ackground-color: rgb(255, 255, 255); float: none; display: inline !importan=
+t;"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans=
+-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spaci=
+ng: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whit=
+e-space: normal; background-color: rgb(250, 250, 250); float: none; display=
+: inline !important;">- Foi verificado tamb=C3=A9m&nbsp;a quantidade&nbsp;d=
+e Policiais&nbsp;</span></span><span style=3D"color: rgb(0, 0, 0); font-fam=
+ily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; fon=
+t-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: no=
+ne; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255,=
+ 255); float: none; display: inline !important;"><span style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-=
+style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; =
+text-transform: none; word-spacing: 0px; white-space: normal; background-co=
+lor: rgb(250, 250, 250); float: none; display: inline !important;">que rece=
+beram o&nbsp;<strong style=3D"color: rgb(0, 0, 0); font-family: arial, helv=
+etica, sans-serif; font-size: 16px; font-style: normal; letter-spacing: nor=
+mal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space=
+: normal;">4799 - APTO PARA O SERVICO COM RESTRICOES</strong>&nbsp;por ano&=
+nbsp;(ver anexo):</span></span></span></span><br><div><img data-mce-src=3D"=
+cid:e77bd24623bbe017f1af863a26a28df931ce4a7d@zimbra" pnsrc=3D"cid:e77bd2462=
+3bbe017f1af863a26a28df931ce4a7d@zimbra" src=3D"cid:e77bd24623bbe017f1af863a=
+26a28df931ce4a7d@zimbra"></div><br><div><span style=3D"font-size: 12pt;">- =
+</span><span style=3D"background-color: rgb(250, 250, 250); float: none; di=
+splay: inline !important;">Por fim, V. Sa. pode escolher outros hist=C3=B3r=
+ico que deseja, </span><span style=3D"background-color: rgb(250, 250, 250);=
+ float: none; display: inline !important;">e extrair a rela=C3=A7=C3=A3o de=
+ of=C3=ADcio no sigrh, conforme orienta=C3=A7=C3=A3o acima.</span></div></d=
+iv><div><div><br><br></div><div><span style=3D"text-decoration: underline;"=
+><em><strong>III - Quantidade total do efetivo por ano (ver arquivo anexo p=
+or favor):</strong></em></span></div><br><div><img width=3D"238" height=3D"=
+195" data-mce-src=3D"cid:8afb99744708236d69f0b9b03165cc79c3a9b5c3@zimbra" p=
+nsrc=3D"cid:8afb99744708236d69f0b9b03165cc79c3a9b5c3@zimbra" src=3D"cid:8af=
+b99744708236d69f0b9b03165cc79c3a9b5c3@zimbra"></div></div></div><div style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0)=
+; font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: n=
+ormal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tra=
+nsform: none; word-spacing: 0px; white-space: normal; background-color: rgb=
+(255, 255, 255); float: none; display: inline !important;"></span><br></div=
+><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; font-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: =
+normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-sp=
+ace: normal; background-color: rgb(255, 255, 255);"><span style=3D"color: r=
+gb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; fo=
+nt-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0p=
+x; text-transform: none; word-spacing: 0px; white-space: normal; background=
+-color: rgb(255, 255, 255); float: none; display: inline !important;"></spa=
+n><br></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetic=
+a, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; lette=
+r-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0p=
+x; white-space: normal; background-color: rgb(255, 255, 255);"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255); float: none; display: inline !impor=
+tant;"></span><br></div><div style=3D"color: rgb(0, 0, 0); font-family: ari=
+al, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight=
+: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word=
+-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);">=
+<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: =
+normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-sp=
+ace: normal; background-color: rgb(255, 255, 255); float: none; display: in=
+line !important;"></span><br></div><span style=3D"font-size: 12pt;"><span s=
+tyle=3D"font-size: 12pt;"></span></span><br></div><div style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-=
+style: normal; font-weight: 400; letter-spacing: normal; text-transform: no=
+ne; word-spacing: 0px; white-space: normal;"><br></div></div><div style=3D"=
+color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: =
+16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal;"><span style=3D"font=
+-family: arial, helvetica, sans-serif; font-size: 12pt;">&nbsp;</span><span=
+ style=3D"font-size: 12pt;">Respeitosamente,</span></div></div></div><div s=
+tyle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fon=
+t-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal;=
+ text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: no=
+rmal; background-color: rgb(250, 250, 250);"><br><br><div><span style=3D"fo=
+nt-family: arial, helvetica, sans-serif; font-size: 12pt;"><strong>FELIPE A=
+UGUSTO DE JESUS</strong></span><br><span style=3D"font-family: arial, helve=
+tica, sans-serif; font-size: 12pt;">Tenente-Coronel PM Ch da Divis=C3=A3o d=
+e Sistemas Informacionais de Pessoal (DP-5)</span><br><span style=3D"font-f=
+amily: arial, helvetica, sans-serif; font-size: 12pt;">Diretoria de Pessoal=
+</span><br><span style=3D"font-family: arial, helvetica, sans-serif; font-s=
+ize: 12pt;">Quartel do Comando Geral - QCG</span><br><span style=3D"font-fa=
+mily: arial, helvetica, sans-serif; font-size: 12pt;">Rua Visconde de Ouro =
+Preto, 549 - Centro - Florian=C3=B3polis - SC</span><br><span style=3D"font=
+-family: arial, helvetica, sans-serif; font-size: 12pt;">CEP 88000-000, Fo=
+ne&nbsp;<span class=3D"Object" id=3D"OBJ_PREFIX_DWT361_com_zimbra_phone" st=
+yle=3D"color: rgb(51, 102, 153); text-decoration: none;"><a style=3D"color:=
+ rgb(51, 102, 153); text-decoration: none;">(48) 3229-6342</a></span>/3229-=
+6343/3229-6346/3229-6338</span><br><span style=3D"font-family: arial, helve=
+tica, sans-serif; font-size: 12pt;">Email&nbsp;<span class=3D"Object" id=3D=
+"OBJ_PREFIX_DWT362_ZmEmailObjectHandler" style=3D"color: rgb(51, 102, 153);=
+ text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT369_ZmE=
+mailObjectHandler" style=3D"color: rgb(51, 102, 153); text-decoration: none=
+;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT394_ZmEmailObjectHandler" sty=
+le=3D"color: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Obje=
+ct" id=3D"OBJ_PREFIX_DWT406_ZmEmailObjectHandler" style=3D"color: rgb(51, 1=
+02, 153); text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_D=
+WT1819_ZmEmailObjectHandler" style=3D"color: rgb(51, 102, 153); text-decora=
+tion: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT1837_ZmEmailObjectH=
+andler" style=3D"color: rgb(51, 102, 153); text-decoration: none;"><span cl=
+ass=3D"Object" id=3D"OBJ_PREFIX_DWT609_ZmEmailObjectHandler" style=3D"color=
+: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Object" id=3D"O=
+BJ_PREFIX_DWT620_ZmEmailObjectHandler" style=3D"color: rgb(51, 102, 153); t=
+ext-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT398_ZmEma=
+ilObjectHandler" style=3D"color: rgb(51, 102, 153); text-decoration: none;"=
+><span class=3D"Object" id=3D"OBJ_PREFIX_DWT412_ZmEmailObjectHandler" style=
+=3D"color: rgb(51, 102, 153); text-decoration: none;"><span class=3D"Object=
+" id=3D"OBJ_PREFIX_DWT962_ZmEmailObjectHandler" style=3D"color: rgb(51, 102=
+, 153); text-decoration: none;">contato@exemplo.org</span></span></span></span=
+></span></span></span></span></span></span></span></span><br><br><span styl=
+e=3D"font-family: arial, helvetica, sans-serif; font-size: 12pt;">Trs.:</sp=
+an></div></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helve=
+tica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; le=
+tter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing:=
+ 0px; white-space: normal; background-color: rgb(250, 250, 250);"><span sty=
+le=3D"font-family: arial, helvetica, sans-serif; font-size: 12pt;">St Meneg=
+otto&nbsp;</span></div><br></div><hr id=3D"zwchr"><div><b>De: </b>"DSPS AUX=
+ILIAR DA SECRETARIA" &lt;contato@exemplo.org&gt;<br><b>Para: </b>"dp5" =
+&lt;contato@exemplo.org&gt;, "DP5 CHEFE" &lt;contato@exemplo.org&gt;<br><b>Cc: =
+</b>"DSPS Subdiretor" &lt;contato@exemplo.org&gt;, "DSPS DIVA Chefe" &l=
+t;contato@exemplo.org&gt;<br><b>Enviadas: </b>Quarta-feira, 22 de outub=
+ro de 2025 13:35:14<br><b>Assunto: </b>RETIFICANDO NOTA N=C2=BA1236/DSPS/20=
+25 SOLICITA=C3=87=C3=83O DE INFORMA=C3=87=C3=95ES JUNTO AO SIGRH</div><br><=
+div><div style=3D"font-family: arial, helvetica, sans-serif; font-size: 12p=
+t; color: rgb(0, 0, 0);"><div><div style=3D"color: rgb(0, 0, 0); font-famil=
+y: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-=
+weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none=
+; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 2=
+55);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sa=
+ns-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spa=
+cing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; wh=
+ite-space: normal; background-color: rgb(255, 255, 255); float: none; displ=
+ay: inline !important;">Boa tarde Senhor;</span></div><div style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0=
+px; text-transform: none; word-spacing: 0px; white-space: normal; backgroun=
+d-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fami=
+ly: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font=
+-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: non=
+e; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, =
+255); float: none; display: inline !important;">&nbsp;</span></div><div sty=
+le=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-=
+size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; t=
+ext-indent: 0px; text-transform: none; word-spacing: 0px; white-space: norm=
+al; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, =
+0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style:=
+ normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-t=
+ransform: none; word-spacing: 0px; white-space: normal; background-color: r=
+gb(255, 255, 255); float: none; display: inline !important;">Cumprimentando=
+ V.S=C2=AA, RETIFICO a solicita=C3=A7=C3=A3o de que seja fornecida a esta D=
+SPS as seguintes Informa=C3=A7=C3=B5es, c</span><span style=3D"color: rgb(0=
+, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; t=
+ext-transform: none; word-spacing: 0px; white-space: normal; background-col=
+or: rgb(255, 255, 255); float: none; display: inline !important;">ontando d=
+o ano de 2019 at=C3=A9 2025 ( detalhamento por cada ano):</span></div><div =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(255, 255, 255); float: none; display: inline !important;">&nbsp;</spa=
+n></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, s=
+ans-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-sp=
+acing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; w=
+hite-space: normal; background-color: rgb(255, 255, 255);"><span style=3D"c=
+olor: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 1=
+6px; font-style: normal; font-weight: 400; letter-spacing: normal; text-ind=
+ent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; bac=
+kground-color: rgb(255, 255, 255); float: none; display: inline !important;=
+">I - Quantidade de PPMM aptos e inaptos por ano;</span></div><div style=3D=
+"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size:=
+ 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; text-i=
+ndent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; b=
+ackground-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); f=
+ont-family: arial, helvetica, sans-serif; font-size: 16px; font-style: norm=
+al; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transf=
+orm: none; word-spacing: 0px; white-space: normal; background-color: rgb(25=
+5, 255, 255); float: none; display: inline !important;">II - Quantidade de =
+PPMM aptos com restri=C3=A7=C3=B5es por ano;</span></div><div style=3D"colo=
+r: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt=
+; font-style: normal; font-weight: 400; letter-spacing: normal; text-indent=
+: 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgr=
+ound-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-f=
+amily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; f=
+ont-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: =
+none; word-spacing: 0px; white-space: normal; background-color: rgb(255, 25=
+5, 255); float: none; display: inline !important;">III - Quantidade total d=
+o efetivo por ano.</span></div><div style=3D"color: rgb(0, 0, 0); font-fami=
+ly: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font=
+-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: non=
+e; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, =
+255);"><br></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, hel=
+vetica, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; =
+letter-spacing: normal; text-indent: 0px; text-transform: none; word-spacin=
+g: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><span s=
+tyle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fon=
+t-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal;=
+ text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: no=
+rmal; background-color: rgb(255, 255, 255); float: none; display: inline !i=
+mportant;">&nbsp;</span></div><div style=3D"color: rgb(0, 0, 0); font-famil=
+y: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-=
+weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none=
+; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 2=
+55);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sa=
+ns-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spa=
+cing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; wh=
+ite-space: normal; background-color: rgb(255, 255, 255); float: none; displ=
+ay: inline !important;">Atenciosamente,</span><br style=3D"color: rgb(0, 0,=
+ 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style=
+: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-=
+transform: none; word-spacing: 0px; white-space: normal; background-color: =
+rgb(255, 255, 255);"><br style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><br =
+style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fo=
+nt-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal=
+; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: n=
+ormal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, =
+0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-sty=
+le: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; tex=
+t-transform: none; word-spacing: 0px; white-space: normal; background-color=
+: rgb(255, 255, 255); float: none; display: inline !important;">Julival Q. =
+de Santana</span><br style=3D"color: rgb(0, 0, 0); font-family: arial, helv=
+etica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; l=
+etter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing=
+: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><span st=
+yle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: rgb(255, 255, 255); float: none; display: inline !im=
+portant;">Coronel PM Diretor de Sa=C3=BAde e Promo=C3=A7=C3=A3o Social</spa=
+n><br style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: =
+normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-sp=
+ace: normal; background-color: rgb(255, 255, 255);"><span style=3D"color: r=
+gb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; fo=
+nt-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0p=
+x; text-transform: none; word-spacing: 0px; white-space: normal; background=
+-color: rgb(255, 255, 255); float: none; display: inline !important;">R. Ma=
+j. Costa, 221, 2=C2=BA Andar - Centro, Florian=C3=B3polis - SC</span><br st=
+yle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0,=
+ 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style=
+: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-=
+transform: none; word-spacing: 0px; white-space: normal; background-color: =
+rgb(255, 255, 255); float: none; display: inline !important;">CEP 88000-000=
+, Fone:&nbsp;<span class=3D"Object" id=3D"OBJ_PREFIX_DWT513_com_zimbra_phon=
+e" style=3D"color: rgb(0, 90, 149); text-decoration: none;"><a style=3D"col=
+or: rgb(0, 90, 149); text-decoration: none;">(48) 3000-0002</a></span>, Ram=
+al 58484</span><br style=3D"color: rgb(0, 0, 0); font-family: arial, helvet=
+ica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; let=
+ter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: =
+0px; white-space: normal; background-color: rgb(255, 255, 255);"><span styl=
+e=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-s=
+ize: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; te=
+xt-indent: 0px; text-transform: none; word-spacing: 0px; white-space: norma=
+l; background-color: rgb(255, 255, 255); float: none; display: inline !impo=
+rtant;">E-mail:&nbsp;<span class=3D"Object" id=3D"OBJ_PREFIX_DWT514_ZmEmail=
+ObjectHandler" style=3D"color: rgb(0, 90, 149); text-decoration: none;"><sp=
+an class=3D"Object" id=3D"OBJ_PREFIX_DWT527_ZmEmailObjectHandler" style=3D"=
+color: rgb(0, 90, 149); text-decoration: none;"><span class=3D"Object" id=
+=3D"OBJ_PREFIX_DWT60_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149);=
+ text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT61_ZmEm=
+ailObjectHandler" style=3D"color: rgb(0, 90, 149); text-decoration: none;">=
+contato@exemplo.org</span></span></span></span></span><br><br><span class=
+=3D"Object" id=3D"OBJ_PREFIX_DWT453_ZmEmailObjectHandler" style=3D"color: r=
+gb(0, 90, 149); text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PR=
+EFIX_DWT65_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149); text-deco=
+ration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT133_ZmEmailObject=
+Handler" style=3D"color: rgb(0, 90, 149); text-decoration: none;"><span cla=
+ss=3D"Object" id=3D"OBJ_PREFIX_DWT350_ZmEmailObjectHandler" style=3D"color:=
+ rgb(0, 90, 149); text-decoration: none;"><span class=3D"Object" id=3D"OBJ_=
+PREFIX_DWT352_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149); text-d=
+ecoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT8062_ZmEmailOb=
+jectHandler" style=3D"color: rgb(0, 90, 149); text-decoration: none;"></spa=
+n></span></span></span></span></span></div><div style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255);"><span class=3D"Object" style=3D"color: rgb(0, 90, 149); =
+text-decoration: none;">&nbsp;</span></div><div style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255);"><img style=3D"text-align: justify;" data-mce-src=3D"/hom=
+e/contato@exemplo.org/Briefcase/pmsc pmail.jpg" src=3D"https://mail.pm.=
+sc.gov.br/service/home/~/?auth=3Dco&amp;loc=3Dpt_BR&amp;id=3D474132&amp;par=
+t=3D1.2.10" saveddisplaymode=3D""></div><div style=3D"color: rgb(0, 0, 0); =
+font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: nor=
+mal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-trans=
+form: none; word-spacing: 0px; white-space: normal; background-color: rgb(2=
+55, 255, 255);"><br></div><div style=3D"color: rgb(0, 0, 0); font-family: a=
+rial, helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weig=
+ht: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; wo=
+rd-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);=
+">Trs:<br>1=C2=BA Sgt PM Aur=C3=A9lio Jos=C3=A9&nbsp;<strong>ALVES</strong>=
+&nbsp;Ribeiro<br>Auxiliar da DivaP1<br>Telefone 32296019 Ramal 1234</div><=
+/div><br><br><br><hr id=3D"zwchr"><div><b>De: </b>"DSPS P1" &lt;dspsdivap1@=
+exemplo.gov.br&gt;<br><b>Para: </b>"dp5" &lt;contato@exemplo.org&gt;, "dp5ch" &l=
+t;contato@exemplo.org&gt;<br><b>Enviadas: </b>Quarta-feira, 22 de outubro de=
+ 2025 13:29:03<br><b>Assunto: </b>NOTA N=C2=BA1236/DSPS/2025 SOLICITA=C3=87=
+=C3=83O DE INFORMA=C3=87=C3=95ES JUNTO AO SIGRH</div><br><div><div style=3D=
+"font-family: arial, helvetica, sans-serif; font-size: 12pt; color: rgb(0, =
+0, 0);"><div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helveti=
+ca, sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; lett=
+er-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0=
+px; white-space: normal; background-color: rgb(255, 255, 255);"><span style=
+=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-si=
+ze: 16px; font-style: normal; font-weight: 400; letter-spacing: normal; tex=
+t-indent: 0px; text-transform: none; word-spacing: 0px; white-space: normal=
+; background-color: rgb(255, 255, 255); float: none; display: inline !impor=
+tant;">Boa tarde Senhor;</span></div><div style=3D"color: rgb(0, 0, 0); fon=
+t-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal=
+; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transfor=
+m: none; word-spacing: 0px; white-space: normal; background-color: rgb(255,=
+ 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvet=
+ica, sans-serif; font-size: 16px; font-style: normal; font-weight: 400; let=
+ter-spacing: normal; text-indent: 0px; text-transform: none; word-spacing: =
+0px; white-space: normal; background-color: rgb(255, 255, 255); float: none=
+; display: inline !important;">&nbsp;</span></div><div style=3D"color: rgb(=
+0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-=
+style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; =
+text-transform: none; word-spacing: 0px; white-space: normal; background-co=
+lor: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: =
+arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-wei=
+ght: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; w=
+ord-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255)=
+; float: none; display: inline !important;">Cumprimentando V.S=C2=AA, solic=
+ito que seja fornecida a esta DSPS as seguintes Informa=C3=A7=C3=B5es, c</s=
+pan><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans=
+-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spaci=
+ng: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; whit=
+e-space: normal; background-color: rgb(255, 255, 255); float: none; display=
+: inline !important;">ontando do ano de 2019 at=C3=A9 2025:</span></div><di=
+v style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; =
+font-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space:=
+ normal; background-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0=
+, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; t=
+ext-transform: none; word-spacing: 0px; white-space: normal; background-col=
+or: rgb(255, 255, 255); float: none; display: inline !important;">&nbsp;</s=
+pan></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica,=
+ sans-serif; font-size: 12pt; font-style: normal; font-weight: 400; letter-=
+spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px;=
+ white-space: normal; background-color: rgb(255, 255, 255);"><span style=3D=
+"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size:=
+ 16px; font-style: normal; font-weight: 400; letter-spacing: normal; text-i=
+ndent: 0px; text-transform: none; word-spacing: 0px; white-space: normal; b=
+ackground-color: rgb(255, 255, 255); float: none; display: inline !importan=
+t;">I - Quantidade de PPMM aptos e inaptos;</span></div><div style=3D"color=
+: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt;=
+ font-style: normal; font-weight: 400; letter-spacing: normal; text-indent:=
+ 0px; text-transform: none; word-spacing: 0px; white-space: normal; backgro=
+und-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-fa=
+mily: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; fo=
+nt-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: n=
+one; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255=
+, 255); float: none; display: inline !important;">II - Quantidade de PPMM a=
+ptos com restri=C3=A7=C3=B5es;</span></div><div style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(255, 255, 255); float=
+: none; display: inline !important;">III - Quantidade total do efetivo nest=
+e anos.</span></div><div style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 12pt; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><spa=
+n style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; =
+font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: norm=
+al; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space:=
+ normal; background-color: rgb(255, 255, 255); float: none; display: inline=
+ !important;">&nbsp;</span></div><div style=3D"color: rgb(0, 0, 0); font-fa=
+mily: arial, helvetica, sans-serif; font-size: 12pt; font-style: normal; fo=
+nt-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: n=
+one; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255=
+, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica,=
+ sans-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-=
+spacing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px;=
+ white-space: normal; background-color: rgb(255, 255, 255); float: none; di=
+splay: inline !important;">&nbsp;</span></div><div style=3D"color: rgb(0, 0=
+, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; font-styl=
+e: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text=
+-transform: none; word-spacing: 0px; white-space: normal; background-color:=
+ rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: aria=
+l, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight:=
+ 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-=
+spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); fl=
+oat: none; display: inline !important;">&nbsp;</span></div><div style=3D"co=
+lor: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12=
+pt; font-style: normal; font-weight: 400; letter-spacing: normal; text-inde=
+nt: 0px; text-transform: none; word-spacing: 0px; white-space: normal; back=
+ground-color: rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font=
+-family: arial, helvetica, sans-serif; font-size: 16px; font-style: normal;=
+ font-weight: 400; letter-spacing: normal; text-indent: 0px; text-transform=
+: none; word-spacing: 0px; white-space: normal; background-color: rgb(255, =
+255, 255); float: none; display: inline !important;">Atenciosamente,</span>=
+<br style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif=
+; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: no=
+rmal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-spac=
+e: normal; background-color: rgb(255, 255, 255);"><br style=3D"color: rgb(0=
+, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-s=
+tyle: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; t=
+ext-transform: none; word-spacing: 0px; white-space: normal; background-col=
+or: rgb(255, 255, 255);"><br style=3D"color: rgb(0, 0, 0); font-family: ari=
+al, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight=
+: 400; letter-spacing: normal; text-indent: 0px; text-transform: none; word=
+-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);">=
+<span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-ser=
+if; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: =
+normal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-sp=
+ace: normal; background-color: rgb(255, 255, 255); float: none; display: in=
+line !important;">Julival Q. de Santana</span><br style=3D"color: rgb(0, 0,=
+ 0); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style=
+: normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-=
+transform: none; word-spacing: 0px; white-space: normal; background-color: =
+rgb(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial=
+, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal; background-color: rgb(255, 255, 255); flo=
+at: none; display: inline !important;">Coronel PM Diretor de Sa=C3=BAde e P=
+romo=C3=A7=C3=A3o Social</span><br style=3D"color: rgb(0, 0, 0); font-famil=
+y: arial, helvetica, sans-serif; font-size: 16px; font-style: normal; font-=
+weight: 400; letter-spacing: normal; text-indent: 0px; text-transform: none=
+; word-spacing: 0px; white-space: normal; background-color: rgb(255, 255, 2=
+55);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sa=
+ns-serif; font-size: 16px; font-style: normal; font-weight: 400; letter-spa=
+cing: normal; text-indent: 0px; text-transform: none; word-spacing: 0px; wh=
+ite-space: normal; background-color: rgb(255, 255, 255); float: none; displ=
+ay: inline !important;">R. Maj. Costa, 221, 2=C2=BA Andar - Centro, Florian=
+=C3=B3polis - SC</span><br style=3D"color: rgb(0, 0, 0); font-family: arial=
+, helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: =
+400; letter-spacing: normal; text-indent: 0px; text-transform: none; word-s=
+pacing: 0px; white-space: normal; background-color: rgb(255, 255, 255);"><s=
+pan style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif=
+; font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: no=
+rmal; text-indent: 0px; text-transform: none; word-spacing: 0px; white-spac=
+e: normal; background-color: rgb(255, 255, 255); float: none; display: inli=
+ne !important;">CEP 88000-000, Fone:&nbsp;<span class=3D"Object" id=3D"OBJ_=
+PREFIX_DWT513_com_zimbra_phone" style=3D"color: rgb(0, 90, 149); text-decor=
+ation: none;"><a style=3D"color: rgb(0, 90, 149); text-decoration: none;">(=
+48) 3229-6019</a></span>, Ramal 1234</span><br style=3D"color: rgb(0, 0, 0=
+); font-family: arial, helvetica, sans-serif; font-size: 16px; font-style: =
+normal; font-weight: 400; letter-spacing: normal; text-indent: 0px; text-tr=
+ansform: none; word-spacing: 0px; white-space: normal; background-color: rg=
+b(255, 255, 255);"><span style=3D"color: rgb(0, 0, 0); font-family: arial, =
+helvetica, sans-serif; font-size: 16px; font-style: normal; font-weight: 40=
+0; letter-spacing: normal; text-indent: 0px; text-transform: none; word-spa=
+cing: 0px; white-space: normal; background-color: rgb(255, 255, 255); float=
+: none; display: inline !important;">E-mail:&nbsp;<span class=3D"Object" id=
+=3D"OBJ_PREFIX_DWT514_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149)=
+; text-decoration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT527_Zm=
+EmailObjectHandler" style=3D"color: rgb(0, 90, 149); text-decoration: none;=
+"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT60_ZmEmailObjectHandler" style=
+=3D"color: rgb(0, 90, 149); text-decoration: none;"><span class=3D"Object" =
+id=3D"OBJ_PREFIX_DWT61_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149=
+); text-decoration: none;">contato@exemplo.org</span></span></span></span>=
+</span><br><br><span class=3D"Object" id=3D"OBJ_PREFIX_DWT453_ZmEmailObject=
+Handler" style=3D"color: rgb(0, 90, 149); text-decoration: none;"><span cla=
+ss=3D"Object" id=3D"OBJ_PREFIX_DWT65_ZmEmailObjectHandler" style=3D"color: =
+rgb(0, 90, 149); text-decoration: none;"><span class=3D"Object" id=3D"OBJ_P=
+REFIX_DWT133_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149); text-de=
+coration: none;"><span class=3D"Object" id=3D"OBJ_PREFIX_DWT350_ZmEmailObje=
+ctHandler" style=3D"color: rgb(0, 90, 149); text-decoration: none;"><span c=
+lass=3D"Object" id=3D"OBJ_PREFIX_DWT352_ZmEmailObjectHandler" style=3D"colo=
+r: rgb(0, 90, 149); text-decoration: none;"><span class=3D"Object" id=3D"OB=
+J_PREFIX_DWT8062_ZmEmailObjectHandler" style=3D"color: rgb(0, 90, 149); tex=
+t-decoration: none;"></span></span></span></span></span></span></div><div s=
+tyle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; fon=
+t-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal;=
+ text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: no=
+rmal; background-color: rgb(255, 255, 255);"><span class=3D"Object" style=
+=3D"color: rgb(0, 90, 149); text-decoration: none;">&nbsp;</span></div><div=
+ style=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; f=
+ont-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: norma=
+l; text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: =
+normal; background-color: rgb(255, 255, 255);"><img style=3D"text-align: ju=
+stify;" data-mce-src=3D"/home/contato@exemplo.org/Briefcase/pmsc pmail.=
+jpg" src=3D"https://mail.exemplo.gov.br/service/home/~/?auth=3Dco&amp;loc=3Dp=
+t_BR&amp;id=3D474132&amp;part=3D1.2.11" saveddisplaymode=3D""></div><div st=
+yle=3D"color: rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font=
+-size: 12pt; font-style: normal; font-weight: 400; letter-spacing: normal; =
+text-indent: 0px; text-transform: none; word-spacing: 0px; white-space: nor=
+mal; background-color: rgb(255, 255, 255);"><br></div><div style=3D"color: =
+rgb(0, 0, 0); font-family: arial, helvetica, sans-serif; font-size: 12pt; f=
+ont-style: normal; font-weight: 400; letter-spacing: normal; text-indent: 0=
+px; text-transform: none; word-spacing: 0px; white-space: normal; backgroun=
+d-color: rgb(255, 255, 255);">Trs:<br>1=C2=BA Sgt PM Aur=C3=A9lio Jos=C3=A9=
+&nbsp;<strong>ALVES</strong>&nbsp;Ribeiro<br>Auxiliar da DivaP1<br>Telefone=
+ 32296019 Ramal 1234</div></div></div></div></div></div></div></div></div>=
+</div><br></div></div></body></html>
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <b327abc119d3bad403ba390b643479301ddd99cb@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <d3fca06cd0c6a33470dce022ea39cf6ca876b944@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <e6e51a6915c8e8c95b0875b5d239fc7441c2bf94@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <8f31b74f2405b97250d950ffbfba4e8ce44aeb05@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <e98fdd074dd27f7959bc54b63aba68b58c9d4838@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <f7f3aab2d59cc6202f27cde296527e24c221470d@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <e77bd24623bbe017f1af863a26a28df931ce4a7d@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df
+Content-Type: image/png; name=image.png
+Content-Disposition: inline; filename=image.png
+Content-Transfer-Encoding: 7bit
+Content-ID: <8afb99744708236d69f0b9b03165cc79c3a9b5c3@zimbra>
+
+[STUB_ATTACHMENT_BYTES]
+--=_3b1574ee-f1dd-4155-bda1-497d0d6583df--
+
+--=_0b8bceca-9f3e-4b3e-aa67-5c09fe9957eb--
+
+------=_Part_3759819_651944833.1761328922873
+Content-Type: 
+ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+ name="3760 APTO PARA O SERVICO DA PMBM.xlsx"
+Content-Disposition: attachment;
+ filename="3760 APTO PARA O SERVICO DA PMBM.xlsx"
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_3759819_651944833.1761328922873
+Content-Type: 
+ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+ name="4799 APTO PARA O SERVICO COM RESTRICOES (1).xlsx"
+Content-Disposition: attachment;
+ filename="4799 APTO PARA O SERVICO COM RESTRICOES (1).xlsx"
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_3759819_651944833.1761328922873
+Content-Type: 
+ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+ name="3769 INAPTO PARA O SERVICO DA PM.xlsx"
+Content-Disposition: attachment;
+ filename="3769 INAPTO PARA O SERVICO DA PM.xlsx"
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_3759819_651944833.1761328922873
+Content-Type: 
+ application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;
+ name="III - Quantidade total do efetivo por ano.xlsx"
+Content-Disposition: attachment;
+ filename="III - Quantidade total do efetivo por ano.xlsx"
+Content-Transfer-Encoding: 7bit
+
+[STUB_ATTACHMENT_BYTES]
+------=_Part_3759819_651944833.1761328922873--
