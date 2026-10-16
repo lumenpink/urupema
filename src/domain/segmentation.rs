@@ -188,6 +188,18 @@ fn is_quote_start(line: &str) -> bool {
         return true;
     }
 
+    // Cabeçalhos de resposta/encaminhamento embutidos estilo Webmail/Zimbra/Outlook
+    // Ex: 'De: "Nome" <email@...>', 'From: Nome <email@...>', '*De:* ...'
+    let clean = lower
+        .trim_start_matches('*')
+        .trim_start_matches('_')
+        .trim();
+    if (clean.starts_with("de:") || clean.starts_with("from:"))
+        && (clean.contains('<') || clean.contains('@') || clean.contains('"'))
+    {
+        return true;
+    }
+
     false
 }
 
@@ -211,6 +223,7 @@ fn is_signature_start(line: &str) -> bool {
         "cordialmente",
         "cordiais saudações",
         "cordiais saudacoes",
+        "respeitosamente",
         "abraços",
         "abracos",
         "um abraço",
@@ -273,24 +286,35 @@ fn chunk_body_head_tail(body: &str, config: &SegmentationConfig) -> Vec<String> 
         .filter(|p| !p.is_empty())
         .collect();
 
-    if paragraphs.is_empty() {
+    // Se o número de parágrafos duplos for menor que o teto mas houver múltiplas linhas,
+    // usamos as linhas para garantir granularidade e respeitar o limite de tokens
+    let blocks: Vec<&str> = if paragraphs.len() < config.max_body_chunks {
+        body.lines()
+            .map(|l| l.trim())
+            .filter(|l| !l.is_empty())
+            .collect()
+    } else {
+        paragraphs
+    };
+
+    if blocks.is_empty() {
         return Vec::new();
     }
 
-    // Agrupa parágrafos contíguos até atingir o limite aproximado de tokens
+    // Agrupa blocos contíguos até atingir o limite aproximado de tokens
     let mut initial_chunks = Vec::new();
     let mut current_group = Vec::new();
     let mut current_tokens = 0;
 
-    for para in paragraphs {
-        let para_tokens = para.split_whitespace().count();
-        if current_tokens > 0 && current_tokens + para_tokens > config.target_chunk_tokens {
+    for block in blocks {
+        let block_tokens = block.split_whitespace().count();
+        if current_tokens > 0 && current_tokens + block_tokens > config.target_chunk_tokens {
             initial_chunks.push(current_group.join("\n\n"));
             current_group.clear();
             current_tokens = 0;
         }
-        current_group.push(para);
-        current_tokens += para_tokens;
+        current_group.push(block);
+        current_tokens += block_tokens;
     }
 
     if !current_group.is_empty() {

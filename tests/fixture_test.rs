@@ -98,7 +98,6 @@ fn test_fixture_boletim_longo_head_tail_chunking() {
     .expect("Deve processar boletim informativo extenso");
 
     let md = sanitized.parts.markdown_auto.as_ref().unwrap();
-
     let config = SegmentationConfig {
         max_body_chunks: 5,
         target_chunk_tokens: 30, // força corte para testar Head-Tail
