@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `CONCLUDED` (Branch: `feat/4-semantic-email-segmentation`)  
-**Ticket de Referência:** `#4` (Anteriores: `#5`, `#1`)
+**Status:** `IN_PROGRESS` (Branch: `feat/6-real-world-fixtures`)  
+**Ticket de Referência:** `#6` (Anteriores: `#4`, `#5`, `#1`)
 
 ---
 
@@ -275,5 +275,35 @@ Para evitar que e-mails anômalos ou hiper-longos inflacionem a matriz vetorial 
 - [x] Algoritmo de fatiamento Cabeça-Cauda (Head-Tail Chunking) garantindo teto de 5 blocos sem perda da cauda.
 - [x] Suíte de testes em `tests/segmentation_test.rs` cobrindo todas as variantes de idioma, casos combinados e corpos vazios.
 - [x] Quality Gate 100% verde (`cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`).
+
+---
+
+## 8. Fixtures Reais Anonimizadas e Suíte de Regressão (Ticket #6)
+
+Para garantir que a dissecação semântica e o pipeline de higienização operem com máxima fidelidade em cenários do mundo real (Zimbra, Outlook, webmail corporativo/governamental), a suíte de testes incorpora fixtures reais anonimizadas (deface).
+
+### 8.1 Política de Anonimização & Deface
+As fixtures contêm e-mails reais que passam por processo estrito de higienização antes de commit:
+- **Nomes Próprios:** Substituídos por personas fictícias neutras (`Servidor Exemplo`, `Fulano de Tal`, `Maria Silva`).
+- **Endereços de E-mail:** Mapeados deterministicamente para o domínio RFC 2606 `exemplo.gov.br` ou `exemplo.org`.
+- **Identificadores Sensíveis:** Telefones, ramais, CPFs e matrículas substituídos por dígitos fictícios mascarados.
+- **Estruturas Preservadas:** A árvore MIME completa, headers RFC 5322, tags HTML, estilos embutidos e espaçamentos originais são preservados com precisão cirúrgica para reproduzir as exatas idiossincrasias dos clientes emissores.
+
+### 8.2 Arquétipos Canônicos em `tests/fixtures/`
+1. `fixture_militar_fwd.eml`: E-mail formal com encaminhamento, fecho `Respeitosamente;`, cabeçalho `De: ...\nPara: ...` no corpo e árvore multipart.
+2. `fixture_thread_multinivel.eml`: Conversa encadeada entre 3 órgãos distintos, contendo histórico citado com aviso de LGPD e assinatura padrão RFC 3676 (`-- `).
+3. `fixture_boletim_longo.eml`: Informativo institucional volumoso (> 50 KB) com múltiplas seções, testando o teto do algoritmo Head-Tail Chunking.
+
+### 8.3 Aprimoramentos Heurísticos no Domínio (`domain/segmentation.rs`)
+- **Fechos em Português:** Inclusão de `respeitosamente` (comum no meio administrativo, militar e jurídico).
+- **Cabeçalhos de Resposta/Encaminhamento:** Reconhecimento de blocos embutidos estilo Webmail/Zimbra/Outlook iniciados por `De: ` / `From: ` seguidos de `Para: ` / `To: ` ou `Enviadas: ` / `Sent: `.
+
+### 8.4 Critérios de Aceite (Ticket #6)
+- [ ] Utilitário de anonimização e deface implementado e documentado.
+- [ ] Arquivos de fixture `.eml` armazenados em `tests/fixtures/`.
+- [ ] Heurísticas de fecho (`respeitosamente`) e cabeçalhos Webmail (`De: ...\nPara: ...`) implementadas no `segmentation.rs`.
+- [ ] Testes de regressão em `tests/fixture_test.rs` validando segmentação e pipeline contra todas as fixtures.
+- [ ] Quality Gate 100% verde (`cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`).
+
 
 
