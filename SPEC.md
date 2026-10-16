@@ -1,7 +1,7 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `IN_PROGRESS` (Branch: `feat/6-real-world-fixtures`)  
+**Status:** `CONCLUDED` (Branch: `feat/6-real-world-fixtures`)  
 **Ticket de Referência:** `#6` (Anteriores: `#4`, `#5`, `#1`)
 
 ---
@@ -299,11 +299,11 @@ As fixtures contêm e-mails reais que passam por processo estrito de higienizaç
 - **Cabeçalhos de Resposta/Encaminhamento:** Reconhecimento de blocos embutidos estilo Webmail/Zimbra/Outlook iniciados por `De: ` / `From: ` seguidos de `Para: ` / `To: ` ou `Enviadas: ` / `Sent: `.
 
 ### 8.4 Critérios de Aceite (Ticket #6)
-- [ ] Utilitário de anonimização e deface implementado e documentado.
-- [ ] Arquivos de fixture `.eml` armazenados em `tests/fixtures/`.
-- [ ] Heurísticas de fecho (`respeitosamente`) e cabeçalhos Webmail (`De: ...\nPara: ...`) implementadas no `segmentation.rs`.
-- [ ] Testes de regressão em `tests/fixture_test.rs` validando segmentação e pipeline contra todas as fixtures.
-- [ ] Quality Gate 100% verde (`cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`).
+- [x] Utilitário de anonimização e deface implementado e documentado (`scripts/anonymize_eml.py`).
+- [x] Arquivos de fixture `.eml` armazenados em `tests/fixtures/`.
+- [x] Heurísticas de fecho (`respeitosamente`) e cabeçalhos Webmail (`De: ...\nPara: ...`) implementadas no `segmentation.rs`.
+- [x] Testes de regressão em `tests/fixture_test.rs` validando segmentação e pipeline contra todas as fixtures.
+- [x] Quality Gate 100% verde (`cargo fmt --check`, `cargo clippy --all-targets -- -D warnings`, `cargo test`).
 
 
 
