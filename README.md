@@ -68,4 +68,10 @@ A documentação estática adota o tema visual **Trash Polka** (halftones, máqu
 
 ## 📄 Licença
 
-Distribuído sob a licença [Apache-2.0](./LICENSE).
+Este projeto é software livre e de código aberto distribuído sob a licença **Apache-2.0**:
+
+| Componente | Licença | Arquivo |
+| :--- | :--- | :--- |
+| **Código-Fonte e Core** | Apache-2.0 | [`LICENSE`](LICENSE) |
+| **Logotipos e Identidade** | CC-BY-ND-4.0 | [`LICENSE-LOGO`](LICENSE-LOGO) |
+| **Mídias e Ilustrações** | CC-BY-SA-4.0 | [`LICENSE-MEDIA`](LICENSE-MEDIA) |
