@@ -48,6 +48,12 @@ O projeto adota rigor **DD-TDD** conforme a norma [GOST](https://codeberg.org/lu
 # Executar todos os testes de unidade e herméticos
 cargo test --all-targets --all-features
 
+# Build de release com LTO fat, strip e otimização agressiva de tamanho
+cargo build --release
+
+# Compilação estática universal (static-pie) contra musl libc
+cargo build --release --target x86_64-unknown-linux-musl
+
 # Validar linter com tolerância zero a avisos
 cargo clippy --all-targets --all-features -- -D warnings
 
