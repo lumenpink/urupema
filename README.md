@@ -21,6 +21,18 @@ O **`urupema`** roda como um binário utilitário no servidor de correio, invoca
 
 ---
 
+## 📦 Binários e Releases Soberanos
+
+O binário oficial para `linux-x86_64` é compilado automaticamente a cada push na branch principal e disponibilizado na forja soberana Gambi:
+
+```bash
+# Baixar a versão mais recente diretamente da Gambi:
+curl -sSL -o /usr/local/bin/urupema https://gambi.2lp.in/lumen/urupema/releases/download/latest/urupema
+chmod +x /usr/local/bin/urupema
+```
+
+---
+
 ## 🛠️ Configuração no Postfix (`/etc/postfix/master.cf`)
 
 Adicione o serviço de transporte `pipe`:
