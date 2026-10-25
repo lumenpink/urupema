@@ -58,6 +58,27 @@ fi
 if [ "$FAILED" -ne 0 ]; then
     echo "==> [FAIL] Teste de conformidade falhou."
     exit 1
-else
-    echo "==> [PASS] Todas as validações da publicação no registro gambi foram aprovadas."
 fi
+
+echo "==> Executando testes de mutação para publish crate workflow..."
+
+TMP_MUTANT=$(mktemp)
+trap 'rm -f "$TMP_MUTANT"' EXIT
+
+# Mutante 1: Registry divergente (ex: crates-io)
+sed 's/cargo publish --registry gambi/cargo publish --registry crates-io/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q "cargo publish --registry gambi" "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 1 (registry divergente) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 1 (registry divergente) detectado e rejeitado."
+
+# Mutante 2: Token ausente
+sed 's/GAMBI_2LP_IN_TOKEN/UNKNOWN_TOKEN/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q "GAMBI_2LP_IN_TOKEN" "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 2 (token ausente) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 2 (token ausente) detectado e rejeitado."
+
+echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"

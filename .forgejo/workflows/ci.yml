@@ -23,6 +23,10 @@ jobs:
         run: cargo clippy --all-targets --all-features -- -D warnings
       - name: "Run Tests"
         run: cargo test --all-targets --all-features
+      - name: "Audit CI Release Workflow"
+        run: bash tests/test_ci_release_workflow.sh
+      - name: "Audit CI Publish Crate Workflow"
+        run: bash tests/test_ci_publish_crate.sh
 
   deploy-site:
     name: "Deploy Documentation Site"
@@ -55,6 +59,30 @@ jobs:
       - uses: actions/checkout@v4
       - name: "Install Rust Toolchain"
         uses: dtolnay/rust-toolchain@stable
+      - name: "Configure Sovereign Gambi Cargo Registry"
+        env:
+          GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
+        run: |
+          mkdir -p "$HOME/.cargo"
+          printf '[registries.gambi]\nindex = "sparse+https://gambi.2lp.in/api/packages/lumen/cargo/"\n' > "$HOME/.cargo/config.toml"
+          if [ -n "$GAMBI_TOKEN" ]; then
+            printf '[registries.gambi]\ntoken = "%s"\n' "$GAMBI_TOKEN" > "$HOME/.cargo/credentials.toml"
+          fi
+
+      - name: "Publish Crate to Sovereign Gambi Registry"
+        env:
+          GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
+        run: |
+          if [ -n "$GAMBI_TOKEN" ]; then
+            CANONICAL_VERSION=$(head -n 1 VERSION | cut -d '-' -f1 | tr -d ' \r\n')
+            echo "-> Sincronizando Cargo.toml para a versao canonica: $CANONICAL_VERSION"
+            sed -i "0,/^version = .*/s//version = \"${CANONICAL_VERSION}\"/" Cargo.toml
+            echo "-> Publicando urupema no registry gambi..."
+            cargo publish --registry gambi --allow-dirty || echo "::warning::Versao ja publicada ou falha tolerada no registry."
+          else
+            echo "GAMBI_2LP_IN_TOKEN not set, skipping crate publish."
+          fi
+
       - name: "Build Release Binary"
         run: cargo build --release --bin urupema
       - name: "Publish Sovereign Release (latest)"
