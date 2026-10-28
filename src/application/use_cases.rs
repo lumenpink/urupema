@@ -3,7 +3,8 @@ use std::collections::HashSet;
 use thiserror::Error;
 
 use crate::domain::{
-    EmailSink, EmailSinkError, ProcessResult, ProcessedParts, RawEmail, SanitizedEmail,
+    is_markdown_empty_or_polluted, sanitize_markdown_noise, EmailSink, EmailSinkError,
+    ProcessResult, ProcessedParts, RawEmail, SanitizedEmail,
 };
 
 #[derive(Debug, Error)]
@@ -98,10 +99,21 @@ impl Pipeline {
             let clean_html = ammonia_builder.clean(html).to_string();
             // Largura ampla para preservar fluxo livre de parágrafos sem quebras artificiais
             const UNWRAPPED_WIDTH: usize = 10_000;
-            let markdown = html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH);
+            let raw_markdown = html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH);
+            let sanitized_markdown = sanitize_markdown_noise(&raw_markdown);
+
+            let fallback_to_plain = is_markdown_empty_or_polluted(
+                &sanitized_markdown,
+                parts.original_plain.as_deref(),
+            );
+
+            if fallback_to_plain && parts.original_plain.is_some() {
+                parts.markdown_auto = parts.original_plain.clone();
+            } else {
+                parts.markdown_auto = Some(sanitized_markdown);
+            }
 
             parts.sanitized_html = Some(clean_html);
-            parts.markdown_auto = Some(markdown);
         }
 
         // 4. Reempacotar mensagem final
