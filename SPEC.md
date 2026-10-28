@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `1.0.0`  
-**Status:** `CONCLUDED` (Branch: `feat/6-real-world-fixtures`)  
-**Ticket de Referência:** `#6` (Anteriores: `#4`, `#5`, `#1`)
+**Status:** `DRAFT` (Branch: `fix/12-markdown-sanitization-payload-selection`)  
+**Ticket de Referência:** `#12` (Anteriores: `#6`, `#4`, `#5`, `#1`)
 
 ---
 
@@ -74,6 +74,20 @@ A política de higienização de tags via `ammonia` é estrita:
 - **Preservação de Quebras Intencionais:** Quebras de parágrafo (`<p>`) são preservadas como parágrafos separados (`\n\n`), e quebras de linha duras (`<br>`, `<br/>`) são mantidas como quebras de linha (`\n`), garantindo integridade visual em endereços, listas, versos e blocos de assinatura.
 - Links são preservados na sintaxe padrão Markdown `[texto](url)`.
 - Tabelas simples são formatadas em ASCII legível.
+
+#### 2.4.1 Sanitização de Ruídos de Markdown (Ticket #12)
+- Newsletters e comunicados frequentes (ex.: GitHub Universe, Canal Meio) geram distorções com divisores ASCII corrompidos, especialmente sequências repetitivas de underlines (`___________`).
+- O sanitizador de ruídos aplica normalização determinística:
+  - Sequências de 3 ou mais underlines repetitivos (`_{3,}`) são colapsadas ou removidas quando isoladas em linhas de separação ruidosas.
+  - Marcadores corrompidos ou fragmentos órfãos de formatação são saneados.
+  - O texto resultante mantém a legibilidade e previne quebras na renderização de Markdown.
+
+#### 2.4.2 Heurística de Seleção de Payload (Ticket #12)
+- E-mails primordialmente visuais (ex.: Pinterest) possuem HTML que, após o parser, produz conteúdo vazio (apenas espaços em branco) ou excessivamente poluído com fragmentos vazios e links truncados, enquanto o `original_plain` multipart contém o texto semântico real da mensagem.
+- A heurística avalia:
+  1. Se `markdown_auto` resultante for vazio ou tiver apenas espaços em branco, e houver `original_plain`, recorrer imediatamente ao `original_plain`.
+  2. Se `markdown_auto` tiver baixíssima densidade textual útil comparada a `original_plain` (indicando HTML puramente cosmético ou quebrado), recorrer ao `original_plain`.
+  3. Caso contrário, quando o HTML possui conteúdo textual substantivo, utilizar o `markdown_auto` devidamente sanitizado.
 
 ### 2.5 Passo 5: Reempacotamento e Rastreabilidade
 - Cabeçalho injetado: `X-Urupema-Processed: 1; engine=urupema-0.1.0`.
