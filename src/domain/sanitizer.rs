@@ -76,7 +76,10 @@ pub fn is_markdown_empty_or_polluted(markdown: &str, original_plain: Option<&str
         let plain_trimmed = plain.trim();
         if !plain_trimmed.is_empty() {
             let md_alpha_count = md_trimmed.chars().filter(|c| c.is_alphanumeric()).count();
-            let plain_alpha_count = plain_trimmed.chars().filter(|c| c.is_alphanumeric()).count();
+            let plain_alpha_count = plain_trimmed
+                .chars()
+                .filter(|c| c.is_alphanumeric())
+                .count();
 
             // Se o texto puro original tem conteúdo substantivo e o Markdown gerado do HTML
             // tiver densidade alfanumérica insignificante ou desproporcionalmente menor (< 20%)

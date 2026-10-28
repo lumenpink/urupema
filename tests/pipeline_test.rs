@@ -221,10 +221,7 @@ Content-Type: text/html; charset=utf-8\r\n\
     )
     .expect("Deve processar pipeline");
 
-    let md = sanitized
-        .parts
-        .markdown_auto
-        .expect("Deve gerar markdown");
+    let md = sanitized.parts.markdown_auto.expect("Deve gerar markdown");
 
     // Nao deve conter sequencias repetitivas de underlines
     assert!(

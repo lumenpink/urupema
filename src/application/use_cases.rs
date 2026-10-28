@@ -102,10 +102,8 @@ impl Pipeline {
             let raw_markdown = html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH);
             let sanitized_markdown = sanitize_markdown_noise(&raw_markdown);
 
-            let fallback_to_plain = is_markdown_empty_or_polluted(
-                &sanitized_markdown,
-                parts.original_plain.as_deref(),
-            );
+            let fallback_to_plain =
+                is_markdown_empty_or_polluted(&sanitized_markdown, parts.original_plain.as_deref());
 
             if fallback_to_plain && parts.original_plain.is_some() {
                 parts.markdown_auto = parts.original_plain.clone();
