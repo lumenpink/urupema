@@ -193,3 +193,105 @@ Content-Type: text/html; charset=utf-8\r\n\
     // Blockquote
     assert!(md.contains("Citacao em bloco com multiplas palavras"));
 }
+
+#[test]
+fn test_markdown_noise_sanitization_underlines_and_markers() {
+    let raw_rfc5322 = b"From: newsletter@news.org\r\n\
+To: destinatario@exemplo.org\r\n\
+Subject: Comunicado com ruidos\r\n\
+Content-Type: text/html; charset=utf-8\r\n\
+\r\n\
+<html><body>\
+<h2>Comunicado do GitHub Universe</h2>\
+<p>Destaques do evento anual.</p>\
+<p>__________________________________________________</p>\
+<p>Avisos importantes da comunidade.</p>\
+<p>____</p>\
+<p>Mais detalhes em breve.</p>\
+</body></html>";
+
+    let raw = RawEmail::new(raw_rfc5322.to_vec());
+    let mut sink = InMemorySink::new();
+
+    let (sanitized, _result) = Pipeline::process(
+        &raw,
+        "newsletter@news.org",
+        "destinatario@exemplo.org",
+        &mut sink,
+    )
+    .expect("Deve processar pipeline");
+
+    let md = sanitized
+        .parts
+        .markdown_auto
+        .expect("Deve gerar markdown");
+
+    // Nao deve conter sequencias repetitivas de underlines
+    assert!(
+        !md.contains("____________________"),
+        "Markdown nao deve conter underlines longos repetitivos: {}",
+        md
+    );
+    assert!(
+        !md.contains("____"),
+        "Markdown nao deve conter sequencias de 4+ underlines: {}",
+        md
+    );
+    assert!(md.contains("Comunicado do GitHub Universe"));
+    assert!(md.contains("Destaques do evento anual."));
+    assert!(md.contains("Avisos importantes da comunidade."));
+}
+
+#[test]
+fn test_payload_selection_fallback_to_plain_on_empty_or_polluted_html() {
+    let raw_rfc5322 = b"From: updates@pinterest.com\r\n\
+To: usuario@exemplo.org\r\n\
+Subject: Novas ideias para seu painel\r\n\
+MIME-Version: 1.0\r\n\
+Content-Type: multipart/alternative; boundary=\"boundary_pin\"\r\n\
+\r\n\
+--boundary_pin\r\n\
+Content-Type: text/plain; charset=utf-8\r\n\
+\r\n\
+Veja as novas ideias de decoracao de primavera que separamos para voce no Pinterest.\r\n\
+--boundary_pin\r\n\
+Content-Type: text/html; charset=utf-8\r\n\
+\r\n\
+<html><body>\
+<table width=\"100%\"><tr><td></td></tr></table>\
+<div>   </div>\
+<img src=\"https://pinterest.com/pixel.gif\" width=\"1\" height=\"1\" />\
+</body></html>\r\n\
+--boundary_pin--";
+
+    let raw = RawEmail::new(raw_rfc5322.to_vec());
+    let mut sink = InMemorySink::new();
+
+    let (sanitized, _result) = Pipeline::process(
+        &raw,
+        "updates@pinterest.com",
+        "usuario@exemplo.org",
+        &mut sink,
+    )
+    .expect("Deve processar e-mail multipart do Pinterest");
+
+    let delivered = sink.last_delivery().expect("Deve ter sido entregue");
+    let delivered_payload = String::from_utf8_lossy(&delivered.payload);
+
+    // Como o HTML era vazio / sem conteudo semantico, o texto entregue no multipart
+    // DEVE conter o texto do original_plain
+    assert!(
+        delivered_payload.contains("Veja as novas ideias de decoracao de primavera"),
+        "O payload final deve conter o texto do original_plain quando HTML for vazio/poluido. Payload: {}",
+        delivered_payload
+    );
+
+    // O campo markdown_auto em parts deve conter ou ter fallback para o texto útil
+    let plain_chosen = sanitized
+        .parts
+        .markdown_auto
+        .as_deref()
+        .or(sanitized.parts.original_plain.as_deref())
+        .unwrap_or("");
+    assert!(plain_chosen.contains("Veja as novas ideias de decoracao de primavera"));
+}
