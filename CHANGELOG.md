@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- Sanitização de ruídos visuais e divisores repetitivos de underlines em Markdown e heurística de seleção de payload com fallback para text/plain (closes #12).
 - Configuração de `[profile.release]` com LTO e strip, e linking estático `+crt-static` para musl libc (closes #8).
 
 ### Added
