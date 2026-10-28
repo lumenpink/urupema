@@ -45,14 +45,14 @@ pub fn sanitize_markdown_noise(input: &str) -> String {
         cleaned_lines.push(sanitized_line);
     }
 
-    // Normaliza múltiplas linhas em branco consecutivas (no máximo duas)
+    // Normaliza múltiplas linhas em branco consecutivas (no máximo uma linha vazia entre parágrafos)
     let mut result = Vec::new();
     let mut consecutive_empty = 0;
 
     for line in cleaned_lines {
         if line.trim().is_empty() {
             consecutive_empty += 1;
-            if consecutive_empty <= 2 {
+            if consecutive_empty <= 1 {
                 result.push(line);
             }
         } else {
@@ -92,4 +92,71 @@ pub fn is_markdown_empty_or_polluted(markdown: &str, original_plain: Option<&str
     }
 
     false
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_sanitize_preserves_markdown_emphasis() {
+        let input = "Este é um texto com _itálico_ e __negrito__ legítimo.";
+        assert_eq!(sanitize_markdown_noise(input), input);
+    }
+
+    #[test]
+    fn test_sanitize_removes_repetitive_underlines_lines() {
+        let input = "Título\n\n____________________\n\nTexto após divisor.";
+        let cleaned = sanitize_markdown_noise(input);
+        assert!(!cleaned.contains("___"));
+        assert!(cleaned.contains("Título"));
+        assert!(cleaned.contains("Texto após divisor."));
+    }
+
+    #[test]
+    fn test_sanitize_removes_inline_four_or_more_underlines() {
+        let input = "Ruído____remover e _____mais.";
+        let cleaned = sanitize_markdown_noise(input);
+        assert!(!cleaned.contains("____"));
+        assert_eq!(cleaned, "Ruídoremover e mais.");
+    }
+
+    #[test]
+    fn test_sanitize_collapses_excessive_blank_lines() {
+        let input = "Linha 1\n\n\n\n\n\nLinha 2";
+        let cleaned = sanitize_markdown_noise(input);
+        assert_eq!(cleaned, "Linha 1\n\nLinha 2");
+    }
+
+    #[test]
+    fn test_is_markdown_empty_or_polluted_scenarios() {
+        // Vazio ou apenas whitespace
+        assert!(is_markdown_empty_or_polluted("", None));
+        assert!(is_markdown_empty_or_polluted("   \n\t  ", None));
+
+        // Markdown rico sem texto puro original
+        assert!(!is_markdown_empty_or_polluted(
+            "Conteúdo perfeitamente válido com mais de vinte caracteres aqui.",
+            None
+        ));
+
+        // Markdown degradado vs texto puro rico (Pinterest)
+        let rich_plain = "Confira a nova seleção de produtos artesanais disponíveis para você.";
+        assert!(is_markdown_empty_or_polluted(
+            "Link: ",
+            Some(rich_plain)
+        ));
+
+        // Ambos ricos
+        assert!(!is_markdown_empty_or_polluted(
+            "Confira a nova seleção de produtos artesanais no nosso catálogo online.",
+            Some(rich_plain)
+        ));
+
+        // Plain curto / sem relevância não deve disparar fallback de markdown válido
+        assert!(!is_markdown_empty_or_polluted(
+            "Mensagem curta.",
+            Some("Curto")
+        ));
+    }
 }
