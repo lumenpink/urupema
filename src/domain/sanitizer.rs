@@ -142,10 +142,7 @@ mod tests {
 
         // Markdown degradado vs texto puro rico (Pinterest)
         let rich_plain = "Confira a nova seleção de produtos artesanais disponíveis para você.";
-        assert!(is_markdown_empty_or_polluted(
-            "Link: ",
-            Some(rich_plain)
-        ));
+        assert!(is_markdown_empty_or_polluted("Link: ", Some(rich_plain)));
 
         // Ambos ricos
         assert!(!is_markdown_empty_or_polluted(
