@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
-**Versão da Norma:** GOST `1.0.0`  
-**Status:** `CONCLUDED` (Branch: `fix/12-markdown-sanitization-payload-selection`)  
-**Ticket de Referência:** `#12` (Anteriores: `#6`, `#4`, `#5`, `#1`)
+**Versão da Norma:** GOST `2.0.0`  
+**Status:** `CONCLUDED` (Branch: `chore/14-bump-version-to-0-1-1-and-publish-to-gambi-registry`)  
+**Ticket de Referência:** `#14` (Anteriores: `#12`, `#6`, `#4`, `#5`, `#1`)
 
 ---
 

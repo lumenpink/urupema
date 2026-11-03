@@ -1,6 +1,6 @@
 # GOST Language Specification: Rust
 **Identificador da Stack:** `rust`  
-**Padrão Base:** GOST `1.0.0`
+**Padrão Base:** GOST `2.0.0`
 
 ---
 
@@ -15,7 +15,7 @@ Esta especificação define os requisitos de engenharia, ferramentas e padrões 
 |---|---|---|
 | **Test Runner** | **Cargo Test** | `cargo test --all-targets --all-features` |
 | **Cobertura (≥ 90%)** | **cargo-llvm-cov** / **tarpaulin** | `cargo llvm-cov --fail-under-lines 90` |
-| **Testes de Mutação** | **cargo-mutants** | `cargo mutants --no-shuffle` |
+| **Testes de Mutação** | **cargo-mutants** | `cargo mutants --in-diff --no-shuffle` |
 | **Linter (Zero Warnings)** | **Clippy** | `cargo clippy --all-targets --all-features -- -D warnings` |
 | **Formatação Determinística** | **rustfmt** | `cargo fmt -- --check` |
 | **Auditoria de Segurança** | **cargo-audit** | `cargo audit` |
@@ -32,8 +32,9 @@ Esta especificação define os requisitos de engenharia, ferramentas e padrões 
 
 ---
 
-## 4. Arquitetura de Domínio & SOLID Pragmático
-1. **Estrutura de Pastas Canônica:**
+## 4. Arquitetura de Domínio & SOLID Pragmático (Regra GOST-27)
+1. **Pureza de Domínio (Zero I/O no Core):** O diretório `src/domain/` é estritamente puro. É terminantemente proibido importar módulos de sistema ou I/O dentro do Core: `std::fs`, `std::net`, `std::process`, `std::env`, `tokio::fs`, `tokio::net`, `reqwest`, `rusqlite`, `sqlx` ou `clap`.
+2. **Estrutura de Pastas Canônica:**
    ```text
    src/
    ├── domain/             # Modelos e regras de negócio puras (sem I/O)
@@ -51,9 +52,9 @@ Esta especificação define os requisitos de engenharia, ferramentas e padrões 
    │   └── cli.rs          # Parser de linha de comando (clap)
    └── main.rs             # Composition Root (bootstrap e injeção)
    ```
-2. **In-Memory Fakes:** Testes unitários instanciam structs que implementam os traits de domínio armazenando dados em `HashMap` ou `RwLock<Vec<T>>` na memória, rodando em microssegundos sem dependência de SQLite ou sockets.
-3. **Parse, Don't Validate:** Validação de entradas externas na borda (parsers `clap` ou DTOs `serde`). O Core opera com primitivos confiáveis ou structs transparentes.
-4. **Estados com Enums Nativos:**
+3. **In-Memory Fakes:** Testes unitários instanciam structs que implementam os traits de domínio armazenando dados em `HashMap` ou `RwLock<Vec<T>>` na memória, rodando em microssegundos sem dependência de SQLite ou sockets. Fakes e adaptadores reais compartilham os mesmos testes de contrato (LSP).
+4. **Parse, Don't Validate:** Validação de entradas externas na borda (parsers `clap` ou DTOs `serde`). O Core opera com primitivos confiáveis ou structs transparentes.
+5. **Estados com Enums Nativos:**
    ```rust
    pub enum TaskState {
        Pending,
@@ -79,10 +80,10 @@ Esta especificação define os requisitos de engenharia, ferramentas e padrões 
            .join(app)
    }
    ```
-2. **Dockerfile Canônico (Multi-stage + Scratch Estático musl):**
+2. **Dockerfile Canônico (Multi-stage + Scratch Estático musl com CA-Certs):**
    ```dockerfile
    FROM rust:1.99-alpine AS builder
-   RUN apk add --no-cache musl-dev
+   RUN apk add --no-cache musl-dev ca-certificates
    WORKDIR /build
    COPY Cargo.toml Cargo.lock ./
    COPY src ./src
@@ -90,7 +91,37 @@ Esta especificação define os requisitos de engenharia, ferramentas e padrões 
 
    FROM scratch
    USER 1000:1000
+   COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/ca-certificates.crt
    COPY --from=builder /build/target/x86_64-unknown-linux-musl/release/app /usr/local/bin/app
    ENTRYPOINT ["/usr/local/bin/app"]
    ```
 3. **Streams:** Saída pura de dados via `println!()`, logs e mensagens diagnósticas via `eprintln!()` ou crate `tracing`/`env_logger` configurada para `stderr`.
+
+---
+
+## 6. Otimização de Binário de Release & Linking Estático
+
+### 1. Perfil de Release Canônico (`[profile.release]`)
+Para assegurar a máxima redução de tamanho binário, eliminação de símbolos mortos e prevenção de overhead de desbobinamento de pilha (*stack unwinding*), projetos Rust no ecossistema GOST devem declarar o perfil canônico em seus manifests `Cargo.toml`:
+
+```toml
+[profile.release]
+opt-level = 3
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+```
+
+### 2. Linking Estático musl (`crt-static`)
+Para garantir independência total do carregador dinâmico (`ld-linux`) e máxima portabilidade em ambientes Linux glibc e musl, a compilação contra alvos `x86_64-unknown-linux-musl` e `aarch64-unknown-linux-musl` deve habilitar o flag `crt-static`:
+
+```toml
+# .cargo/config.toml
+[target.x86_64-unknown-linux-musl]
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[target.aarch64-unknown-linux-musl]
+rustflags = ["-C", "target-feature=+crt-static"]
+```
+
