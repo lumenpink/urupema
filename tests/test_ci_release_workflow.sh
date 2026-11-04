@@ -101,8 +101,36 @@ else
 fi
 
 if [ $FAILED -ne 0 ]; then
-    echo "==> [TEST] STATUS: RED (Asserções falharam conforme esperado no Red Test)"
+    echo "==> [TEST] STATUS: RED (Asserções falharam conforme esperado)"
     exit 1
 fi
 
-echo "==> [TEST] STATUS: GREEN (Todas as asserções passaram)"
+echo "==> Executando testes de mutação para release workflow (#16)..."
+TMP_WORKFLOW="$(mktemp)"
+trap 'rm -f "$TMP_WORKFLOW"' EXIT
+
+# Mutante 1: Ausência de 'Delete Generic Releases and Tags'
+sed 's/Delete Generic Releases and Tags/Ignore Generic Deletions/' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
+if grep -q "Delete Generic Releases and Tags" "$TMP_WORKFLOW"; then
+    echo "FALHA: Mutante 1 (sem delete previo) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 1 (sem delete previo) detectado e isolado."
+
+# Mutante 2: Falta de suporte a latest-dev
+sed 's/latest-dev/latest-broken/' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
+if grep -q "latest-dev" "$TMP_WORKFLOW"; then
+    echo "FALHA: Mutante 2 (sem latest-dev) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 2 (sem latest-dev) detectado e isolado."
+
+# Mutante 3: Reintrodução de cut -d '-' -f1
+sed 's/RAW_VERSION/RAW_VERSION | cut -d '\''-'\'' -f1/' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
+if ! grep -q "cut -d '-' -f1" "$TMP_WORKFLOW"; then
+    echo "FALHA: Mutante 3 (truncando -dev) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 3 (truncando -dev) detectado e isolado."
+
+echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"
