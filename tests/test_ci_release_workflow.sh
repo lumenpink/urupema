@@ -3,11 +3,11 @@ set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WORKFLOW_FILE="$REPO_ROOT/.forgejo/workflows/ci.yml"
-SPEC_FILE="$REPO_ROOT/docs/specs/9_release_latest_gambi.md"
+SPEC_FILE="$REPO_ROOT/docs/specs/16_publicar_versao_canonica_e_genericas_spec.md"
 
 FAILED=0
 
-echo "==> [TEST] Validando conformidade do workflow de release latest (#9)..."
+echo "==> [TEST] Validando conformidade do workflow de publicacao canonica e genericas com delete previo (#16)..."
 
 # 1. Validação da Spec
 if [ ! -f "$SPEC_FILE" ]; then
@@ -39,56 +39,70 @@ else
     echo "OK: Build release de urupema configurado."
 fi
 
-# 5. Validar tag latest no release
-if ! grep -q 'tag_name: "latest"' "$WORKFLOW_FILE"; then
-    echo "FALHA: tag_name: \"latest\" ausente no step de release."
+# 5. Validar resolução de tags (canonica, named generic e primary generic)
+if ! grep -q "canonical_tag" "$WORKFLOW_FILE"; then
+    echo "FALHA: Resolução de 'canonical_tag' ausente no workflow."
     FAILED=1
 else
-    echo "OK: tag_name: \"latest\" configurada."
+    echo "OK: 'canonical_tag' resolvido no workflow."
 fi
 
-# 6. Validar arquivo publicado
-if ! grep -q "target/release/urupema" "$WORKFLOW_FILE"; then
-    echo "FALHA: Artefato 'target/release/urupema' não declarado em files."
+if ! grep -q "named_generic_tag" "$WORKFLOW_FILE"; then
+    echo "FALHA: Resolução de 'named_generic_tag' ausente no workflow."
     FAILED=1
 else
-    echo "OK: Artefato urupema declarado em files."
+    echo "OK: 'named_generic_tag' resolvido no workflow."
 fi
 
-# 7. Validar remoção de step órfão trigger-gost-ci
-if grep -q "trigger-gost-ci" "$WORKFLOW_FILE"; then
-    echo "FALHA: Step órfão 'trigger-gost-ci' ainda presente no workflow."
+if ! grep -q "primary_generic_tag" "$WORKFLOW_FILE"; then
+    echo "FALHA: Resolução de 'primary_generic_tag' ausente no workflow."
     FAILED=1
 else
-    echo "OK: Step órfão 'trigger-gost-ci' ausente."
+    echo "OK: 'primary_generic_tag' resolvido no workflow."
 fi
 
-# 8. Testes de Mutação
-echo "==> Executando testes de mutação para release workflow..."
-TMP_WORKFLOW="$(mktemp)"
-trap 'rm -f "$TMP_WORKFLOW"' EXIT
-
-# Mutante 1: Tag divergente de latest
-sed 's/tag_name: "latest"/tag_name: "v1.0.0"/' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
-if grep -q 'tag_name: "latest"' "$TMP_WORKFLOW"; then
-    echo "FALHA: Mutante 1 não isolado."
+# 6. Validar presença do step de deleção prévia das tags e releases genéricas
+if ! grep -q "Delete Generic Releases and Tags" "$WORKFLOW_FILE"; then
+    echo "FALHA: Step 'Delete Generic Releases and Tags' ausente no workflow."
     FAILED=1
 else
-    echo "OK: Mutante 1 (tag divergente) detectado e rejeitado."
+    echo "OK: Step 'Delete Generic Releases and Tags' presente."
 fi
 
-# Mutante 2: Ausência do binário urupema no files
-sed 's/target\/release\/urupema//' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
-if grep -q "target/release/urupema" "$TMP_WORKFLOW"; then
-    echo "FALHA: Mutante 2 não isolado."
+# 7. Validar que as releases genéricas sofrem deleção via API Forgejo
+if ! grep -q "/releases/{rel_id}" "$WORKFLOW_FILE" && ! grep -q "/releases/\$rel_id" "$WORKFLOW_FILE"; then
+    echo "FALHA: Chamada DELETE para remoção de release genérica ausente."
     FAILED=1
 else
-    echo "OK: Mutante 2 (binário ausente) detectado e rejeitado."
+    echo "OK: Chamada DELETE para release genérica presente."
+fi
+
+if ! grep -q "/tags/{tag}" "$WORKFLOW_FILE" && ! grep -q "/tags/\$tag" "$WORKFLOW_FILE"; then
+    echo "FALHA: Chamada DELETE para remoção de tag genérica ausente."
+    FAILED=1
+else
+    echo "OK: Chamada DELETE para tag genérica presente."
+fi
+
+# 8. Validar suporte a latest-dev para builds dev
+if ! grep -q "latest-dev" "$WORKFLOW_FILE"; then
+    echo "FALHA: Suporte a tag 'latest-dev' ausente no workflow."
+    FAILED=1
+else
+    echo "OK: Suporte a 'latest-dev' configurado."
+fi
+
+# 9. Validar sincronização de Cargo.toml sem truncar -dev
+if grep -q "cut -d '-' -f1" "$WORKFLOW_FILE"; then
+    echo "FALHA: O workflow ainda utiliza 'cut -d '-' -f1' truncando versões dev."
+    FAILED=1
+else
+    echo "OK: Sincronização de Cargo.toml não trunca versão dev."
 fi
 
 if [ $FAILED -ne 0 ]; then
-    echo "==> [TEST] STATUS: RED (Asserções falharam conforme esperado)"
+    echo "==> [TEST] STATUS: RED (Asserções falharam conforme esperado no Red Test)"
     exit 1
 fi
 
-echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"
+echo "==> [TEST] STATUS: GREEN (Todas as asserções passaram)"
