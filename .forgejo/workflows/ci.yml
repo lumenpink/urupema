@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - develop
+    tags:
+      - "v*"
   pull_request:
 
 jobs:
@@ -52,11 +54,40 @@ jobs:
     name: "Release Linux x86_64 Binary"
     runs-on: ubuntu-latest
     needs: [test]
-    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    if: (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/v')) && github.event_name == 'push'
     steps:
       - uses: actions/checkout@v4
       - name: "Install Rust Toolchain"
         uses: dtolnay/rust-toolchain@stable
+
+      - name: "Determine Version and Release Tags"
+        id: versioning
+        run: |
+          RAW_VERSION=$(head -n 1 VERSION | tr -d ' \r\n')
+          BASE_VERSION=$(echo "$RAW_VERSION" | cut -d'-' -f1 | cut -d'+' -f1)
+
+          if [[ "$RAW_VERSION" == *"-dev"* ]] || [[ "${{ github.ref }}" != refs/tags/v* && "$RAW_VERSION" =~ [a-zA-Z] ]]; then
+            IS_DEV=true
+            CANONICAL_TAG="$RAW_VERSION"
+            NAMED_GENERIC_TAG="${BASE_VERSION}-dev"
+            PRIMARY_GENERIC_TAG="latest-dev"
+          else
+            IS_DEV=false
+            CANONICAL_TAG="$RAW_VERSION"
+            NAMED_GENERIC_TAG="${BASE_VERSION}"
+            PRIMARY_GENERIC_TAG="latest"
+          fi
+
+          echo "is_dev=${IS_DEV}" >> "$GITHUB_OUTPUT"
+          echo "canonical_tag=${CANONICAL_TAG}" >> "$GITHUB_OUTPUT"
+          echo "named_generic_tag=${NAMED_GENERIC_TAG}" >> "$GITHUB_OUTPUT"
+          echo "primary_generic_tag=${PRIMARY_GENERIC_TAG}" >> "$GITHUB_OUTPUT"
+
+          echo "★ Versao Resolvida: $RAW_VERSION (dev=$IS_DEV)"
+          echo "★ Tag Canonica    : $CANONICAL_TAG"
+          echo "★ Tag Nomeada     : $NAMED_GENERIC_TAG"
+          echo "★ Tag Principal   : $PRIMARY_GENERIC_TAG"
+
       - name: "Configure Gambi Cargo Registry"
         env:
           GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
@@ -72,8 +103,8 @@ jobs:
           GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
         run: |
           if [ -n "$GAMBI_TOKEN" ]; then
-            CANONICAL_VERSION=$(head -n 1 VERSION | cut -d '-' -f1 | tr -d ' \r\n')
-            echo "-> Sincronizando Cargo.toml para a versao canonica: $CANONICAL_VERSION"
+            CANONICAL_VERSION="${{ steps.versioning.outputs.canonical_tag }}"
+            echo "-> Sincronizando Cargo.toml para a versao: $CANONICAL_VERSION"
             sed -i "0,/^version = .*/s//version = \"${CANONICAL_VERSION}\"/" Cargo.toml
             echo "-> Publicando urupema no registry gambi..."
             cargo publish --registry gambi --allow-dirty || echo "::warning::Versao ja publicada ou falha tolerada no registry."
@@ -84,7 +115,7 @@ jobs:
       - name: "Build Release Binary"
         run: cargo build --release --bin urupema
 
-      - name: "Prune Previous Asset on Forgejo"
+      - name: "Delete Generic Releases and Tags"
         env:
           GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -100,36 +131,75 @@ jobs:
           if token:
               headers["Authorization"] = f"token {token}"
 
-          url = f"{api_url}/repos/{repo}/releases/tags/latest"
-          req = urllib.request.Request(url, headers=headers)
-          try:
-              with urllib.request.urlopen(req) as resp:
-                  rel = json.load(resp)
-          except Exception as e:
-              print(f"-> Nenhuma release previa encontrada ou erro na consulta: {e}")
-              sys.exit(0)
+          generic_tags = [
+              "${{ steps.versioning.outputs.named_generic_tag }}",
+              "${{ steps.versioning.outputs.primary_generic_tag }}",
+          ]
 
-          rel_id = rel.get("id")
-          for asset in rel.get("assets", []):
-              if asset.get("name") == "urupema":
-                  asset_id = asset.get("id")
-                  del_url = f"{api_url}/repos/{repo}/releases/{rel_id}/assets/{asset_id}"
+          for tag in generic_tags:
+              print(f"-> Verificando release e tag generica: {tag}")
+              url = f"{api_url}/repos/{repo}/releases/tags/{tag}"
+              req = urllib.request.Request(url, headers=headers)
+              rel_id = None
+              try:
+                  with urllib.request.urlopen(req) as resp:
+                      rel = json.load(resp)
+                      rel_id = rel.get("id")
+              except Exception as e:
+                  print(f"   Nenhuma release existente para {tag}: {e}")
+
+              if rel_id:
+                  del_url = f"{api_url}/repos/{repo}/releases/{rel_id}"
                   del_req = urllib.request.Request(del_url, headers=headers, method="DELETE")
                   try:
                       with urllib.request.urlopen(del_req) as del_resp:
-                          print(f"-> Asset antigo urupema (id: {asset_id}) removido da release {rel_id}: {del_resp.status}")
+                          print(f"   Release generica {tag} (id: {rel_id}) deletada: {del_resp.status}")
                   except Exception as e:
-                      print(f"::warning::Falha ao podar asset {asset_id}: {e}")
+                      print(f"::warning::Falha ao deletar release {rel_id}: {e}")
+
+              # Deletar a tag git correspondente
+              del_tag_url = f"{api_url}/repos/{repo}/tags/{tag}"
+              del_tag_req = urllib.request.Request(del_tag_url, headers=headers, method="DELETE")
+              try:
+                  with urllib.request.urlopen(del_tag_req) as del_tag_resp:
+                      print(f"   Tag generica {tag} deletada: {del_tag_resp.status}")
+              except Exception as e:
+                  print(f"   Tag remota {tag} inexistente ou erro: {e}")
           '
 
-      - name: "Publish Release (latest)"
+      - name: "Publish Canonical Release"
         uses: https://github.com/softprops/action-gh-release@v2
         with:
-          tag_name: "latest"
-          name: "Urupema Latest (linux-x86_64)"
-          prerelease: false
+          tag_name: ${{ steps.versioning.outputs.canonical_tag }}
+          name: "Urupema ${{ steps.versioning.outputs.canonical_tag }} (linux-x86_64)"
+          prerelease: ${{ steps.versioning.outputs.is_dev == 'true' }}
           files: target/release/urupema
           body: |
             Binário oficial compilado para linux-x86_64.
+            Versão Canônica: ${{ steps.versioning.outputs.canonical_tag }}
+            Commit: ${{ github.sha }}
+
+      - name: "Publish Named Generic Release"
+        uses: https://github.com/softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.versioning.outputs.named_generic_tag }}
+          name: "Urupema ${{ steps.versioning.outputs.named_generic_tag }} (linux-x86_64)"
+          prerelease: ${{ steps.versioning.outputs.is_dev == 'true' }}
+          files: target/release/urupema
+          body: |
+            Binário oficial compilado para linux-x86_64 (${{ steps.versioning.outputs.named_generic_tag }}).
+            Versão Canônica: ${{ steps.versioning.outputs.canonical_tag }}
+            Commit: ${{ github.sha }}
+
+      - name: "Publish Primary Generic Release"
+        uses: https://github.com/softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.versioning.outputs.primary_generic_tag }}
+          name: "Urupema ${{ steps.versioning.outputs.primary_generic_tag }} (linux-x86_64)"
+          prerelease: ${{ steps.versioning.outputs.is_dev == 'true' }}
+          files: target/release/urupema
+          body: |
+            Binário oficial compilado para linux-x86_64 (${{ steps.versioning.outputs.primary_generic_tag }}).
+            Versão Canônica: ${{ steps.versioning.outputs.canonical_tag }}
             Commit: ${{ github.sha }}
 
