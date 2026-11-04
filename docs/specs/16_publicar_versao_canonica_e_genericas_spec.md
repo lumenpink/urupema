@@ -4,6 +4,7 @@
 - **Status:** Concluído (Fase 9: Finish & Close)
 - **Autora:** Lumen
 - **Alinhamento:** GOST 2.0.0
+- **Data:** 2026-11-04
 
 ## 1. Contexto & Motivação
 Anteriormente, o job de release do `urupema` publicava apenas na tag estática e rolante `latest`, truncando versões pré-release para a base semântica (`cut -d '-' -f1`).
