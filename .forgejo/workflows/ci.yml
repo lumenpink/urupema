@@ -25,6 +25,8 @@ jobs:
         run: cargo test --all-targets --all-features
       - name: "Audit CI Release Workflow"
         run: bash tests/test_ci_release_workflow.sh
+      - name: "Audit CI Prune Release Asset"
+        run: bash tests/test_ci_prune_release_asset.sh
       - name: "Audit CI Publish Crate Workflow"
         run: bash tests/test_ci_publish_crate.sh
 
@@ -55,7 +57,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: "Install Rust Toolchain"
         uses: dtolnay/rust-toolchain@stable
-      - name: "Configure Sovereign Gambi Cargo Registry"
+      - name: "Configure Gambi Cargo Registry"
         env:
           GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
         run: |
@@ -65,7 +67,7 @@ jobs:
             printf '[registries.gambi]\ntoken = "%s"\n' "$GAMBI_TOKEN" > "$HOME/.cargo/credentials.toml"
           fi
 
-      - name: "Publish Crate to Sovereign Gambi Registry"
+      - name: "Publish Crate to Gambi Registry"
         env:
           GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
         run: |
@@ -83,20 +85,44 @@ jobs:
         run: cargo build --release --bin urupema
 
       - name: "Prune Previous Asset on Forgejo"
+        env:
+          GAMBI_TOKEN: ${{ secrets.GAMBI_2LP_IN_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          API_URL="${GITHUB_API_URL:-https://gambi.2lp.in/api/v1}"
-          REPO="${GITHUB_REPOSITORY:-lumen/urupema}"
-          TOKEN="${GITHUB_TOKEN:-${{ secrets.GITHUB_TOKEN }}}"
-          REL_INFO=$(curl -s -H "Authorization: token $TOKEN" "$API_URL/repos/$REPO/releases/tags/latest" || true)
-          REL_ID=$(echo "$REL_INFO" | jq -r .id 2>/dev/null || echo "")
-          if [ -n "$REL_ID" ] && [ "$REL_ID" != "null" ]; then
-            ASSET_ID=$(echo "$REL_INFO" | jq -r '.assets[]? | select(.name=="urupema") | .id' 2>/dev/null || echo "")
-            if [ -n "$ASSET_ID" ] && [ "$ASSET_ID" != "null" ]; then
-              curl -s -X DELETE -H "Authorization: token $TOKEN" "$API_URL/repos/$REPO/releases/$REL_ID/assets/$ASSET_ID" || true
-            fi
-          fi
+          python3 -c '
+          import os, sys, json, urllib.request
 
-      - name: "Publish Sovereign Release (latest)"
+          api_url = os.environ.get("GITHUB_API_URL") or "https://gambi.2lp.in/api/v1"
+          repo = os.environ.get("GITHUB_REPOSITORY") or "lumen/urupema"
+          token = os.environ.get("GAMBI_TOKEN") or os.environ.get("GITHUB_TOKEN") or ""
+
+          headers = {"User-Agent": "urupema-ci"}
+          if token:
+              headers["Authorization"] = f"token {token}"
+
+          url = f"{api_url}/repos/{repo}/releases/tags/latest"
+          req = urllib.request.Request(url, headers=headers)
+          try:
+              with urllib.request.urlopen(req) as resp:
+                  rel = json.load(resp)
+          except Exception as e:
+              print(f"-> Nenhuma release previa encontrada ou erro na consulta: {e}")
+              sys.exit(0)
+
+          rel_id = rel.get("id")
+          for asset in rel.get("assets", []):
+              if asset.get("name") == "urupema":
+                  asset_id = asset.get("id")
+                  del_url = f"{api_url}/repos/{repo}/releases/{rel_id}/assets/{asset_id}"
+                  del_req = urllib.request.Request(del_url, headers=headers, method="DELETE")
+                  try:
+                      with urllib.request.urlopen(del_req) as del_resp:
+                          print(f"-> Asset antigo urupema (id: {asset_id}) removido da release {rel_id}: {del_resp.status}")
+                  except Exception as e:
+                      print(f"::warning::Falha ao podar asset {asset_id}: {e}")
+          '
+
+      - name: "Publish Release (latest)"
         uses: https://github.com/softprops/action-gh-release@v2
         with:
           tag_name: "latest"
@@ -104,6 +130,6 @@ jobs:
           prerelease: false
           files: target/release/urupema
           body: |
-            Binário soberano oficial compilado para linux-x86_64.
+            Binário oficial compilado para linux-x86_64.
             Commit: ${{ github.sha }}
 

@@ -8,10 +8,10 @@
 ## 1. Contexto & Motivação
 O `urupema` exporta uma biblioteca Rust com domínios fundamentais de sanitização, parsing MIME e segmentação textual de e-mails (`adapters`, `application`, `domain`).
 O aplicativo irmão `lauda` (através do `lauda-index` e `lauda-server`) depende dessas definições para indexação BM25 e busca semântica.
-Para evitar a necessidade de clonar o repositório fonte a cada ciclo de compilação ou teste de integração, o `urupema` deve publicar automaticamente a sua biblioteca no registro de pacotes Cargo soberano (`gambi.2lp.in`), sob o identificador de registro `gambi`.
+Para evitar a necessidade de clonar o repositório fonte a cada ciclo de compilação ou teste de integração, o `urupema` deve publicar automaticamente a sua biblioteca no registro de pacotes Cargo gambi (`gambi.2lp.in`), sob o identificador de registro `gambi`.
 
 ## 2. Requisitos Técnicos
-1. **Configuração do Registro Soberano:**
+1. **Configuração do Registro Gambi:**
    - Adicionar configuração em `~/.cargo/config.toml`:
      ```toml
      [registries.gambi]

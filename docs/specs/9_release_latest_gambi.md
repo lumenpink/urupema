@@ -7,7 +7,7 @@
 
 ## 1. Contexto & Motivação
 O binário `urupema` é utilizado como sanitizador MIME e post-queue filter no servidor de e-mail e como dependência do ecossistema Lauda. Atualmente, os consumidores necessitam clonar e compilar o código fonte repetidamente.
-O objetivo desta especificação é definir o job de release automatizado no workflow Forgejo CI (`.forgejo/workflows/ci.yml`) para compilar o binário em modo `--release` para a arquitetura `linux-x86_64` e publicá-lo sob a tag `latest` na forja soberana (`gambi.2lp.in`).
+O objetivo desta especificação é definir o job de release automatizado no workflow Forgejo CI (`.forgejo/workflows/ci.yml`) para compilar o binário em modo `--release` para a arquitetura `linux-x86_64` e publicá-lo sob a tag `latest` na forja oficial (`gambi.2lp.in`).
 
 ## 2. Requisitos Técnicos
 1. **Gatilho de Execução:**
