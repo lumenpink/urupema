@@ -1,7 +1,7 @@
 # Especificação Técnica — Publicação de Versão Canônica e Tags Genéricas com Deleção Prévia (#16)
 
 - **ID do Ticket:** #16
-- **Status:** Em Progresso (Fase 3: Spec)
+- **Status:** Concluído (Fase 9: Finish & Close)
 - **Autora:** Lumen
 - **Alinhamento:** GOST 2.0.0
 
@@ -49,9 +49,9 @@ Antes da publicação dos novos binários:
 - [x] **Fase 1: Ticket** — Ticket #16 aberto e sincronizado.
 - [x] **Fase 2: Branch** — Branch `feat/16-publicar-versao-canonica-e-genericas-com-delete-previo` criada.
 - [x] **Fase 3: Spec** — Especificação técnica redigida.
-- [ ] **Fase 4: Red Test** — Testes de auditoria atualizados comprovando falhas no workflow atual.
-- [ ] **Fase 5: Green Implement** — Implementada a deleção prévia e a tríade de tags no CI.
-- [ ] **Fase 6: Refactor** — Limpeza e padronização dos scripts de automação.
-- [ ] **Fase 7: Mutation Test** — Validação de mutantes nos testes do workflow.
-- [ ] **Fase 8: Quality Gate** — Verificação rigorosa com clippy, fmt, tests e cccp check.
-- [ ] **Fase 9: Finish & Close** — Atualização do changelog e fechamento do ciclo.
+- [x] **Fase 4: Red Test** — Testes de auditoria atualizados comprovando falhas no workflow atual.
+- [x] **Fase 5: Green Implement** — Implementada a deleção prévia e a tríade de tags no CI.
+- [x] **Fase 6: Refactor** — Limpeza e padronização dos scripts de automação.
+- [x] **Fase 7: Mutation Test** — Validação de mutantes nos testes do workflow.
+- [x] **Fase 8: Quality Gate** — Verificação rigorosa com clippy, fmt, tests e cccp check.
+- [x] **Fase 9: Finish & Close** — Atualização do changelog e fechamento do ciclo.
