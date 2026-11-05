@@ -80,7 +80,7 @@ else
 fi
 
 # 9. Validar envio do pacote urupema no payload
-if ! grep -q '"package": "urupema"' "$WORKFLOW_FILE"; then
+if ! grep -q '\\"package\\": \\"urupema\\"' "$WORKFLOW_FILE"; then
     echo "FALHA: Payload JSON não declara '\"package\": \"urupema\"'."
     FAILED=1
 else

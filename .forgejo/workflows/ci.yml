@@ -112,6 +112,23 @@ jobs:
             echo "GAMBI_2LP_IN_TOKEN not set, skipping crate publish."
           fi
 
+      - name: "Notify Kombinat Daemon of Release Cascade"
+        run: |
+          VERSION="${{ steps.versioning.outputs.canonical_tag }}"
+          if [ -z "$VERSION" ]; then
+            VERSION=$(head -n 1 VERSION | cut -d'+' -f1 | tr -d ' \r\n')
+          else
+            VERSION=$(echo "$VERSION" | cut -d'+' -f1 | tr -d ' \r\n')
+          fi
+          echo "★ Notificando Kombinat da publicação de urupema@${VERSION}..."
+          curl -s -X POST http://127.0.0.1:4040/api/cascade/dispatch \
+            -H "Content-Type: application/json" \
+            -d "{\"package\": \"urupema\", \"version\": \"${VERSION}\"}" || curl -s -X POST http://172.17.0.1:4040/api/cascade/dispatch \
+            -H "Content-Type: application/json" \
+            -d "{\"package\": \"urupema\", \"version\": \"${VERSION}\"}" || {
+            echo "::warning::Falha ao contatar Kombinat daemon em 127.0.0.1:4040 ou 172.17.0.1:4040. Continuando sem abortar CI."
+          }
+
       - name: "Build Release Binary"
         run: cargo build --release --bin urupema
 
