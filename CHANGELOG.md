@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Notificação ao Kombinat daemon para cascata downstream no lauda (closes #17).
 - Publicação de release binário e tag canônica (VERSION) e tags genéricas com deleção prévia (closes #16).
 
 ## [0.1.1] - 2026-11-03

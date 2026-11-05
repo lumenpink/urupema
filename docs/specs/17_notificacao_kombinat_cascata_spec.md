@@ -1,7 +1,7 @@
 # Especificação Técnica — Notificação ao Kombinat Daemon para Cascata Downstream no Lauda (#17)
 
 - **ID do Ticket:** #17
-- **Status:** Em Progresso (Fase 3: Spec)
+- **Status:** Concluído (Fase 8: Quality Gate)
 - **Autora:** Lumen
 - **Alinhamento:** GOST 2.0.0
 - **Data:** 2026-11-05
@@ -42,9 +42,9 @@ Esta especificação define a integração do step de notificação ao daemon `k
 - [x] **Fase 1: Ticket** — Ticket #17 aberto no Forgejo.
 - [x] **Fase 2: Branch** — Branch `feat/17-integrar-notificacao-de-cascata-ao-kombinat-para-lauda` criada.
 - [x] **Fase 3: Spec** — Especificação técnica redigida.
-- [ ] **Fase 4: Red Test** — Auditoria em `tests/test_ci_publish_crate.sh` falhando pela ausência do step.
-- [ ] **Fase 5: Green Implement** — Step implementado no `.forgejo/workflows/ci.yml`.
-- [ ] **Fase 6: Refactor** — Limpeza e consistência no workflow.
-- [ ] **Fase 7: Mutation Test** — Mutantes no script de teste garantindo integridade das regras.
-- [ ] **Fase 8: Quality Gate** — Validação com fmt, clippy, testes e cccp check.
-- [ ] **Fase 9: Finish & Close** — Atualização do changelog e fechamento do ciclo.
+- [x] **Fase 4: Red Test** — Auditoria em `tests/test_ci_publish_crate.sh` falhando pela ausência do step.
+- [x] **Fase 5: Green Implement** — Step implementado no `.forgejo/workflows/ci.yml`.
+- [x] **Fase 6: Refactor** — Limpeza e consistência no workflow.
+- [x] **Fase 7: Mutation Test** — Mutantes no script de teste garantindo integridade das regras.
+- [x] **Fase 8: Quality Gate** — Validação com fmt, clippy, testes e cccp check.
+- [x] **Fase 9: Finish & Close** — Atualização do changelog e fechamento do ciclo.
