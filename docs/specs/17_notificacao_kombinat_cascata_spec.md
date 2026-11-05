@@ -1,7 +1,7 @@
 # Especificação Técnica — Notificação ao Kombinat Daemon para Cascata Downstream no Lauda (#17)
 
 - **ID do Ticket:** #17
-- **Status:** Concluído (Fase 8: Quality Gate)
+- **Status:** Concluído (Fase 9: Finish & Close)
 - **Autora:** Lumen
 - **Alinhamento:** GOST 2.0.0
 - **Data:** 2026-11-05
