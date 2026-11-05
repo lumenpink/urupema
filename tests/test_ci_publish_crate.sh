@@ -121,4 +121,28 @@ if grep -q "GAMBI_2LP_IN_TOKEN" "$TMP_MUTANT"; then
 fi
 echo "OK: Mutante 2 (token ausente) detectado e rejeitado."
 
+# Mutante 3: Endpoint divergente
+sed 's|/api/cascade/dispatch|/api/cascade/divergente|g' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q "/api/cascade/dispatch" "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 3 (endpoint divergente) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 3 (endpoint divergente) detectado e rejeitado."
+
+# Mutante 4: Pacote divergente
+sed 's/\\"package\\": \\"urupema\\"/\\"package\\": \\"divergente\\"/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q '\\"package\\": \\"urupema\\"' "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 4 (pacote divergente) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 4 (pacote divergente) detectado e rejeitado."
+
+# Mutante 5: Fallback ausente
+sed 's/172\.17\.0\.1:4040/0\.0\.0\.0:9999/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q "172\.17\.0\.1:4040" "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 5 (fallback ausente) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 5 (fallback ausente) detectado e rejeitado."
+
 echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"
