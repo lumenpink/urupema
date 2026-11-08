@@ -97,9 +97,13 @@ impl Pipeline {
             ammonia_builder.link_rel(Some("noopener noreferrer"));
 
             let clean_html = ammonia_builder.clean(html).to_string();
-            // Largura ampla para preservar fluxo livre de parágrafos sem quebras artificiais
+            // Largura ampla para preservar fluxo livre de parágrafos sem quebras artificiais,
+            // desativando bordas de tabelas de layout para prevenir poluição por grades ASCII
             const UNWRAPPED_WIDTH: usize = 10_000;
-            let raw_markdown = html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH);
+            let raw_markdown = html2text::config::plain()
+                .no_table_borders()
+                .string_from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH)
+                .unwrap_or_else(|_| html2text::from_read(clean_html.as_bytes(), UNWRAPPED_WIDTH));
             let sanitized_markdown = sanitize_markdown_noise(&raw_markdown);
 
             let fallback_to_plain =

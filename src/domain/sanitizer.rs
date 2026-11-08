@@ -1,14 +1,19 @@
 //! Higienização de ruídos e seleção de payload de mensagens.
 
-/// Limpa ruídos visuais, marcadores corrompidos e sequências repetitivas de underlines
-/// comumente injetados por newsletters (ex.: comunicados do GitHub Universe e Canal Meio).
+/// Limpa ruídos visuais, marcadores corrompidos e sequências repetitivas de underlines,
+/// hifens, traços de caixas e divisores comumente injetados por newsletters e layouts de e-mail.
 pub fn sanitize_markdown_noise(input: &str) -> String {
     let mut cleaned_lines = Vec::new();
 
     for line in input.lines() {
         let trimmed = line.trim();
 
-        // 1. Linhas compostas exclusivamente por 3 ou mais underlines e espaços (divisores ruidosos de newsletters)
+        // 1. Linhas compostas exclusivamente por espaçadores pontuais (ex.: '.' isolado)
+        if trimmed == "." {
+            continue;
+        }
+
+        // 2. Linhas compostas exclusivamente por 3 ou mais underlines e espaços (divisores ruidosos de newsletters)
         if trimmed.len() >= 3
             && trimmed.chars().all(|c| c == '_' || c == ' ')
             && trimmed.contains("___")
@@ -16,7 +21,21 @@ pub fn sanitize_markdown_noise(input: &str) -> String {
             continue;
         }
 
-        // 2. Substituir sequências de 4 ou mais underlines dentro da linha
+        // 3. Linhas compostas exclusivamente por traços de desenho de caixas/tabelas (─, ━, ═)
+        if !trimmed.is_empty()
+            && trimmed
+                .chars()
+                .all(|c| c == '─' || c == '━' || c == '═' || c == ' ' || c == '┬' || c == '┴' || c == '┼')
+        {
+            continue;
+        }
+
+        // 4. Linhas com sequências excessivas de hifens (>= 5 hifens com espaços)
+        if trimmed.len() >= 5 && trimmed.chars().all(|c| c == '-' || c == ' ') {
+            continue;
+        }
+
+        // 5. Substituir sequências de 4 ou mais underlines dentro da linha
         let mut sanitized_line = String::with_capacity(line.len());
         let mut under_count = 0;
 
@@ -45,11 +64,31 @@ pub fn sanitize_markdown_noise(input: &str) -> String {
         cleaned_lines.push(sanitized_line);
     }
 
-    // Normaliza múltiplas linhas em branco consecutivas (no máximo uma linha vazia entre parágrafos)
+    // Normaliza divisores e múltiplas linhas em branco consecutivas
+    let mut normalized_lines = Vec::new();
+    let mut last_was_hr = false;
+
+    for line in cleaned_lines {
+        let trimmed = line.trim();
+        let is_hr = trimmed == "---" || trimmed == "***" || trimmed == "___";
+
+        if is_hr {
+            if !last_was_hr {
+                normalized_lines.push(line);
+                last_was_hr = true;
+            }
+        } else {
+            if !trimmed.is_empty() {
+                last_was_hr = false;
+            }
+            normalized_lines.push(line);
+        }
+    }
+
     let mut result = Vec::new();
     let mut consecutive_empty = 0;
 
-    for line in cleaned_lines {
+    for line in normalized_lines {
         if line.trim().is_empty() {
             consecutive_empty += 1;
             if consecutive_empty <= 1 {
