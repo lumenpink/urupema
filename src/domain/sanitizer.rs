@@ -156,4 +156,34 @@ mod tests {
             Some("Curto")
         ));
     }
+
+    #[test]
+    fn test_sanitize_removes_repetitive_hyphen_and_box_drawing_lines() {
+        let input = "Seção 1\n\n--------------------\n\n--------------------\n\nSeção 2\n\n────────────────────\n\n────────────────────\n\nSeção 3";
+        let cleaned = sanitize_markdown_noise(input);
+        // Não deve ter múltiplos divisores consecutivos
+        assert!(!cleaned.contains("--------------------\n\n--------------------"));
+        assert!(!cleaned.contains("────────────────────\n\n────────────────────"));
+        assert!(cleaned.contains("Seção 1"));
+        assert!(cleaned.contains("Seção 2"));
+        assert!(cleaned.contains("Seção 3"));
+    }
+
+    #[test]
+    fn test_sanitize_removes_isolated_dot_spacers() {
+        let input = "Produto A\n.\n-50%\n.\nR$ 100\n.\nProduto B";
+        let cleaned = sanitize_markdown_noise(input);
+        assert!(!cleaned.lines().any(|l| l.trim() == "."));
+        assert!(cleaned.contains("Produto A"));
+        assert!(cleaned.contains("-50%"));
+        assert!(cleaned.contains("R$ 100"));
+        assert!(cleaned.contains("Produto B"));
+    }
+
+    #[test]
+    fn test_sanitize_collapses_consecutive_horizontal_rules() {
+        let input = "Texto\n\n---\n\n---\n\n---\n\nContinuação";
+        let cleaned = sanitize_markdown_noise(input);
+        assert_eq!(cleaned, "Texto\n\n---\n\nContinuação");
+    }
 }
