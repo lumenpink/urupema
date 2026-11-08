@@ -1,8 +1,8 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `2.0.0`  
-**Status:** `CONCLUDED` (Branch: `chore/14-bump-version-to-0-1-1-and-publish-to-gambi-registry`)  
-**Ticket de Referência:** `#14` (Anteriores: `#12`, `#6`, `#4`, `#5`, `#1`)
+**Status:** `DRAFT` (Branch: `fix/18-desativar-bordas-de-tabela-e-expurgar-linhas-repetitivas-de-tracos`)  
+**Ticket de Referência:** `#18` (Anteriores: `#17`, `#16`, `#14`, `#12`, `#6`, `#4`, `#5`, `#1`)
 
 ---
 
@@ -73,12 +73,15 @@ A política de higienização de tags via `ammonia` é estrita:
 - **Largura Flexível / Responsiva:** Em vez de quebras artificiais rígidas a 80 colunas (que corrompem o fluxo de leitura em visualizadores modernos e telas dinâmicas), a conversão utiliza uma largura ampla (unwrapped, e.g. 10.000 colunas), permitindo que o cliente de exibição controle o wrap de texto livremente.
 - **Preservação de Quebras Intencionais:** Quebras de parágrafo (`<p>`) são preservadas como parágrafos separados (`\n\n`), e quebras de linha duras (`<br>`, `<br/>`) são mantidas como quebras de linha (`\n`), garantindo integridade visual em endereços, listas, versos e blocos de assinatura.
 - Links são preservados na sintaxe padrão Markdown `[texto](url)`.
-- Tabelas simples são formatadas em ASCII legível.
+- Tabelas de layout HTML têm suas bordas decorativas desativadas (`no_table_borders`), permitindo fluxo linear e limpo sem fragmentação em grades ASCII gigantescas.
 
-#### 2.4.1 Sanitização de Ruídos de Markdown (Ticket #12)
-- Newsletters e comunicados frequentes (ex.: GitHub Universe, Canal Meio) geram distorções com divisores ASCII corrompidos, especialmente sequências repetitivas de underlines (`___________`).
+#### 2.4.1 Sanitização de Ruídos de Markdown (Ticket #12, Estendido no Ticket #18)
+- Newsletters e comunicados frequentes (ex.: GitHub Universe, Canal Meio, Shein, Reddit, Pinterest, TikTok, AliExpress) geram distorções com divisores ASCII/Unicode corrompidos, especialmente sequências repetitivas de underlines (`___________`), hifens (`-----------`) e linhas de traços/caixas Unicode (`───────────`, `═══════════`, `━━━━━━━━━━━`).
 - O sanitizador de ruídos aplica normalização determinística:
   - Sequências de 3 ou mais underlines repetitivos (`_{3,}`) são colapsadas ou removidas quando isoladas em linhas de separação ruidosas.
+  - Linhas compostas exclusivamente por traços, hifens ou divisores Unicode (`-`, `─`, `━`, `═`) e espaços são descartadas quando formam ruído repetitivo ou excessivo.
+  - Linhas repetitivas de hifens/traços horizontais (`---`, `───`) são colapsadas para no máximo uma ocorrência de separador semântico entre seções.
+  - Linhas espúrias contendo apenas pontos órfãos ou espaçadores residuais (ex.: `.` isolado derivado de espaçadores de tabelas de e-mail) são descartadas.
   - Marcadores corrompidos ou fragmentos órfãos de formatação são saneados.
   - O texto resultante mantém a legibilidade e previne quebras na renderização de Markdown.
 
