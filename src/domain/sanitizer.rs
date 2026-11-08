@@ -23,9 +23,9 @@ pub fn sanitize_markdown_noise(input: &str) -> String {
 
         // 3. Linhas compostas exclusivamente por traços de desenho de caixas/tabelas (─, ━, ═)
         if !trimmed.is_empty()
-            && trimmed
-                .chars()
-                .all(|c| c == '─' || c == '━' || c == '═' || c == ' ' || c == '┬' || c == '┴' || c == '┼')
+            && trimmed.chars().all(|c| {
+                c == '─' || c == '━' || c == '═' || c == ' ' || c == '┬' || c == '┴' || c == '┼'
+            })
         {
             continue;
         }

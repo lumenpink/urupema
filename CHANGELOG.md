@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Desativação de bordas de tabela de layout no `html2text` (`no_table_borders`) e expurgo de linhas repetitivas de traços, hifens e divisores de caixas em `sanitize_markdown_noise` (closes #18).
+
 ### Added
 - Notificação ao Kombinat daemon para cascata downstream no lauda (closes #17).
 - Publicação de release binário e tag canônica (VERSION) e tags genéricas com deleção prévia (closes #16).
