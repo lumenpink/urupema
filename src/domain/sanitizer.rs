@@ -225,4 +225,33 @@ mod tests {
         let cleaned = sanitize_markdown_noise(input);
         assert_eq!(cleaned, "Texto\n\n---\n\nContinuação");
     }
+
+    #[test]
+    fn test_sanitize_edge_cases_boundary_conditions() {
+        // Hífen único legítimo (item de lista) não deve ser removido
+        let list_item = "- Item de lista";
+        assert_eq!(sanitize_markdown_noise(list_item), list_item);
+
+        // 4 hifens (limiar antes de 5) preservados se não forem HR de 3
+        let four_hyphens = "----";
+        assert_eq!(sanitize_markdown_noise(four_hyphens), "----");
+
+        // 5 hifens (limiar exato de ruído) devem ser descartados
+        let five_hyphens = "-----";
+        assert_eq!(sanitize_markdown_noise(five_hyphens), "");
+
+        // Caracteres variados de box-drawing (═ e ━) isolados
+        let double_box = "═══════════";
+        assert_eq!(sanitize_markdown_noise(double_box), "");
+        let heavy_box = "━━━━━━━━━━━";
+        assert_eq!(sanitize_markdown_noise(heavy_box), "");
+
+        // Ponto isolado com espaços
+        let dot_with_spaces = "   .   ";
+        assert_eq!(sanitize_markdown_noise(dot_with_spaces), "");
+
+        // Ponto substantivo em texto (ex.: elipse ...) NÃO descartado
+        let ellipsis = "...";
+        assert_eq!(sanitize_markdown_noise(ellipsis), "...");
+    }
 }
