@@ -95,7 +95,7 @@ jobs:
           mkdir -p "$HOME/.cargo"
           printf '[registries.gambi]\nindex = "sparse+https://gambi.2lp.in/api/packages/lumen/cargo/"\n' > "$HOME/.cargo/config.toml"
           if [ -n "$GAMBI_TOKEN" ]; then
-            printf '[registries.gambi]\ntoken = "%s"\n' "$GAMBI_TOKEN" > "$HOME/.cargo/credentials.toml"
+            printf '[registries.gambi]\ntoken = "Bearer %s"\n' "$GAMBI_TOKEN" > "$HOME/.cargo/credentials.toml"
           fi
 
       - name: "Publish Crate to Gambi Registry"
@@ -148,9 +148,12 @@ jobs:
           if token:
               headers["Authorization"] = f"token {token}"
 
+          canonical = "${{ steps.versioning.outputs.canonical_tag }}"
           generic_tags = [
-              "${{ steps.versioning.outputs.named_generic_tag }}",
-              "${{ steps.versioning.outputs.primary_generic_tag }}",
+              t for t in [
+                  "${{ steps.versioning.outputs.named_generic_tag }}",
+                  "${{ steps.versioning.outputs.primary_generic_tag }}",
+              ] if t != canonical
           ]
 
           for tag in generic_tags:
@@ -197,6 +200,7 @@ jobs:
             Commit: ${{ github.sha }}
 
       - name: "Publish Named Generic Release"
+        if: steps.versioning.outputs.named_generic_tag != steps.versioning.outputs.canonical_tag
         uses: https://github.com/softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.versioning.outputs.named_generic_tag }}

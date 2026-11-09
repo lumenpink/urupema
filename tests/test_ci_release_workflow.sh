@@ -4,10 +4,11 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WORKFLOW_FILE="$REPO_ROOT/.forgejo/workflows/ci.yml"
 SPEC_FILE="$REPO_ROOT/docs/specs/16_publicar_versao_canonica_e_genericas_spec.md"
+TICKET19_SPEC_FILE="$REPO_ROOT/docs/specs/19_corrigir_token_bearer_e_isolar_release_generica.md"
 
 FAILED=0
 
-echo "==> [TEST] Validando conformidade do workflow de publicacao canonica e genericas com delete previo (#16)..."
+echo "==> [TEST] Validando conformidade do workflow de publicacao canonica e genericas com delete previo (#16, #19)..."
 
 # 1. Validação da Spec
 if [ ! -f "$SPEC_FILE" ]; then
@@ -15,6 +16,13 @@ if [ ! -f "$SPEC_FILE" ]; then
     FAILED=1
 else
     echo "OK: $SPEC_FILE presente."
+fi
+
+if [ ! -f "$TICKET19_SPEC_FILE" ]; then
+    echo "FALHA: Arquivo de especificação $TICKET19_SPEC_FILE não encontrado."
+    FAILED=1
+else
+    echo "OK: $TICKET19_SPEC_FILE presente."
 fi
 
 # 2. Validação do arquivo de workflow
@@ -140,5 +148,13 @@ if ! grep -q "cut -d '-' -f1" "$TMP_WORKFLOW"; then
     exit 1
 fi
 echo "OK: Mutante 3 (truncando -dev) detectado e isolado."
+
+# Mutante 4: Omissão da guarda de colisão de release genérica (#19)
+sed '/named_generic_tag != steps.versioning.outputs.canonical_tag/d' "$WORKFLOW_FILE" > "$TMP_WORKFLOW"
+if grep -q "named_generic_tag != steps.versioning.outputs.canonical_tag" "$TMP_WORKFLOW"; then
+    echo "FALHA: Mutante 4 (sem guarda de colisao) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 4 (sem guarda de colisao) detectado e isolado."
 
 echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"

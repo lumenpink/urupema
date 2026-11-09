@@ -5,10 +5,11 @@ REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 WORKFLOW_FILE="$REPO_ROOT/.forgejo/workflows/ci.yml"
 SPEC_FILE="$REPO_ROOT/docs/specs/10_publish_crate_gambi.md"
 KOMBINAT_SPEC_FILE="$REPO_ROOT/docs/specs/17_notificacao_kombinat_cascata_spec.md"
+TICKET19_SPEC_FILE="$REPO_ROOT/docs/specs/19_corrigir_token_bearer_e_isolar_release_generica.md"
 
 FAILED=0
 
-echo "==> [TEST] Validando conformidade da publicação da crate urupema no registro gambi (#10) e cascata kombinat (#17)..."
+echo "==> [TEST] Validando conformidade da publicação da crate urupema no registro gambi (#10), cascata kombinat (#17) e token bearer (#19)..."
 
 # 1. Validação das Specs
 if [ ! -f "$SPEC_FILE" ]; then
@@ -23,6 +24,13 @@ if [ ! -f "$KOMBINAT_SPEC_FILE" ]; then
     FAILED=1
 else
     echo "OK: $KOMBINAT_SPEC_FILE presente."
+fi
+
+if [ ! -f "$TICKET19_SPEC_FILE" ]; then
+    echo "FALHA: Arquivo de especificação $TICKET19_SPEC_FILE não encontrado."
+    FAILED=1
+else
+    echo "OK: $TICKET19_SPEC_FILE presente."
 fi
 
 # 2. Validação do arquivo de workflow
@@ -152,5 +160,13 @@ if grep -q "172\.17\.0\.1:4040" "$TMP_MUTANT"; then
     exit 1
 fi
 echo "OK: Mutante 5 (fallback ausente) detectado e rejeitado."
+
+# Mutante 6: Prefixo Bearer ausente (#19)
+sed 's/Bearer %s/%s/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+if grep -q 'token = "Bearer %s"' "$TMP_MUTANT"; then
+    echo "FALHA: Mutante 6 (sem Bearer) não foi simulado corretamente."
+    exit 1
+fi
+echo "OK: Mutante 6 (sem Bearer) detectado e rejeitado."
 
 echo "==> [TEST] STATUS: GREEN (Todas as asserções e mutações passaram)"

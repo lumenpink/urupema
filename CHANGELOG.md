@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Fixed
+- Configuração de token Bearer para o cargo publish e condicionamento de release genérica nomeada para evitar colisão na mesma tag (closes #19).
 - Desativação de bordas de tabela de layout no `html2text` (`no_table_borders`) e expurgo de linhas repetitivas de traços, hifens e divisores de caixas em `sanitize_markdown_noise` (closes #18).
 
 ### Added
