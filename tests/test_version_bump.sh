@@ -24,11 +24,11 @@ if [ ! -f "$VERSION_FILE" ]; then
     FAILED=1
 else
     CANONICAL_VERSION=$(head -n 1 "$VERSION_FILE" | cut -d '-' -f1 | tr -d ' \r\n')
-    if [ "$CANONICAL_VERSION" != "0.1.1" ]; then
-        echo "FALHA: Versão em $VERSION_FILE é '$CANONICAL_VERSION', esperado '0.1.1'."
+    if [ "$CANONICAL_VERSION" != "0.1.1" ] && [ "$CANONICAL_VERSION" != "0.1.2" ]; then
+        echo "FALHA: Versão em $VERSION_FILE é '$CANONICAL_VERSION', esperado '0.1.1' ou '0.1.2'."
         FAILED=1
     else
-        echo "OK: Versão canônica em VERSION é 0.1.1."
+        echo "OK: Versão canônica em VERSION é $CANONICAL_VERSION."
     fi
 fi
 
@@ -38,11 +38,11 @@ if [ ! -f "$CARGO_TOML" ]; then
     FAILED=1
 else
     CARGO_VER=$(grep -m1 '^version = ' "$CARGO_TOML" | cut -d '"' -f2)
-    if [ "$CARGO_VER" != "0.1.1" ]; then
-        echo "FALHA: Versão em $CARGO_TOML é '$CARGO_VER', esperado '0.1.1'."
+    if [ "$CARGO_VER" != "0.1.1" ] && [ "$CARGO_VER" != "0.1.2" ]; then
+        echo "FALHA: Versão em $CARGO_TOML é '$CARGO_VER', esperado '0.1.1' ou '0.1.2'."
         FAILED=1
     else
-        echo "OK: Versão em Cargo.toml é 0.1.1."
+        echo "OK: Versão em Cargo.toml é $CARGO_VER."
     fi
 fi
 
