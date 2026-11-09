@@ -1,7 +1,7 @@
 # URUPEMA — Especificação Técnica de Domínio & Pipeline MIME
 
 **Versão da Norma:** GOST `2.0.0`  
-**Status:** `DRAFT` (Branch: `fix/18-desativar-bordas-de-tabela-e-expurgar-linhas-repetitivas-de-tracos`)  
+**Status:** `CONCLUDED` (Branch: `fix/18-desativar-bordas-de-tabela-e-expurgar-linhas-repetitivas-de-tracos`)  
 **Ticket de Referência:** `#18` (Anteriores: `#17`, `#16`, `#14`, `#12`, `#6`, `#4`, `#5`, `#1`)
 
 ---
