@@ -95,6 +95,14 @@ else
     echo "OK: Fallback 172.17.0.1:4040 configurado."
 fi
 
+# 11. Validar uso do prefixo Bearer no token de autenticação do registro gambi (#19)
+if ! grep -q 'token = "Bearer %s"' "$WORKFLOW_FILE"; then
+    echo "FALHA: Prefixo 'Bearer ' ausente na configuração do token de credentials.toml."
+    FAILED=1
+else
+    echo "OK: Prefixo 'Bearer ' configurado para autenticação do cargo."
+fi
+
 if [ "$FAILED" -ne 0 ]; then
     echo "==> [FAIL] Teste de conformidade falhou."
     exit 1

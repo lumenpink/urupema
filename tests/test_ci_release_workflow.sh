@@ -100,6 +100,14 @@ else
     echo "OK: Sincronização de Cargo.toml não trunca versão dev."
 fi
 
+# 10. Validar salvaguarda contra colisão de tag na release genérica nomeada (#19)
+if ! grep -q "named_generic_tag != steps.versioning.outputs.canonical_tag" "$WORKFLOW_FILE"; then
+    echo "FALHA: Condicional prevenindo colisão entre named_generic_tag e canonical_tag ausente."
+    FAILED=1
+else
+    echo "OK: Condicional contra colisão de release genérica presente."
+fi
+
 if [ $FAILED -ne 0 ]; then
     echo "==> [TEST] STATUS: RED (Asserções falharam conforme esperado)"
     exit 1
