@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "urupema",
+  "title": "Urupema",
+  "site_type": "app",
+  "tagline": "Filtro Post-Queue MIME e sanitizador de e-mail para Postfix",
+  "summary": "Utilitário post-queue em Rust síncrono para dissecação de MIME, conversão em Markdown e sanitização estrita de e-mails recebidos pelo Postfix.",
+  "abstract": "O urupema é um filtro de entrega de correio eletrônico que desseca a árvore MIME e higieniza o conteúdo em texto puro e Markdown limpo.",
+  "tags": [
+    "urupema",
+    "email",
+    "postfix",
+    "mime",
+    "markdown",
+    "rust"
+  ],
+  "icon": "✉",
+  "theme": {
+    "bg_color": "#181825",
+    "accent_color": "#a6e3a1"
+  }
+}

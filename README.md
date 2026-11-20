@@ -2,7 +2,7 @@
 
 > Utilitário post-queue em Rust síncrono para dissecação de MIME, conversão em Markdown e sanitização estrita de e-mails recebidos pelo Postfix.
 
-[![GOST Compliance](https://img.shields.io/badge/GOST-2.0.0-crimson)](https://gostlumen.2lp.in)
+[![GOST Compliance](https://img.shields.io/badge/GOST-3.0.0-crimson)](.gost/GOST.md)
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](./LICENSE)
 [![Website](https://img.shields.io/badge/portal-urupema.2lp.in-red)](https://urupema.2lp.in)
 
@@ -41,3 +41,7 @@ cargo test --all-targets
 ```
 
 Para a especificação completa de domínio e arquitetura, consulte [`SPEC.md`](./SPEC.md). Licenciado sob [Apache-2.0](./LICENSE).
+
+---
+
+Feito com amor travesti por [Lumen Pink](https://lumen.pink).
