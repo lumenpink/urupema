@@ -1,6 +1,6 @@
 [package]
 name = "urupema"
-version = "0.1.3-dev.7+20261120.81b30ad"
+version = "0.1.3-dev.8+20261120.6b1a795"
 edition = "2021"
 authors = ["Lumen <lumen@2lp.in>"]
 description = "Filtro Post-Queue MIME e sanitizador de e-mail para Postfix"

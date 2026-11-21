@@ -33,22 +33,19 @@ jobs:
         run: bash tests/test_ci_publish_crate.sh
 
   deploy-site:
-    name: "Deploy Documentation Site"
+    name: "Publish Site Bundle to Generic Packages"
     runs-on: ubuntu-latest
+    container:
+      image: gambi.2lp.in/lumen/gost-ci-shell:latest
     needs: [test]
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v4
-      - name: "Deploy to Cloudflare Workers"
+      - name: "Upload Site Bundle for Kombinat"
         env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          GAMBI_2LP_IN_TOKEN: ${{ secrets.REGISTRY_TOKEN || secrets.GAMBI_2LP_IN_TOKEN || secrets.FORGEJO_TOKEN || secrets.GIT_2LP_TOKEN }}
         run: |
-          if [ -n "$CLOUDFLARE_API_TOKEN" ]; then
-            npx wrangler deploy
-          else
-            echo "CLOUDFLARE_API_TOKEN not set, skipping Cloudflare deploy."
-          fi
+          cccp package upload site
 
   release:
     name: "Release Linux x86_64 Binary"

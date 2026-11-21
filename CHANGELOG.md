@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **ci:** delegar entregas ao Kombinat via Generic Packages (`cccp package upload`) (closes #22)
+
 ### Fixed
 - Simplificação de expressão booleana em `is_embedded_header_start` eliminando `needless_bool` do clippy (closes #21).
 - Configuração de token Bearer para o cargo publish e condicionamento de release genérica nomeada para evitar colisão na mesma tag (closes #19).
