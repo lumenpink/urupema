@@ -130,7 +130,7 @@ fi
 echo "OK: Mutante 1 (registry divergente) detectado e rejeitado."
 
 # Mutante 2: Token ausente
-sed 's/GAMBI_2LP_IN_TOKEN/UNKNOWN_TOKEN/' "$WORKFLOW_FILE" > "$TMP_MUTANT"
+sed 's/GAMBI_2LP_IN_TOKEN/UNKNOWN_TOKEN/g' "$WORKFLOW_FILE" > "$TMP_MUTANT"
 if grep -q "GAMBI_2LP_IN_TOKEN" "$TMP_MUTANT"; then
     echo "FALHA: Mutante 2 (token ausente) não foi simulado corretamente."
     exit 1
